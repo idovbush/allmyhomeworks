@@ -1,0 +1,83 @@
+.wrapper {
+    width: 830px;
+    height: 1200;
+    background-color: beige;
+    margin: 0 auto;
+}
+
+header {
+    height: 130px;
+    padding: 20px;
+    border-bottom: 2px solid brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 16px;
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+h3 {
+    font-size: 14px;
+}
+
+main {
+    height: 1000px;
+    padding: 20px;
+    border-bottom: 2px solid brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.2;
+}
+
+.columns {
+    border-bottom: 2px solid brown;
+    padding-bottom: 16px;
+}
+
+li:not(img) {
+    margin-top: 10px;
+}
+
+img {
+    background-color: beige;
+    width: 25px;
+    height: 18px;
+}
+
+.columns div,
+li div {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+}
+
+.date {
+    width: 120px;
+    padding-top: 3px;
+}
+
+.lesson {
+    width: 120px;
+    padding-top: 3px;
+}
+.theme {
+    width: 240px;
+    padding-top: 3px;
+}
+
+.link {
+    width: 120px;
+    padding-top: 3px;
+}
+
+.page {
+    width: 120px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+}
