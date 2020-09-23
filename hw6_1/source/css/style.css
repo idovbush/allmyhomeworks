@@ -1,0 +1,73 @@
+@font-face {
+   font-family: 'Proxima Nova Light';
+   src: url('../fonts/ProximaNova-Light.eot');
+   src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/ProximaNova-Light.woff') format('woff'),
+   url('../fonts/ProximaNova-Light.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   }
+
+.wrapper {
+   width: 1550px;
+   height: 289px;
+   background: rgb(255, 255, 255);
+   padding-left: 198px;
+}
+
+.services {
+   width: 1060px;
+   height: 169px;
+   display: inline-block;
+   text-align: center;
+   padding-top: 57px;
+}
+
+.info-blocks {
+   width: 220px;
+   height: 169px;
+   display: inline-block;
+   margin-left: 100px;
+   
+}
+
+.header {
+   width: 148px;
+   height: 24px;
+   font-family: "Proxima Nova Light";
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 24px;
+   margin: 10px auto;
+}
+
+.text-blocks {
+   width: 250px;
+   height: 52px;
+   font-family: "Proxima Nova Light";
+   font-size: 14px;
+   line-height: 20px;
+   letter-spacing: 0.35px;
+   margin: 0 auto;
+   color: #9D9D9D;
+}
+
+.picture-blocks {
+   width: 66px;
+   height: 66px;
+   background-image: url("../img/bg_blue.png");
+   background-repeat: no-repeat;
+   padding-top: 18px;
+   margin: 0 auto;
+
+}
+
+
+.images {
+   width: 28px;
+   height: 28px;
+}
+
+.tablet:hover {
+   
+}
