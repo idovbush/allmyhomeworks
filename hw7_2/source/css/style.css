@@ -1,0 +1,171 @@
+.wrapper {
+   width: 100%;
+   max-width: 1468px;
+   background-color: rgb(51,153,204);
+   color: rgb(255,255,255);
+   border: 25px solid rgb(43,129,172);
+   padding-top: 35px;
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.main {
+   
+   width: 985px;
+   height: 621px;
+   margin: 0 auto;
+   font-size: 0px;
+   border: 3px solid rgb(255,255,255);
+
+}
+
+.Lisbon {
+   width: 50%;
+   background-color: rgb(51,153,204);
+   height: 154px;
+   border: 3px solid rgb(255,255,255);
+   display: inline-block;
+   font-size: 26px;
+   text-align: center;
+   padding-top: 34px;
+}
+
+.Paris {
+   width: 25%;
+   background-color: rgb(51,204,204);
+   height: 154px;
+   border: 3px solid rgb(255,255,255);
+   display: inline-block;
+   font-size: 26px;
+   text-align: center;
+   padding-top: 34px;
+}
+
+.Belgrade {
+   width: 25%;
+   background-color: rgb(153,102,153);
+   height: 154px;
+   border: 3px solid rgb(255,255,255);
+   display: inline-block;
+   font-size: 26px;
+   text-align: center;
+   padding-top: 34px;
+}
+
+.Moscow {
+   width: 25%;
+   background-color: rgb(194,71,71);
+   height: 154px;
+   border: 3px solid rgb(255,255,255);
+   display: inline-block;
+   font-size: 26px;
+   text-align: center;
+   padding-top: 34px;
+}
+
+.Tel-Aviv {
+   width: 25%;
+   background-color: rgb(226,103,74);
+   height: 154px;
+   border: 3px solid rgb(255,255,255);
+   display: inline-block;
+   font-size: 26px;
+   text-align: center;
+   padding-top: 34px;
+}
+
+.Cair {
+   width: 25%;
+   background-color: rgb(255,204,102);
+   height: 154px;
+   border: 3px solid rgb(255,255,255);
+   display: inline-block;
+   font-size: 26px;
+   text-align: center;
+   padding-top: 34px;
+}
+
+.New-York {
+   width: 25%;
+   background-color: rgb(153,204,153);
+   height: 154px;
+   border: 3px solid rgb(255,255,255);
+   display: inline-block;
+   font-size: 26px;
+   text-align: center;
+   padding-top: 34px;
+}
+
+
+.New-Delhi {
+   width: 25%;
+   background-color: rgb(102,153,153);
+   height: 154px;
+   border: 3px solid rgb(255,255,255);
+   display: inline-block;
+   font-size: 26px;
+   text-align: center;
+   padding-top: 34px;
+}
+
+.San-Francisco {
+   width: 50%;
+   background-color: rgb(204,102,153);
+   height: 154px;
+   border: 3px solid rgb(255,255,255);
+   display: inline-block;
+   font-size: 26px;
+   text-align: center;
+   padding-top: 34px;
+}
+
+.Tokyo {
+   width: 25%;
+   background-color: rgb(51,153,102);
+   height: 154px;
+   border: 3px solid rgb(255,255,255);
+   display: inline-block;
+   font-size: 26px;
+   text-align: center;
+   padding-top: 34px;
+}
+
+.Sydney {
+   width: 100%;
+   background-color: rgb(102,102,153);
+   height: 154px;
+   border: 3px solid rgb(255,255,255);
+   display: inline-block;
+   font-size: 26px;
+   text-align: center;
+   padding-top: 34px;
+}
+
+.Lisbon:hover,
+.Paris:hover,
+.Moscow:hover,
+.Tel-Aviv:hover,
+.Cair:hover,
+.New-York:hover,
+.New-Delhi:hover,
+.San-Francisco:hover,
+.Tokyo:hover,
+.Sydney:hover {
+   opacity: 50%;
+}
+
+* {
+   transition: all .1s ease-in;
+}
+
+.header {
+   font-size: 28px;
+   margin-left: 160px;
+   margin-bottom: 40px;
+}
+
+.footer {
+   font-size: 22px;
+   margin-left: 160px;
+   margin-top: 34px;
+   margin-bottom: 143px;
+}
