@@ -4,13 +4,13 @@
    background-color: rgb(51,153,204);
    color: rgb(255,255,255);
    border: 25px solid rgb(43,129,172);
-   padding-top: 35px;
+   padding-top: 33px;
    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .main {
-   
-   width: 985px;
+   width: 67%;
+   max-width: 985px;
    height: 621px;
    margin: 0 auto;
    font-size: 0px;
@@ -18,130 +18,116 @@
 
 }
 
-.Lisbon {
-   width: 50%;
-   background-color: rgb(51,153,204);
+.city {
    height: 154px;
    border: 3px solid rgb(255,255,255);
    display: inline-block;
    font-size: 26px;
    text-align: center;
-   padding-top: 34px;
+   padding-top: 33px;
+}
+
+.Lisbon {
+   width: 50%;
+   background-color: rgb(51,153,204);
+}
+
+.Lisbon p {
+   color: rgb(191,223,229);
 }
 
 .Paris {
    width: 25%;
    background-color: rgb(51,204,204);
-   height: 154px;
-   border: 3px solid rgb(255,255,255);
-   display: inline-block;
-   font-size: 26px;
-   text-align: center;
-   padding-top: 34px;
+}
+
+.Paris p {
+   color: rgb(191,239,239);
 }
 
 .Belgrade {
    width: 25%;
    background-color: rgb(153,102,153);
-   height: 154px;
-   border: 3px solid rgb(255,255,255);
-   display: inline-block;
-   font-size: 26px;
-   text-align: center;
-   padding-top: 34px;
+}
+
+.Belgrade p {
+   color: rgb(223,207,223);
 }
 
 .Moscow {
    width: 25%;
    background-color: rgb(194,71,71);
-   height: 154px;
-   border: 3px solid rgb(255,255,255);
-   display: inline-block;
-   font-size: 26px;
-   text-align: center;
-   padding-top: 34px;
+}
+
+.Moscow p {
+   color: rgb(235,197,197);
 }
 
 .Tel-Aviv {
    width: 25%;
    background-color: rgb(226,103,74);
-   height: 154px;
-   border: 3px solid rgb(255,255,255);
-   display: inline-block;
-   font-size: 26px;
-   text-align: center;
-   padding-top: 34px;
+}
+
+.Tel-Aviv p{
+   color: rgb(245,207,198);
 }
 
 .Cair {
    width: 25%;
    background-color: rgb(255,204,102);
-   height: 154px;
-   border: 3px solid rgb(255,255,255);
-   display: inline-block;
-   font-size: 26px;
-   text-align: center;
-   padding-top: 34px;
+}
+
+.Cair p {
+   color: rgb(255,209,237);
 }
 
 .New-York {
    width: 25%;
    background-color: rgb(153,204,153);
-   height: 154px;
-   border: 3px solid rgb(255,255,255);
-   display: inline-block;
-   font-size: 26px;
-   text-align: center;
-   padding-top: 34px;
 }
 
-
+.New-York p {
+   color: rgb(223,239,223);
+}
 .New-Delhi {
    width: 25%;
    background-color: rgb(102,153,153);
-   height: 154px;
-   border: 3px solid rgb(255,255,255);
-   display: inline-block;
-   font-size: 26px;
-   text-align: center;
-   padding-top: 34px;
+}
+
+.New-Delhi p {
+   color: rgb(207,223,223);
 }
 
 .San-Francisco {
    width: 50%;
    background-color: rgb(204,102,153);
-   height: 154px;
-   border: 3px solid rgb(255,255,255);
-   display: inline-block;
-   font-size: 26px;
-   text-align: center;
-   padding-top: 34px;
+}
+
+.San-Francisco p {
+   color: rgb(239,207,223);
 }
 
 .Tokyo {
    width: 25%;
    background-color: rgb(51,153,102);
-   height: 154px;
-   border: 3px solid rgb(255,255,255);
-   display: inline-block;
-   font-size: 26px;
-   text-align: center;
-   padding-top: 34px;
+}
+
+.Tokyo p{
+   color: rgb(191,223,207);
 }
 
 .Sydney {
    width: 100%;
    background-color: rgb(102,102,153);
-   height: 154px;
-   border: 3px solid rgb(255,255,255);
-   display: inline-block;
-   font-size: 26px;
-   text-align: center;
-   padding-top: 34px;
+}
+
+.Sydney p {
+   color: rgb(207,207,223);
 }
 
 .Lisbon:hover,
 .Paris:hover,
+.Belgrade:hover,
 .Moscow:hover,
 .Tel-Aviv:hover,
 .Cair:hover,
@@ -158,14 +144,24 @@
 }
 
 .header {
-   font-size: 28px;
-   margin-left: 160px;
-   margin-bottom: 40px;
+   font-size: 30px;
+   margin: 0 auto;
+   margin-left: 200px;
+   margin-bottom: 35px;
 }
 
 .footer {
    font-size: 22px;
-   margin-left: 160px;
+   margin-left: 200px;
    margin-top: 34px;
-   margin-bottom: 143px;
+   margin-bottom: 140px;
 }
+
+.city p {
+   margin-top: 18px;
+   
+}
+.city i {
+   font-size: 40px;
+}
+
