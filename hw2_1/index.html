@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список покупок</title>
+    <style>
+        .wrapper {
+            width: 840px;
+            height: 1060px;
+            margin: 0 auto;
+            padding: 40px 70px 30px 100px;
+            background-color: rgb(235, 235, 235);
+            font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: rgb(55, 55, 55)
+        }
+
+        legend {
+            font-size: 18px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            color: rgb(125,125,125);
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li:nth-child(2n) {
+            background-color: rgb(215, 215, 215);
+        }
+
+        ul>li:hover {
+            background-color: rgb(241, 70, 70);
+            color: rgb(11, 53, 145);
+        }
+        
+        
+        input:checked {
+            margin-left: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Список покупок на случай наступления второй волны короновируса</h1>
+        <ol>
+            <li><fieldset>
+                <legend>Продукты</legend>
+                    <ul>
+                        <li><label><input type="checkbox">Крупы</label></li>
+                        <li><label><input type="checkbox">Консервы</label></li>
+                        <li><label><input type="checkbox">Сухофрукты</label></li>
+                        <li><label><input type="checkbox">Соль</label></li>
+                        <li><label><input type="checkbox">Сахар</label></li>
+                        <li><label><input type="checkbox">Печенье</label></li>
+                        <li><label><input type="checkbox">Специи</label></li>
+                    </ul>
+                </fieldset>
+            </li>
+            <li><fieldset>
+                <legend>Лекарства</legend>
+                    <ul>
+                        <li><label><input type="checkbox">Ибупрофен</label></li>
+                        <li><label><input type="checkbox">Спирт</label></li>
+                        <li><label><input type="checkbox">Перекись водорода</label></li>
+                        <li><label><input type="checkbox">Кетанол</label></li>
+                        <li><label><input type="checkbox"></label>Лоперамид</li>
+                        <li><label><input type="checkbox"></label>Дротаверин</li>
+                        <li><label><input type="checkbox">Супрастин</label></li>
+                    </ul>
+                </fieldset>
+            </li>
+            <li><fieldset>
+                <legend>Бытовая химия</legend>
+                    <ul>
+                        <li><label><input type="checkbox">Доместос</label></li>
+                        <li><label><input type="checkbox">Туалетная бумага</label></li>
+                        <li><label><input type="checkbox">Стиральный порошок</label></li>
+                        <li><label><input type="checkbox">Антибактериальное мыло</label></li>
+                        <li><label><input type="checkbox">Зубная паста</label></li>
+                    </ul> 
+                </fieldset>
+            </li>
+            
+        </ol>
+    </div>
+</body>
+</html>
