@@ -9,26 +9,29 @@
    }
 
 .wrapper {
-   width: 1550px;
-   height: 289px;
+   width: 100%;
+   max-width: 1550px;
+   max-height: 289px;
    background: rgb(255, 255, 255);
-   padding-left: 198px;
+   font-size: 0px;
+   padding-top: 10%;
 }
 
+
 .services {
-   width: 1060px;
+   width: 100%;
+   max-width: 940px;
    height: 169px;
-   display: inline-block;
+   margin: 0 auto;
    text-align: center;
    padding-top: 57px;
+   
 }
 
 .info-blocks {
-   width: 220px;
+   width: 33.33%;
    height: 169px;
    display: inline-block;
-   margin-left: 100px;
-   
 }
 
 .header {
@@ -55,19 +58,20 @@
 .picture-blocks {
    width: 66px;
    height: 66px;
-   background-image: url("../img/bg_blue.png");
-   background-repeat: no-repeat;
-   padding-top: 18px;
    margin: 0 auto;
-
+   font-size: 18px;
 }
 
-
-.images {
-   width: 28px;
-   height: 28px;
+i:hover {
+   color: #2a69a6;
+   background-color: rgb(255, 255, 255);
+   border: 1px solid #2a69a6;
 }
 
-.tablet:hover {
-   
+i {
+   color: rgb(255, 255, 255);
+   font-size: 24px;
+   background-color: #2a69a6;
+   padding: 20px;
+   border-radius: 50%;
 }
