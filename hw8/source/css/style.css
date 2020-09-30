@@ -1,19 +1,31 @@
 .wrapper {
    width: 100%;
-   height: 100%;
+   height: auto;
    max-width: 1601px;
+   min-width: 900px;
+   min-height: 100%;
    max-height: 803px;
-   background-image: url("../img/bg.png") center top fixed;
+   background-image: url("../img/bg.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
    background-color: #cccccc;
    padding-top: 18px;
+   display: inline-block;
+   margin: 0 auto;
+   overflow: hidden;
+   /*position: relative;
+   top:0px;
+   left:0px;*/
 }
 
 .top {
-   
+   width: 95.6%;
    max-width: 1531px;
    height: 108px;
    margin: 0 auto;
    border: 2px solid red;
+   margin: 0 auto;
    position: relative;
 }
 
@@ -21,7 +33,7 @@
    width: 316px;
    height: 108px; 
    position: absolute;
-   left: 30px;
+   left: 0px;
    top: 3px;
 }
 
@@ -35,16 +47,19 @@
    text-transform: uppercase;
    position: absolute;
    top: 68px;
-   left: 59px;
+   left: 29px;
 }
 
 .menu {
    position: absolute;
-   width: 662px;
+   width: 665px;
    height: 32px;
-   left: 893px;
+   right: 10px;
    top: 19px;
+   border: 1px solid green;
 }
+
+
 
 nav {
    display: inline-block;
@@ -59,5 +74,100 @@ li {
    font-size: 17px;
    font-weight: 300;
    line-height: 35px;
-   /*border: 1px  solid blue;*/
+   margin-right: 40px;
 }
+
+li:hover {
+   border-top: 1px  solid #8dc63f;;
+}
+
+.content {
+   max-width: 680px;
+   height: 213px;
+   border-left: 8px solid #8dc63f;
+   margin: 0 auto;
+   margin-top: 150px;
+   padding-left: 30px;
+   /*position: relative;
+   top: 150px;
+   left: 395px;*/
+}
+
+.title {
+   width: 618px;
+   height: 117px;
+   color: #ffffff;
+   font-family: "Acrom - Extra Bold", Arial, serif;
+   font-size: 65px;
+   font-weight: 400;
+   line-height: 70px;
+   text-transform: uppercase;
+}
+.squares {
+   width: 18px;
+   height: 18px;
+   position: absolute;
+   transition-property: all;
+}
+.rectangle-green-first {
+   background-image: url("../img/Rectangle_green.png");
+   bottom: 118px;
+   left: 231px;
+   animation: rotating 2.5s linear 1.4s infinite;
+}
+
+.rectangle-green-second {
+   background-image: url("../img/Rectangle_green.png");
+   bottom: 93px;
+   left: 248px;
+   animation: rotating 2.5s linear 1.7s infinite;
+}
+
+.rectangle-green-third {
+   background-image: url("../img/Rectangle_green.png");
+   top: 170px;
+   right: 230px;
+   animation: rotating 2.5s linear 1.2s infinite;
+}
+
+.rectangle-green-fourth {
+   background-image: url("../img/Rectangle_green.png");
+   bottom: 155px;
+   right: 230px;
+   animation: rotating 2.5s linear 1.5s infinite;
+}
+
+.rectangle-green-fifth {
+   background-image: url("../img/Rectangle_green.png");
+   bottom: 125px;
+   right: 260px;
+   animation: rotating 2.5s linear 1.7s infinite;
+}
+
+.rectangle-white-first {
+   background-image: url("../img/Rectangle_white.png");
+   top: 213px;
+   left: 290px;
+   animation: rotating 2.5s linear 1.5s infinite;
+}
+
+.rectangle-white-second {
+   background-image: url("../img/Rectangle_white.png");
+   bottom: 92px;
+   right: 260px;
+   animation: rotating 2.5s linear 1.2s infinite;
+}
+
+@keyframes rotating {
+   0% {
+     transform: rotateY(0deg);
+   }
+   50%{
+      transform: rotateY(0deg);
+   }
+   100% {
+     transform: rotateY(360deg);
+   }
+
+}
+
