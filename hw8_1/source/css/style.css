@@ -1,0 +1,56 @@
+.wrapper {
+    font-size: 0;
+    width: 100%;
+    height: 100%;    
+}
+
+.main {
+    width: 173.61vh;
+    height: 100vh;
+    max-width: 1500px;
+    max-height: 864px;
+    margin: 0 auto;
+    background-color: #b07cf7;
+    
+}
+
+/*.header {
+    width: 37.53%;
+    height: 21.06%;
+    max-width: 563px;
+    max-height: 182px;
+    margin: 0 auto;
+    position: relative;
+    top: 11.57%;
+    border: 1px green solid;
+    position: relative;
+}*/
+
+h1 {
+    width: 12.66%;
+    height: 10%;
+    margin-top: 0;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 25px;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.description {
+    width: 37.53%;
+    height: 7.63%;
+    max-width: 563px;
+    max-height: 66px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    border: 1px solid brown;
+    position: absolute;
+}
