@@ -1,0 +1,133 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.gray {
+  height: 100vh;
+  width: 133.33vh;
+  max-width: 1200px;
+  max-height: 900px;
+  background-color: rgb(70, 79, 84);
+  margin: 0 auto;
+  position: relative;
+}
+.white {
+  max-width: 1060px;
+  max-height: 851px;
+  height: 83.44%;
+  width: 88.33%;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.22);
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 5.83%;
+}
+.header {
+}
+.author {
+  max-width: 211px;
+  max-height: 17px;
+  color: #b4b4b4;
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  position: absolute;
+  top: 39%;
+  left: 16.25%;
+}
+.title {
+  max-width: 755px;
+  max-height: 54px;
+  color: #2a2a2a;
+  font-family: "Futura PT - Heavy";
+  font-size: 78px;
+  font-weight: 400;
+  line-height: 73.52px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 5.28px;
+  position: absolute;
+  top: 46.11%;
+  left: 16.42%;
+}
+.questions {
+  max-width: 551px;
+  max-height: 30px;
+  color: #8f8f8f;
+  font-family: Georgia;
+  font-size: 30px;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: 62.44px;
+  text-align: left;
+  position: absolute;
+  top: 54.44%;
+  left: 16.42%;
+}
+.text {
+}
+.first {
+  max-width: 806px;
+  max-height: 143px;
+  color: #000000;
+  font-family: Georgia;
+  font-size: 27px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 40.38px;
+  text-align: justifyLeft;
+
+  font-family: Georgia;
+
+  position: absolute;
+  top: 63.89%;
+  left: 16.42%;
+}
+.second {
+  max-width: 804px;
+  max-height: 107px;
+  color: #000000;
+  font-family: Georgia;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 40.38px;
+  text-align: justifyLeft;
+  position: absolute;
+  top: 84.11%;
+  left: 16.42%;
+}
+.black {
+  max-width: 876px;
+  max-height: 187px;
+  width: 73%;
+  height: 20.78%;
+  box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+  background-color: #181818;
+  position: absolute;
+  top: 5.22%;
+  right: 0px;
+  z-index: 2;
+}
+.new-title {
+}
+.redo {
+  background-color: black;
+}
+.new {
+}
+.orange {
+  max-width: 812px;
+  max-height: 76px;
+  width: 67.67%;
+  height: 8.44%;
+  box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+  background-color: #fbc02d;
+  position: absolute;
+  top: 26%;
+  right: 0px;
+  z-index: 3;
+}
