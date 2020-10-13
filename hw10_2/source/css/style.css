@@ -1,11 +1,33 @@
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("../fonts/proxima-nova-regular/fonts/proxima_nova_regular.woff ")
+    format("woff");
+}
+@font-face {
+  font-family: "Georgia-reg";
+  src: url("../fonts/Georgia-reg.ttf ") format("truetype");
+}
+@font-face {
+  font-family: "Georgia-italic";
+  src: url("../fonts/Georgia-ital.ttf ") format("truetype");
+}
+@font-face {
+  font-family: "Playfair-Display";
+  src: url("../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf ")
+    format("truetype");
+}
+@font-face {
+  font-family: "FuturaPT-Heavy";
+  src: url("../fonts/FuturaPT/FuturaPT-Heavy.ttf ") format("truetype");
+}
 .container {
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 .gray {
-  height: 100vh;
-  width: 133.33vh;
+  height: 75vw;
+  width: 100vw;
   max-width: 1200px;
   max-height: 900px;
   background-color: rgb(70, 79, 84);
@@ -26,79 +48,77 @@
 .header {
 }
 .author {
-  max-width: 211px;
+  max-width: 250px;
   max-height: 17px;
   color: #b4b4b4;
-  font-family: "Proxima Nova";
+  font-family: "Proxima-Nova";
   font-size: 20px;
   font-weight: 400;
+  letter-spacing: 4px;
   text-align: left;
   text-transform: uppercase;
   position: absolute;
-  top: 39%;
-  left: 16.25%;
+  top: 26%;
+  left: 11.79%;
 }
 .title {
-  max-width: 755px;
+  max-width: 810px;
   max-height: 54px;
   color: #2a2a2a;
-  font-family: "Futura PT - Heavy";
+  font-family: "FuturaPT-Heavy";
   font-size: 78px;
   font-weight: 400;
   line-height: 73.52px;
   text-align: left;
   text-transform: uppercase;
-  letter-spacing: 5.28px;
+  letter-spacing: 4px;
   position: absolute;
-  top: 46.11%;
-  left: 16.42%;
+  top: 32.66%;
+  left: 11.79%;
 }
 .questions {
-  max-width: 551px;
+  max-width: 580px;
   max-height: 30px;
   color: #8f8f8f;
-  font-family: Georgia;
+  font-family: "Georgia-italic", Arial, serif;
   font-size: 30px;
   font-style: italic;
   letter-spacing: normal;
   line-height: 62.44px;
   text-align: left;
   position: absolute;
-  top: 54.44%;
-  left: 16.42%;
+  top: 43.07%;
+  left: 11.79%;
 }
 .text {
 }
 .first {
-  max-width: 806px;
+  max-width: 825px;
   max-height: 143px;
   color: #000000;
-  font-family: Georgia;
+  font-family: "Georgia-reg", Arial, serif;
   font-size: 27px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: 40.38px;
   text-align: justifyLeft;
-
-  font-family: Georgia;
-
   position: absolute;
-  top: 63.89%;
-  left: 16.42%;
+  top: 55.8%;
+  left: 11.79%;
 }
 .second {
-  max-width: 804px;
+  max-width: 825px;
   max-height: 107px;
   color: #000000;
-  font-family: Georgia;
+  font-family: "Georgia-reg", Arial, serif;
   font-size: 27px;
   font-weight: 400;
   line-height: 40.38px;
   text-align: justifyLeft;
   position: absolute;
-  top: 84.11%;
-  left: 16.42%;
+  top: 80.44%;
+  left: 11.79%;
 }
 .black {
   max-width: 876px;
@@ -112,13 +132,39 @@
   right: 0px;
   z-index: 2;
 }
+.label {
+  max-width: 57px;
+  max-height: 10px;
+  color: #818181;
+  font-family: "Proxima-Nova";
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  position: absolute;
+  top: 18.6%;
+  left: 7.3%;
+}
+.bottom-line {
+  border-bottom: 3px solid #818181;
+  position: absolute;
+  width: 92.7%;
+  left: 7.3%;
+  top: 72%;
+}
 .new-title {
-}
-.redo {
-  background-color: black;
-}
-.new {
   background-color: corals;
+  max-width: 372px;
+  max-height: 40px;
+  color: #fefefe;
+  font-family: "Playfair-Display";
+  font-size: 48px;
+  font-weight: 400;
+  text-align: left;
+  position: absolute;
+  left: 7.3%;
+  top: 25.5%;
 }
 .orange {
   max-width: 812px;
@@ -144,3 +190,14 @@
   max-width: 28px;
   max-height: 28px;
 }
+.italic {
+  font-family: "Georgia-italic", Arial, serif;
+}
+/* 
+h2:after {
+  content: " ";
+  border-left: 2px solid #fefefe;
+  margin-left: 7px;
+  height: 25px;
+}
+*/
