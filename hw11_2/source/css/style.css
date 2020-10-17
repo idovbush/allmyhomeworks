@@ -1,3 +1,13 @@
+
+@font-face {
+	font-family: 'MuseoSansRounded';
+	src: url('../fonts/MuseoSansRounded/fonts/MuseoSansRounded-100.eot');
+	src: local('☺'), url('../fonts/MuseoSansRounded/fonts/MuseoSansRounded-100.woff') format('woff'), url('../fonts/MuseoSansRounded/fonts/MuseoSansRounded-100.ttf') format('truetype'), url('../fonts/MuseoSansRounded/fonts/MuseoSansRounded-100.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 .container {
   width: 800px;
   height: 600px;
@@ -16,6 +26,8 @@
 
 }
 .product-card__content {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 .product-card__logo {
@@ -26,6 +38,7 @@
   left: 21px;
 }
 .product-card__images {
+
 }
 .product-card__img {
   width: 330px;
@@ -35,25 +48,100 @@
   left: 36px;
 }
 .product-card__colors {
+  width: 70px;
+  height: 20px;
+  position: absolute;
+  left: 178px;
+  bottom: 21px;
 }
-.color-list {
+.colors-list {
+  width: 70px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .product-card__info {
+  width: 175px;
+  height: 115px;
+  position: absolute;
+  top: 75px;
+  right: 70px;
 }
 .product-card__title {
+  font-family: "MuseoSansRounded";
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  color: #e1e1e1;
+  margin-bottom: 14px;
 }
 .product-card__descr {
+  opacity: 0.54;
+  font-family: "MuseoSansRounded";
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  color: #e1e1e1;
+  margin-bottom: 22px;
 }
 .product-card__score {
+  width: 70px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
 }
+
 .product-card__order {
+  width: 184px;
+  height: 104px;
+  position: absolute;
+  bottom: 71px;
+  right: 60px;
 }
 .product-card__size {
+
 }
 .product-card__qty {
 }
+.product-card__choice {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+.size-select,
+.qty-select {
+  display: inline-block;
+  width: 69px;
+  height: 32px;
+  opacity: 0.25;
+  font-family: "MuseoSansRounded";
+  font-size: 14px;
+  padding-left: 14px;
+  line-height: 18px;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  color: #e1e1e1;
+  background-color: #111a28;
+  border: 1px solid #ffffff;
+}
 .product-card__cart {
+
+}
+.cart-btn {
+  width: 184px;
+  height: 40px;
+  opacity: 0.25;
+  background-color: #4c525a;
+  border: 1px solid #ffffff;
+  font-family: "MuseoSansRounded";
+  font-size: 14px;
+  
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  color: #e1e1e1;
+  padding-left: 54px;
+  padding-top: 14px;
+  margin-top: 29px;
 }
