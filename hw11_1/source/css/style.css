@@ -1,0 +1,188 @@
+@font-face {
+	font-family: 'Pacifico-Regular';
+	src: url('../fonts/Pacifico-Regular/fonts/Pacifico-Regular.eot');
+	src: local('☺'), url('../fonts/Pacifico-Regular/fonts/Pacifico-Regular.woff') format('woff'), url('../fonts/Pacifico-Regular/fonts/Pacifico-Regular.ttf') format('truetype'), url('../fonts/Pacifico-Regular/fonts/Pacifico-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway-Light';
+	src: url('../fonts/Raleway-Light/fonts/Raleway-Light.eot');
+	src: local('☺'), url('../fonts/Raleway-Light/fonts/Raleway-Light.woff') format('woff'), url('../fonts/Raleway-Light/fonts/Raleway-Light.ttf') format('truetype'), url('../fonts/Raleway-Light/fonts/Raleway-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway-Bold';
+	src: url('../fonts/Raleway-Bold/fonts/Raleway-Bold.eot');
+	src: local('☺'), url('../fonts/Raleway-Bold/fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold/fonts/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway-Bold/fonts/Raleway-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway-Black';
+	src: url('../fonts/Raleway-Black/fonts/Raleway-Black.eot');
+	src: local('☺'), url('../fonts/Raleway-Black/fonts/Raleway-Black.woff') format('woff'), url('../fonts/Raleway-Black/fonts/Raleway-Black.ttf') format('truetype'), url('../fonts/Raleway-Black/fonts/Raleway-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.container {
+   width: 98%;
+   height: 100%;
+
+}
+.header {
+   width: 100vw;
+   height: 66.67vw;
+   border: 1px solid #fff;
+   margin: 0 auto;
+   max-width: 1500px;
+   max-height: 1087px;
+   background: url("../img/header_img.png") no-repeat top left 100% ;
+   position: relative;
+}
+.header__block {
+   width: 76.67%;
+   margin: 50px auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header__logo {
+   width: 127px;
+   height: 52px;
+   font-family: "Pacifico-Regular";
+   font-size: 50px;
+   font-weight: 400;
+   color: #262626;
+}
+
+.header__menu {
+   width: 560px;
+   height: 18px;
+}
+.menu__list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.menu__item {
+   display: inline-block;
+   font-family: "Raleway-Bold";
+   font-size: 18px;
+   line-height: 20px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+.menu__link {
+   color: #262626;
+   display: inline-block;
+}
+.header-info {
+   width: 370px;
+   height: 235px;
+   position: absolute;
+   left: 11%;
+   top: 58vh;
+}
+.header-info__title {
+   font-family: "Raleway-Black";
+   font-size: 60px;
+   font-weight: 900;
+   color: #262626;
+}
+.header-info__text {
+   font-family: "Raleway-Light";
+   font-size: 17px;
+   line-height: 26px;
+   font-weight: 300;
+   color: #262626;
+   margin-top: 5.47%;
+   margin-bottom: 7.47%;
+}
+.btn__link {
+   width: 200px;
+   height: 55px;
+   background-color: #ff6033;
+   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+   color: #fff;
+   font-family: "Raleway-Light";
+   font-size: 20px;
+   line-height: 27px;
+   font-weight: 300;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.header__mouse {
+   width: 24px;
+   height: 40px;  
+   position: absolute;
+   bottom: 7%;
+   left: 50%;
+}
+.about {
+   width: 100vw;
+   height: 46.67vw;
+   max-width: 1500px;
+   max-height: 700px;
+   margin: 0 auto;
+   background-color: #00c4c4;
+   background: url("../img/about__bg.png") no-repeat top left 100%;
+   position: relative;
+}
+.about__img {
+   width: 566px;
+   height: 559px;
+}
+.about-info {
+   max-width: 500px;
+   max-height: 290px;
+   position: absolute;
+   top: 25.74%;
+   right: 11%;
+}
+.about-info__title {
+   font-family: "Raleway-Bold";
+   font-size: 90px;
+   font-weight: 700;
+   color: #ffffff;
+
+}
+.about-info__text {
+   margin-top: 3.5%;
+   font-family: "Raleway-Light";
+   font-size: 17px;
+   line-height: 25px;
+   font-weight: 300;
+   color: #ffffff;
+}
+
+.menu__item::before {
+   content: " ";
+   display: inline-block;
+   width: 5%;
+   height: 3px;
+   position: absolute;
+   margin-bottom: 5px;
+   top: 60px;
+   }
+   
+.menu__item:hover::before{
+   background-color: #ff6033;
+   animation-name: fall;
+   animation-duration: 0.5s;
+   }
+   
+   
+@keyframes fall {
+   from {
+      top: 40px;
+   }
+   
+   to {
+      top: 60px;
+   }
+}
