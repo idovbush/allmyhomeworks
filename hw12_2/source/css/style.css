@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 800px;
+  height: 600px;
+  background-image: url("../img/background.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*position: relative;*/
+}
+.color-container {
+  width: 400px;
+  height: 496px;
+  background-image: url("../img/bg_image.png");
+  transform: translateXgit ;
+  /*opacity: 0.2;*/
+
+  /*position: absolute;
+  top: 51px;
+  left: 143px;
+  */
+
+}
+.login-form {
+
+  width: 400px;
+  height: 496px;
+  /*background-image: url("../img/bg_form.png");*/
+  background-color: #166a6a;
+  background-image: linear-gradient(32.0deg, #3023ae 3%, #c86dd7 96%);
+  opacity: 0.9;
+}
+.form__tabs {
+}
+.tab-sing-in {
+}
+.tab-sing-in__label {
+}
+.tab-sing-in__input {
+}
+.tab-sing-in__checkbox {
+}
+.tab-sing-in__button {
+}
+.tab-sing-in__links {
+}
+.link {
+}
+.link-forgot {
+}
+.link-create {
+}
+.tab-join-us {
+}
+.tab-join-us__label {
+}
+.tab-join-us__input {
+}
+.tab-join-us__checkbox {
+}
+.tab-join-us__button {
+}
