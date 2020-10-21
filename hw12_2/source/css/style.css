@@ -16,7 +16,7 @@ body {
   width: 400px;
   height: 496px;
   background-image: url("../img/bg_image.png");
-  transform: translateXgit ;
+  background-position: -67px -1px;
   /*opacity: 0.2;*/
 
   /*position: absolute;
@@ -35,18 +35,41 @@ body {
   opacity: 0.9;
 }
 .form__tabs {
+  font-family: "Quicksand";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fbf6e4;
 }
-.tab-sing-in {
+#sign-in,
+#join-us {
+  display: none;
 }
-.tab-sing-in__label {
+
+input#sign-in:checked .tab-join-us {
+  display: none;
+  border: 1px solid red;
+} 
+#join-us:checked .tab-sign-in {
+  display: none;
+  border: 1px solid green;
 }
-.tab-sing-in__input {
+
+.tab-sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab-sign-in__label {
+}
+.tab-sign-in__input {
 }
 .tab-sing-in__checkbox {
 }
-.tab-sing-in__button {
+.tab-sign-in__button {
 }
-.tab-sing-in__links {
+.tab-sign-in__links {
 }
 .link {
 }
@@ -55,6 +78,10 @@ body {
 .link-create {
 }
 .tab-join-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .tab-join-us__label {
 }
