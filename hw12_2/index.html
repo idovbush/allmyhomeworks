@@ -14,60 +14,61 @@
       <div class="color-container">
          <div class="login-form">
             <form action="#">
-               <div class="form__tabs">
-                  <label for="sign-in" class="label-sign-in">Sign in
-                     <input type="radio" name="tab" id="sign-in" checked>
-                  </label>
-                  <label for="join-us" class="label-join-us">Join us
-                     <input type="radio" name="tab" id="join-us">
-                  </label>
-               </div>
+               <div class="form-tabs">
 
-               <div class="tab-sign-in">
-                  <label for="username" class="tab-sign-in__label">Username
-                     <input type="text" name="username" class="tab-sign-in__input">
-                  </label>
-                  <label for="password" class="tab-sign-in__label">Password
-                     <input type="password" name="password" class="tab-sign-in__input">
-                  </label>
-                  <label for="checkbox" class="tab-sign-in__label">Keep me signed in
-                     <input type="checkbox" name="checkbox" class="tab-sign-in__checkbox">
-                  </label>
-                  <button class="tab-sign-in__button">Sign in</button>
-                  <div class="tab-sign-in__links">
-                     <div class="link">
-                        <a href="#" class="link-forgot">
-                           <p>Forgot password</p>
-                        </a>
-                     </div>
-                     <div class="link">
-                        <a href="#" class="link-create">
-                           <p>Create an account</p>
-                        </a>
-                     </div>
+                  <div class="form__tab">
+                     <input type="radio" name="tab" id="tab-sign-in" checked>
+                     <label for="tab-sign-in" class="tab-title">Sign in</label>
+                     <section class="form-content">   
+                        <label for="username" class="tab-sign-in__label">Username
+                           <input type="text" name="username" class="tab-sign-in__input">
+                        </label>
+                        <label for="password" class="tab-sign-in__label">Password
+                           <input type="password" name="password" class="tab-sign-in__input">
+                        </label>
+                        <label for="checkbox" class="tab-sign-in__label">Keep me signed in
+                           <input type="checkbox" name="checkbox" class="tab-sign-in__checkbox">
+                        </label>
+                        <button class="tab-sign-in__button">Sign in</button>
+                        <div class="tab-sign-in__links">
+                           <div class="link">
+                              <a href="#" class="link-forgot">
+                                 <p>Forgot password</p>
+                              </a>
+                           </div>
+                           <div class="link">
+                              <a href="#" class="link-create">
+                                 <p>Create an account</p>
+                              </a>
+                           </div>
+                        </div>
+                     </section>   
                   </div>
-               </div>
 
-               <div class="tab-join-us">
-                  <label for="username" class="tab-join-us__label">Enter Username
-                     <input type="text" name="username" class="tab-join-us__input">
-                  </label>
-                  <label for="password" class="tab-join-us__label">Enter Password
-                     <input type="password" name="password" class="tab-join-us__input">
-                  </label>
-                  <label for="password" class="tab-join-us__label">Repeat Password
-                     <input type="password" name="password" class="tab-join-us__input">
-                  </label>
-                  <label for="checkbox" class="tab-join-us__label">I agree
-                     <input type="checkbox" name="checkbox" class="tab-join-us__checkbox">
-                  </label>
-                  <button class="tab-join-us__button">Join us</button>
+                  <div class="form__tab">
+                     <label for="tab-join-us" class="tab-title">Join us</label>
+                     <input type="radio" name="tab" id="tab-join-us">
+                     <section class="form-content">
+                        <label for="username" class="tab-join-us__label">Enter Username
+                           <input type="text" name="username" class="tab-join-us__input">
+                        </label>
+                        <label for="password" class="tab-join-us__label">Enter Password
+                           <input type="password" name="password" class="tab-join-us__input">
+                        </label>
+                        <label for="password" class="tab-join-us__label">Repeat Password
+                           <input type="password" name="password" class="tab-join-us__input">
+                        </label>
+                        <label for="checkbox" class="tab-join-us__label">I agree
+                           <input type="checkbox" name="checkbox" class="tab-join-us__checkbox">
+                        </label>
+                        <button class="tab-join-us__button">Join us</button>
+                     </section>
+                  </div>
                </div>
             </form>
          </div>
       </div>
    </div>
-
 </body>
 
 </html>

@@ -10,19 +10,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*position: relative;*/
+ 
 }
 .color-container {
   width: 400px;
   height: 496px;
   background-image: url("../img/bg_image.png");
   background-position: -67px -1px;
-  /*opacity: 0.2;*/
-
-  /*position: absolute;
-  top: 51px;
-  left: 143px;
-  */
 
 }
 .login-form {
@@ -40,22 +34,39 @@ body {
   line-height: 1.2;
   font-weight: 700;
   color: #fbf6e4;
+  position: relative;
 }
-#sign-in,
-#join-us {
+.form__tab, 
+.tab-title {
+  display: inline-block; 
+}
+#tab-sign-in,
+#tab-join-us {
   display: none;
 }
-
-input#sign-in:checked .tab-join-us {
+.form-content {
   display: none;
-  border: 1px solid red;
-} 
-#join-us:checked .tab-sign-in {
-  display: none;
+  position: absolute;
+}
+#tab-sign-in:checked + .tab-title {
+  position: relative; 
   border: 1px solid green;
+ 
 }
-
-.tab-sign-in {
+#tab-sign-in:checked ~ .form-content {
+  display: block; 
+}
+#tab-join-us:checked + .tab-title {
+  position: relative; 
+  border: 1px solid green;
+ 
+}
+#tab-join-us:checked ~ .form-content {
+  display: block; 
+}
+.form-content {
+  width: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
