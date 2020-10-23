@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'Pacifico-Regular';
+	src: url('../fonts/Pacifico-Regular/fonts/Pacifico-Regular.eot');
+	src: local('☺'), url('../fonts/Pacifico-Regular/fonts/Pacifico-Regular.woff') format('woff'), url('../fonts/Pacifico-Regular/fonts/Pacifico-Regular.ttf') format('truetype'), url('../fonts/Pacifico-Regular/fonts/Pacifico-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway-Light';
+	src: url('../fonts/Raleway-Light/fonts/Raleway-Light.eot');
+	src: local('☺'), url('../fonts/Raleway-Light/fonts/Raleway-Light.woff') format('woff'), url('../fonts/Raleway-Light/fonts/Raleway-Light.ttf') format('truetype'), url('../fonts/Raleway-Light/fonts/Raleway-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway-Bold';
+	src: url('../fonts/Raleway-Bold/fonts/Raleway-Bold.eot');
+	src: local('☺'), url('../fonts/Raleway-Bold/fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold/fonts/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway-Bold/fonts/Raleway-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway-Black';
+	src: url('../fonts/Raleway-Black/fonts/Raleway-Black.eot');
+	src: local('☺'), url('../fonts/Raleway-Black/fonts/Raleway-Black.woff') format('woff'), url('../fonts/Raleway-Black/fonts/Raleway-Black.ttf') format('truetype'), url('../fonts/Raleway-Black/fonts/Raleway-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.contact__container {
+}
+.contact__content {
+}
+.contact__title {
+}
+.contact__descr {
+}
+.contact__main {
+}
+.contact__form {
+}
+.form__name {
+}
+.form__email {
+}
+.form__phone {
+}
+.form__button {
+}
+.contact__info {
+}
+.contact__address {
+}
+.address-title {
+}
+.address {
+}
+.contact__email {
+}
+.email-title {
+}
+.email {
+}
+.contact__phone {
+}
+.phone-title {
+}
+.phone {
+}
+.footer__container {
+}
+.footer__content {
+}
+.footer__copy {
+}
+.footer__logo {
+}
+.footer__link {
+}
+.author-link {
+}
