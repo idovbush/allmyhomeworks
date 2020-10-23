@@ -27,9 +27,11 @@
 	font-style: normal;
 }
 .contact__container {
-   max-width: 1500px;
+  max-width: 1500px;
 	max-height: 866px;
 	height: 100vh;
+	margin: 0 auto;
+	color: #fff;
 	background-image: url(../img/bg_contact.jpg);
 	background-size: cover;
 	background-position: center;
@@ -38,24 +40,27 @@
 	align-items: center;
 }
 .contact__content {
-	max-width: 990px;
+	max-width: 1000px;
 	max-height: 650px;
-	height: 75vh;
+	width: 130vh;
+	height: 85vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 .contact__title {
-	font-family: Raleway;
+	width: 340px;
+	height: 65px;
+	font-family: "Raleway-Bold";
 	font-size: 90px;
-	line-height: 25px;
 	font-weight: 700;
 	color: #262626;
 }
 .contact__descr {
-	font-family: Raleway;
+	width: 350px;
+	height: 41px;
+	font-family: "Raleway-Light";
 	font-size: 17px;
-	line-height: 25px;
 	font-weight: 300;
 	color: #262626;
 }
@@ -65,23 +70,53 @@
 	height: 69.2vh;
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 
 }
 .contact__form {
 	max-width: 500px;
 	max-height: 500px;
-	height: 77vh;
+	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.form__name {
-}
-.form__email {
-}
+.form__name,
+.form__email,
 .form__phone {
+	max-width: 500px;
+	height: 50px;
+	opacity: 0.5;
+	background-color: #00c4c4;
+	font-family: "Raleway-Light";
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 300;
+	color: #fff;
+	padding: 0 20px;
+}
+#form__textarea {
+	max-width: 500px;
+	height: 30vh;
+	width: 30vh;
+	opacity: 0.5;
+	background-color: #00c4c4;
+	font-family: "Raleway-Light";
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 300;
+	color: #fff;
+	padding: 0 20px;
 }
 .form__button {
+	width: 170px;
+	height: 50px;
+	opacity: 0.5;
+	background-color: #00c4c4;
+	font-family: "Raleway-Light";
+	font-size: 15px;
+	color: #000;
 }
 .contact__info {
 	max-width: 320px;
@@ -97,8 +132,11 @@
 .address,
 .email,
 .phone {
+	font-family: "Raleway-Light";
 	font-size: 20px;
-	font-weight: 300;	
+	line-height: 25px;
+	font-weight: 300;
+	color: #262626;
 }
 .contact__email {
 }
@@ -109,7 +147,7 @@
 .address-title,
 .email-title,
 .phone-title {
-	font-family: Raleway;
+	font-family: "Raleway-Bold";
 	font-size: 17px;
 	line-height: 25px;
 	font-weight: 700;
@@ -117,14 +155,49 @@
 }
 
 .footer__container {
+	max-width: 1500px;
+	max-height: 90px;
+	height: 10.4vh;
+	background-color: #262626;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .footer__content {
+	width: 77%;
+	height: 30%;
+	min-height: 28px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .footer__copy {
+	font-family: "Raleway-Light";
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 300;
+	color: #b9b9b9;
 }
 .footer__logo {
+	font-family: "Pacifico-Regular";
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #b9b9b9;
 }
 .footer__link {
+	font-family: "Raleway-Light";
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 300;
+	color: #b9b9b9;
 }
 .author-link {
+	font-family: "Raleway-Bold";
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 700;
+	color: #ff2b58;
+/*
 }
