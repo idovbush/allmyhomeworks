@@ -27,16 +27,53 @@
 	font-style: normal;
 }
 .contact__container {
+   max-width: 1500px;
+	max-height: 866px;
+	height: 100vh;
+	background-image: url(../img/bg_contact.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .contact__content {
+	max-width: 990px;
+	max-height: 650px;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .contact__title {
+	font-family: Raleway;
+	font-size: 90px;
+	line-height: 25px;
+	font-weight: 700;
+	color: #262626;
 }
 .contact__descr {
+	font-family: Raleway;
+	font-size: 17px;
+	line-height: 25px;
+	font-weight: 300;
+	color: #262626;
 }
 .contact__main {
+	max-width: 990px;
+	max-height: 450px;
+	height: 69.2vh;
+	display: flex;
+	justify-content: space-between;
+
 }
 .contact__form {
+	max-width: 500px;
+	max-height: 500px;
+	height: 77vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .form__name {
 }
@@ -47,25 +84,38 @@
 .form__button {
 }
 .contact__info {
+	max-width: 320px;
+	max-height: 160px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
 }
 .contact__address {
 }
-.address-title {
-}
-.address {
+
+.address,
+.email,
+.phone {
+	font-size: 20px;
+	font-weight: 300;	
 }
 .contact__email {
 }
-.email-title {
-}
-.email {
-}
+
+
 .contact__phone {
 }
+.address-title,
+.email-title,
 .phone-title {
+	font-family: Raleway;
+	font-size: 17px;
+	line-height: 25px;
+	font-weight: 700;
+	color: #262626;
 }
-.phone {
-}
+
 .footer__container {
 }
 .footer__content {
