@@ -46,6 +46,14 @@
 	font-weight: 700;
 	color: #262626;
 	flex-grow: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.services__descr p{
+	max-width: 240px;
+	margin: 0 auto;
 }
 .services__icon {
 	max-width: 100px;
