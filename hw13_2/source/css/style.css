@@ -1,0 +1,171 @@
+  .home__container {
+    max-width: 1920px;
+    max-height: 1072px;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(../img/bg_home.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home__content {
+    height: 37.3vh;
+    max-width: 600px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .home__logo {
+    max-width: 67px;
+    max-height: 67px;
+
+  }
+  .home__title {
+    max-width: 600px;
+    max-height: 110px;
+    font-family: Lato;
+    font-size: 54px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #ffffff;
+  }
+  .home__descr {
+    max-width: 600px;
+    max-height: 75px;
+    font-family: Lato;
+    font-size: 15px;
+    line-height: 29px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+  .mouse {
+  }
+  .about__container {
+  }
+  .about__content {
+  }
+  .about__title {
+  }
+  .about__descr {
+  }
+  .services__container {
+  }
+  .services__content {
+  }
+  .services__title {
+  }
+  .services__descr {
+  }
+  .what-we-do__container {
+  }
+  .what-we-do__content {
+  }
+  .what-we-do__title {
+  }
+  .what-we-do__list {
+  }
+  .what-we-do__item {
+  }
+  .item__icon {
+  }
+  .item__title {
+  }
+  .item__descr {
+  }
+  .panels__container {
+  }
+  .panel__content {
+  }
+  .panel__title {
+  }
+  .contact__container {
+  }
+  .contact__content {
+  }
+  .contact__title {
+  }
+  .contact__descr {
+  }
+  .contact_btn {
+  }
+  .footer__container {
+  }
+  .footer__content {
+  }
+  .footer__logo {
+  }
+  .footer__copy {
+  }
+}
+.home__content {
+}
+.home__logo {
+}
+.home__title {
+}
+.home__descr {
+}
+.mouse {
+}
+.about__container {
+}
+.about__content {
+}
+.about__title {
+}
+.about__descr {
+}
+.services__container {
+}
+.services__content {
+}
+.services__title {
+}
+.services__descr {
+}
+.what-we-do__container {
+}
+.what-we-do__content {
+}
+.what-we-do__title {
+}
+.what-we-do__list {
+}
+.what-we-do__item {
+}
+.item__icon {
+}
+.item__title {
+}
+.item__descr {
+}
+.panels__container {
+}
+.panel__content {
+}
+.panel__title {
+}
+.contact__container {
+}
+.contact__content {
+}
+.contact__title {
+}
+.contact__descr {
+}
+.contact_btn {
+}
+.footer__container {
+}
+.footer__content {
+}
+.footer__logo {
+}
+.footer__copy {
+}
