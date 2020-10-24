@@ -6,16 +6,69 @@
 	font-style: normal;
 }
 .services__container {
+	max-width: 1500px;
+	max-height: 790px;
+	height: 100vh;
+	margin: 0 auto;
+	padding-left: 17.6%;
+	padding-top: 7%;
+	background-color: #70bfff;
 }
 .services__content {
+	height: 68.3vh;
+	width: 138vh;
+	display: flex;
+	justify-content: space-between;
 }
 .services__list {
+	max-width: 400px;
+	max-height: 460px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
 }
 .services__item {
+	max-width: 400px;
+	max-height: 100px;
+	height: 12.7vh;
+	background-color: #fff;
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: start;
+
 }
 .services__descr {
+	max-width: 300px;
+	font-family: "Raleway-Bold";
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 700;
+	color: #262626;
+	flex-grow: 3;
 }
 .services__icon {
+	max-width: 100px;
+	border-left: 1px solid #9d9d9d;
+	flex-grow: 1;
 }
 .services__title {
+	max-width: 540px;
+	max-height: 530px;
+	height: 67vh;
+	width: 70vh;
+	background-image: url("../img/img_tomato.png");
+	background-size: cover;
+}
+h1 {
+	max-width: 539px;
+	max-height: 67px;
+	font-family: "Raleway-Bold";
+	font-size: 90px;
+	line-height: 27px;
+	font-weight: 700;
+	color: #ffffff;}
+.icon {
+	width: 55px;
+	height: 55px;
 }
