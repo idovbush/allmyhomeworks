@@ -44,7 +44,7 @@
     align-items: center;
   }
   .home__content {
-    height: 37.3vh;
+    height: 47.3vh;
     max-width: 620px;
     max-height: 400px;
     display: flex;
@@ -52,9 +52,10 @@
     justify-content: space-between;
   }
   .home__logo {
-    max-width: 67px;
-    max-height: 67px;
-
+    max-width: 65px;
+    max-height: 65px;
+    fill: #fff;
+    margin: 0 auto;
   }
   .home__title {
     max-width: 620px;
@@ -81,11 +82,19 @@
     text-align: center;
   }
   .mouse {
+    position: absolute;
+    left: 50%;
+    bottom: 12vh;
+  }
+  .mouse-icon {
+    width: 22px;
+    height: 37px;
+    fill: #fff;
   }
   .about__container {
     max-width: 1920px;
     max-height: 632px;
-    height: 59vh;
+    height: 69vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +102,7 @@
   .about__content {
     max-width: 905px;
     max-height: 316px;
-    height: 29.5vh;
+    height: 39.5vh;
     border: 3px solid #000;
   }
   .about__title {
@@ -121,11 +130,13 @@
     font-weight: 300;
     color: #3c3c3c;
     text-align: center;
+    width: 60%;
+    margin: 0 auto;
   }
   .services__container {
     max-width: 1920px;
     max-height: 488px;
-    height: 45.5vh;
+    height: 55.5vh;
     background-image: url("../img/bg_services.jpg");
     background-size: cover;
     display: flex;
@@ -134,33 +145,32 @@
   }
   .services__content {
     max-width: 905px;
-    max-height: 316px;
-    height: 29.5vh;
+    max-height: 330px;
+    height: 39.5vh;
     border: 3px solid #fff;
     border-top: none;
   }
   .services__title {
-    /* max-width: 420px; */
+    /* max-width: 420px;  */
     width: 100%;
     max-height: 100px;
     height: 9.3vh;
     font-family: "Lato-Bold";
-    font-size: 34px;
-    line-height: 1.2;
+    font-size: 33px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.16em;
     color: #fff;
     position: relative;
-    top: -24px;
-    padding: 10px 110px;
+    top: -33px;
+    padding: 10px 100px;
     margin: 0 auto;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .services__title:before  {
     display: block;
-    width: calc((100% - 410px)/2);
+    width: calc((100% - 400px)/2);
     content: '';
     position: absolute;
     border-bottom: 3px solid #fff;
@@ -169,7 +179,7 @@
   }
   .services__title:after {
     display: block;
-    width: calc((100% - 410px)/2);
+    width: calc((100% - 390px)/2);
     content: '';
     position: absolute;
     border-bottom: 3px solid #fff;
@@ -177,11 +187,13 @@
     right: 0px;
   }
   .services__descr {
+    width:60%;
     font-family: "Lato-Light";
     font-size: 16px;
     line-height: 25px;
     font-weight: 300;
     color: #fff;
+    margin: 0 auto;
   }
   .services__descr p {
     text-align: center;
@@ -189,7 +201,7 @@
   .what-we-do__container {
     max-width: 1920px;
     max-height: 1415px;
-    height: 132vh;
+    height: 182vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,10 +210,22 @@
     width: 100%;
     max-width: 905px;
     max-height: 1180px;
-    height: 105vh;
+    height: 165vh;
     border: 3px solid #000;
     /* border-top: none; */
     
+  }
+  .item__icon {
+    width: 84px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .icon {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto;
   }
   .what-we-do__title {
     max-width: 420px;
@@ -249,13 +273,13 @@
   }
   .what-we-do__item {
     max-width: 550px;
-    max-height: 250px;
-    height: 23vh;
-    flex-grow: 1;
-  }
-  .item__icon {
-    width: 84px;
-    height: 84px;
+    max-height: 350px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10vh;
   }
   .item__title {
     font-family: "Lato-Bold";
@@ -278,24 +302,38 @@
   .panels__container {
     max-width: 1920px;
     max-height: 490px;
+    width: 99vw;
     height: 48vh;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .panel__content {
-    max-width: 550px;
+    max-width: 545px;
     max-height: 237px;
-    width: 49vh;
+    width: 26vw;
     height: 23vh;
     position: relative;
+    flex-grow: 2;
+    margin: 0 4px;
+  }
+  .panel__img1,
+  .panel__img2,
+  .panel__img3,
+  .panel__img4,
+  .panel__img5,
+  .panel__img6 {
+    width:100%;
+    height: 100%;
   }
   .panel__content-center {
-    max-width: 800px;
+    max-width: 795px;
     max-height: 237px;  
-    width: 78vh;
+    width: 40vw;
     height: 23vh;
     position: relative;
+    flex-grow: 3;
+    margin: 0 3px
   }
 
   .panel__title {
@@ -312,20 +350,22 @@
   }
   .contact__container {
     max-width: 1920px;
-    max-height:430px;
-    height: 42vh;
+    max-height:540px;
+    height: 54vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .contact__content {
     max-width: 905px;
-    max-height: 300px;
+    max-height: 400px;
+    height: 40vh;
     border: 3px solid #000;
     /* border-top: none; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    
     
   }
   .contact__title {
@@ -334,13 +374,12 @@
     height: 9.3vh;
     font-family: "Lato-Bold";
     font-size: 30px;
-    line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.16em;
     color: #3c3c3c;
     position: relative;
-    top: -30px;
+    top: -40px;
     padding: 10px 90px;
     margin: 0 auto;
     text-align: center;
@@ -368,18 +407,30 @@
   } */
   .contact__descr {
     font-family: "Lato-Light";
+    width: 60%;
     font-size: 16px;
     line-height: 25px;
     font-weight: 300;
     color: #3c3c3c;
+    margin: 0 auto;
     text-align: center;
+    position: relative;
+    top: -30px;
   }
   .contact_btn {
     width: 395px;
     height: 58px;
     background-color: #3c3c3c;
     border: 2px solid #3c3c3c;
+    font-family: "Lato-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #fff;
     margin: 0 auto;
+    position: relative;
+    top: -30px;
   }
   .footer__container {
     max-width: 1920px;
@@ -408,3 +459,28 @@
     font-weight: 400;
     color: #3c3c3c;
   }
+  .panel__img1 {
+    background-image: url(../img/work1.jpg);
+    background-size: cover;
+  }
+  .panel__img2 {
+    background-image: url(../img/work2.jpg);
+    background-size: cover;
+  }
+  .panel__img3 {
+    background-image: url(../img/work3.jpg);
+    background-size: cover;
+  }
+  .panel__img4 {
+    background-image: url(../img/work4.jpg);
+    background-size: cover;
+  }
+  .panel__img5 {
+    background-image: url(../img/work5.jpg);
+    background-size: cover;
+  }
+  .panel__img6 {
+    background-image: url(../img/work6.jpg);
+    background-size: cover;
+  }
+
