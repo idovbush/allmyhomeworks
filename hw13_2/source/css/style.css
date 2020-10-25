@@ -1,3 +1,37 @@
+  
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/Lato/Lato-Regular.eot');
+  src: local('Lato Regular'), local('Lato-Regular'),
+      url('../fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Lato/Lato-Regular.woff') format('woff'),
+      url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/Lato/Lato-Bold.eot');
+  src: local('Lato Bold'), local('Lato-Bold'),
+      url('../fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Lato/Lato-Bold.woff') format('woff'),
+      url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('../fonts/Lato/Lato-Light.eot');
+  src: local('Lato Light'), local('Lato-Light'),
+      url('../fonts/Lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Lato/Lato-Light.woff') format('woff'),
+      url('../fonts/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
   .home__container {
     max-width: 1920px;
     max-height: 1072px;
@@ -25,7 +59,7 @@
   .home__title {
     max-width: 600px;
     max-height: 110px;
-    font-family: Lato;
+    font-family: "Lato-Bold";
     font-size: 54px;
     line-height: 1.2;
     font-weight: 700;
@@ -36,7 +70,7 @@
   .home__descr {
     max-width: 600px;
     max-height: 75px;
-    font-family: Lato;
+    font-family: "Lato-Regular";
     font-size: 15px;
     line-height: 29px;
     font-weight: 400;
@@ -47,125 +81,311 @@
   .mouse {
   }
   .about__container {
+    max-width: 1920px;
+    max-height: 632px;
+    height: 59vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .about__content {
+    max-width: 905px;
+    max-height: 316px;
+    height: 29.5vh;
+    border: 3px solid #000;
   }
   .about__title {
+    max-width: 420px;
+    max-height: 100px;
+    height: 9.3vh;
+    font-family: "Lato-Bold";
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #3c3c3c;
+    position: relative;
+    top: -30px;
+    padding: 10px 96px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
   }
   .about__descr {
+    font-family: "Lato-Light";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #3c3c3c;
   }
   .services__container {
+    max-width: 1920px;
+    max-height: 488px;
+    height: 45.5vh;
+    background-image: url("../img/bg_services.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .services__content {
+    max-width: 905px;
+    max-height: 316px;
+    height: 29.5vh;
+    border: 3px solid #fff;
+    border-top: none;
   }
   .services__title {
+    /* max-width: 420px; */
+    width: 100%;
+    max-height: 100px;
+    height: 9.3vh;
+    font-family: "Lato-Bold";
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #fff;
+    position: relative;
+    top: -30px;
+    padding: 10px 110px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  .services__title:before  {
+    display: block;
+    width: calc((100% - 418px)/2);
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #fff;
+    top: 50%;
+    left: 0px;
+  }
+  .services__title:after {
+    display: block;
+    width: calc((100% - 418px)/2);
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #fff;
+    top: 50%;
+    right: 0px;
   }
   .services__descr {
+    font-family: "Lato-Light";
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #ffffff;
   }
   .what-we-do__container {
+    max-width: 1920px;
+    max-height: 1415px;
+    height: 132vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .what-we-do__content {
+    max-height: 1180px;
+    border: 3px solid #000;
+    border-top: none;
+    
   }
   .what-we-do__title {
+    width: 100%;
+    max-height: 100px;
+    height: 9.3vh;
+    position: relative;
+    font-family: "Lato-Bold";
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #3c3c3c;
+    top: -30px;
+    padding: 10px 110px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .what-we-do__title:before  {
+    display: block;
+    width: calc((100% - 418px)/2);
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #000;
+    top: 50%;
+    left: 0px;
+}
+  .what-we-do__title:after {
+    display: block;
+    width: calc((100% - 418px)/2);
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #000;
+    top: 50%;
+    right: 0px;
   }
   .what-we-do__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .what-we-do__item {
+    max-width: 550px;
+    max-height: 250px;
+    height: 23vh;
   }
   .item__icon {
+    width: 84px;
+    height: 84px;
   }
   .item__title {
+    font-family: "Lato-Bold";
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #3c3c3c;
   }
   .item__descr {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #3c3c3c;
   }
   .panels__container {
+    max-width: 1920px;
+    max-height: 490px;
+    height: 48vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .panel__content {
+    max-width: 550px;
+    max-height: 237px;
+    width: 49vh;
+    height: 23vh;
+    position: relative;
   }
+  .panel__content-center {
+    max-width: 800px;
+    max-height: 237px;  
+    width: 78vh;
+    height: 23vh;
+    position: relative;
+  }
+
   .panel__title {
+    font-family: "Lato-Bold";
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #ffffff;
+    position: absolute;
+    left: 44px;
+    bottom: 42px;
   }
   .contact__container {
+    max-width: 1920px;
+    max-height:430px;
+    height: 42vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .contact__content {
+    max-width: 905px;
+    max-height: 300px;
+    border: 3px solid #000;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
   }
   .contact__title {
+    width: 100%;
+    font-family: "Lato-Bold";
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #3c3c3c;
+    position: relative;
+    top: -30px;
+    padding: 10px 110px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .contact__title:before  {
+    display: block;
+    width: calc((100% - 418px)/2);
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #000;
+    top: 50%;
+    left: 0px;
+}
+  .contact__title:after {
+    display: block;
+    width: calc((100% - 418px)/2);
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #000;
+    top: 50%;
+    right: 0px;
   }
   .contact__descr {
+    font-family: "Lato-Light";
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #3c3c3c;
   }
   .contact_btn {
+    width: 395px;
+    height: 58px;
+    background-color: #3c3c3c;
+    border: 2px solid #3c3c3c;
   }
   .footer__container {
+    max-width: 1920px;
+    max-height: 160px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
   .footer__content {
+    max-width: 320px;
+    max-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .footer__logo {
+    width: 35px;
+    height: 37px; 
   }
   .footer__copy {
+    font-family: "Lato-Regular";
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #3c3c3c;
   }
-}
-.home__content {
-}
-.home__logo {
-}
-.home__title {
-}
-.home__descr {
-}
-.mouse {
-}
-.about__container {
-}
-.about__content {
-}
-.about__title {
-}
-.about__descr {
-}
-.services__container {
-}
-.services__content {
-}
-.services__title {
-}
-.services__descr {
-}
-.what-we-do__container {
-}
-.what-we-do__content {
-}
-.what-we-do__title {
-}
-.what-we-do__list {
-}
-.what-we-do__item {
-}
-.item__icon {
-}
-.item__title {
-}
-.item__descr {
-}
-.panels__container {
-}
-.panel__content {
-}
-.panel__title {
-}
-.contact__container {
-}
-.contact__content {
-}
-.contact__title {
-}
-.contact__descr {
-}
-.contact_btn {
-}
-.footer__container {
-}
-.footer__content {
-}
-.footer__logo {
-}
-.footer__copy {
-}
