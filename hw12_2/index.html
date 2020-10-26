@@ -24,16 +24,21 @@
 
                <section class="form-sign-in">
                   <div class="form-content">
-                     <label for="username" class="tab-sign-in__label">Username
-                        <input type="text" name="username" class="tab-sign-in__input">
-                     </label>
-                     <label for="password" class="tab-sign-in__label">Password
-                        <input type="password" name="password" class="tab-sign-in__input">
-                     </label>
+                     <label for="username" class="tab-sign-in__label">Username</label>
+                     <input type="text" name="username" class="tab-sign-in__input" required minlength="3">
+
+                     <div class="form__error">error</div>
+
+                     <label for="password" class="tab-sign-in__label">Password</label>
+                     <input type="password" name="password" class="tab-sign-in__input" required minlength="6">
+
+                     <div class="form__error">error</div>
+
+                     <input type="checkbox" name="checkbox" id="checkbox" class="custom-checkbox">
                      <label for="checkbox" class="tab-sign-in__checkbox">
-                        <input type="checkbox" name="checkbox" id="checkbox" class="tab-sign-in__checkbox">
                         Keep me signed in
                      </label>
+
                      <button class="tab-sign-in__button"><span>Sign in</span></button>
                      <div class="tab-sign-in__links">
                         <div class="link">
@@ -53,18 +58,24 @@
 
                <section class="form-join-us">
                   <div class="form-content">
-                     <label for="username" class="tab-join-us__label">Enter Username
-                        <input type="text" name="username" class="tab-join-us__input">
-                     </label>
+                     <label for="username" class="tab-join-us__label">Enter Username</label>
+                     <input type="text" name="username" class="tab-join-us__input" required minlength="3">
+
+                     <div class="form__error">error</div>
+
                      <label for="password" class="tab-join-us__label">Enter Password
-                        <input type="password" name="password" class="tab-join-us__input">
                      </label>
-                     <label for="password" class="tab-join-us__label">Repeat Password
-                        <input type="password" name="password" class="tab-join-us__input">
-                     </label>
+                     <input type="password" name="password" class="tab-join-us__input" required minlength="6">
+
+                     <div class="form__error">error</div>
+
+                     <label for="password" class="tab-join-us__label">Repeat Password</label>
+                     <input type="password" name="password" class="tab-join-us__input" required minlength="6">
+
+                     <div class="form__error">error</div>
+
+                     <input type="checkbox" name="join-us-checkbox" id="join-us-checkbox" class="custom-checkbox">
                      <label for="join-us-checkbox" class="tab-join-us__checkbox">
-                        <input type="checkbox" name="join-us-checkbox" id="join-us-checkbox"
-                           class="tab-join-us__checkbox">
                         I agree
                      </label>
                      <button class="tab-join-us__button"><span>Join us</span></button>

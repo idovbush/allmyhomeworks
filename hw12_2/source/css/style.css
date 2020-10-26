@@ -53,10 +53,10 @@ body {
 .form-tabs {
   width: 65%;
   height: 80%;
-  font-family: "Quicksand-Bold";
+  font-family: "Quicksand-Regular";
   font-size: 18px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 400;
   color: #fbf6e4;
  
 }
@@ -65,7 +65,9 @@ body {
   display: inline-block; 
   cursor: pointer;
   position: relative;
+  padding-bottom: 3px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 #tab-sign-in,
 #tab-join-us {
@@ -100,26 +102,43 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: stretch;
+  justify-content: space-around;
 }
 .tab-sign-in__label,
 .tab-join-us__label {
-  font-family: "Quicksand-Bold";
+  font-family: "Quicksand-Regular";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 400;
   color: #fbf6e4;
 }
 .tab-sign-in__input,
 .tab-join-us__input {
   width: 260px;
   height: 42px;
-  border: 3px solid rgba(191,185,204,0.53);
+  border: 2px solid rgba(191,185,204,0.53);
   background: none;
+  padding: 0 15px;
+  font-family: "Quicksand-Regular";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fbf6e4;
 }
 
+input:invalid+.form__error {
+  visibility: visible;
+}
+
+input+.form__error {
+  visibility: hidden;
+}
+
+.form__error {
+  color: #f00;
+  font-family: "Quicksand-Regular";
+  font-size: 10px;
+}
 
 .tab-sign-in__button,
 .tab-join-us__button {
@@ -127,36 +146,76 @@ body {
   height: 42px;
   background-color: #23ae92;
 }
+
+/* a,
+a:visited {
+  text-decoration: none;
+} */
 .tab-sign-in__links {
-  font-family: "Quicksand-Regular"
-  ;
-  font-size: 13px;
+  font-family: "Quicksand-Regular";
+  width: 100%;
+  font-size: 12px;
   line-height: 1.2;
   font-weight: 400;
-  color: #b9b9cc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .link {
+  border-bottom: 1px  solid  #fbf6e4;;
 }
 .link-forgot {
+  color: #fbf6e4;
 }
 .link-create {
+  color: #fbf6e4;
 }
 
 .tab-sign-in__checkbox ,
 .tab-join-us__checkbox {
   font-family: "Quicksand-Regular";
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 400;
   color: #fbf6e4;
 }
+  .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+}
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75% 75%;
+}
+.custom-checkbox:checked+label::before {
+  border-color: #23ae92;;
+  background-color: #23ae92;;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
 #checkbox:checked {
   background-color: #23ae92;
 }
 button>span {
-  font-family: "Quicksand-Bold";
+  font-family: "Quicksand-Regular";
   font-size: 18px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 400;
   color: #fbf6e4;
 }
