@@ -9,7 +9,7 @@
 }
 .inner {
   max-width: 1120px;
-  max-height: 800;
+  max-height: 800px;
   min-height: 100vh;
   /* height: 100vh; */
   width: 80%;
@@ -23,7 +23,7 @@
 .carousel {
   /* position: relative; */
   width: 100%;
-  min-height: 70vh;
+  min-height: 75vh;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
-  min-height: 70vh;
+  min-height: 75vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,16 +51,18 @@
   position: absolute;
   opacity: 0;
   width: 100%;
-  height: 70vh;
+  height: 75vh;
+  padding-top: 5vh;
   transition: opacity 0.3s ease-out;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  border: 1px solid lightpink;
+  
 }
 .item__info {
   width: 50%;
-  height: 85%;
+  /* height: 85%; */
+  height: 65vh;
   border-left: 1px solid#ffcc00;
   display: flex;
   flex-direction: column;
@@ -69,7 +71,8 @@
 }
 .item__foto {
   width: 50%;
-  height: 85%;
+ /*  height: 85%; */
+  height: 65vh;
   border: 1px solid orange;
   display: flex;
   flex-direction: column;
@@ -82,8 +85,13 @@
 }
 .carousel-item img {
   display: block;
-  max-height: 100%;
-  max-width: 100%;
+  /* max-height: 100%;
+  max-width: 100%; */
+  object-fit: cover;
+}
+.item__foto p {
+  border: 1px solid #ffcc00 ;
+  padding: 10px;
 }
 
 .carousel-control {
@@ -189,11 +197,12 @@ ol {
 }
 
 .item__foto {
+  width: 100%;
+  height: 100%;
 }
 .item__foto p {
   max-width: 388px;
   max-height: 388px;
-  width: 30vw;
   border: 1px solid #ffcc00;
 }
 
