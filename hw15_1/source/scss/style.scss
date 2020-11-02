@@ -3,18 +3,60 @@
 
 .wrapper {
   min-height: 100vh;
+
   overflow: hidden;
 }
 
 .container {
-  max-width: 1530px;
+  max-width: 1510px;
   min-height: 100vh;
-  padding: 0 15px;
-  display: flex;
+  min-width: 320px;
+  padding: 0 5px;
+  margin: 0 auto;
+  border: 1px solid green;
+  /* display: flex;
   flex-direction: column;
+  justify-content: space-between; */
+}
+/************ адаптив ***************/
+@media (max-width: 1350px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 1182px) {
+  .container {
+    max-width: 980px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .scroll {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .scroll {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: none;
+  }
+  .scroll {
+    display: none;
+  }
 }
 
-.page {
+
+/**************************************/
+.home {
   width: 100%;
   height: 100%;
   min-height: 100vh;
@@ -29,18 +71,65 @@
     position: relative;
     top: 0;
     left: 0;
-    
-    
-  }
-}
-.home {
-  & .content {
     background-image: url("../img/main_bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    flex: 1 0 100%;
+    flex: 1 1 100%;
   }
+  & .info {
+    max-width: 390px;
+    max-height: 250px;
+    height: 35vh;
+    position: absolute;
+    left: 10%;
+    top: 38vh;
+  }
+  & .info__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  & .info__title {
+    font-family: "Raleway-Black";
+    font-size: 60px;
+    font-weight: 900;
+    color: #262626;
+  }
+  & .info__text {
+    font-family: "Raleway-Light";
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #262626;
+    /* margin-top: 5.47%;
+    margin-bottom: 7.47%; */
+  }
+  & .btn__link {
+    max-width: 200px;
+    height: 7vh;
+    max-height: 55px;
+    background-color: #ff6033;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    color: #fff;
+    font-family: "Raleway-Light";
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    & .scroll {
+    width: 24px;
+    height: 40px;  
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    }
 }
 .header {
   position: absolute;
@@ -80,97 +169,183 @@
     color: #262626;
   }
 }
-/********************************/
-.links__container {
-  max-width: 1500px;
-  max-height: 790px;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #70bfff;
-}
-.links__content {
-	height: 68.3vh;
-	width: 158vh;
-	display: flex;
-	justify-content: space-between;
-}
-.links__list {
-	max-width: 400px;
-	max-height: 460px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	
-}
-.links__item {
-	max-width: 400px;
-	max-height: 100px;
-	height: 12.7vh;
-	background-color: #fff;
-	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
-	display: flex;
-	justify-content: start;
+/***************** about ********************/
+.about {
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
+  margin: 0 auto;
+  background-color: #00c4c4;
+  background: url("../img/about__bg.png") no-repeat top left 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .content {
+    width: 90%;
+    height: 90%;
+    /* width: 100vw; */
+    height: 46.67vw;
+    max-height: 700px;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & .info__img {
+    max-width: 627px;
+    width: 60%;
+   /*  height: 59vh; */
+    max-height: 622px;
+    text-align: left;
+    /* background: url("../img/about_img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* position: absolute;
+    top: 5vh;
+    left: 5%; */   
+  }
+  & img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }
+  & .info {
+    max-width: 600px;
+    max-height: 300px;
+    height: 30vh;
+    /* position: absolute;
+    top: 25.74%;
+    right: 11%; */
+  }
+  & .info__title {
+    font-family: "Raleway-Bold";
+    font-size: 90px;
+    font-weight: 700;
+    color: #ffffff;
 
-}
-.links__descr {
-	max-width: 300px;
-	font-family: "Raleway-Bold";
-	font-size: 16px;
-	font-weight: 700;
-	color: #262626;
-	flex-grow: 3;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-}
-p {
-	text-align: center;
-}
-.links__descr p{
-	max-width: 75%;
-	margin: 0 auto;
-}
-.links__icon {
-	max-width: 100px;
-	min-width: 13vh;
-	border-left: 1px solid #9d9d9d;
-	flex-grow: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.links__title {
-	max-width: 570px;
-	max-height: 530px;
-	height: 67vh;
-	width: 80vh;
-	background-image: url("../img/img_tomato.png");
-	background-size: 100% 100%;
-	position: relative;
-}
-h1 {
-	max-width: 570px;
-	max-height: 70px;
-	font-family: "Raleway-Bold";
-	font-size: 70px;
-	font-weight: 700;
-	color: #ffffff;
-	position: absolute;
-	top: 40%;
-	left: -5%;
-}
-.icon {
-	width: 55px;
-	height: 55px;
+  }
+  & .info__text {
+    max-width: 500px;
+    margin-top: 3.5%;
+    font-family: "Raleway-Light";
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #ffffff;
+  }
 }
 
+/**************** services ****************/
+.services {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #70bfff;
+  & .content {
+    width: 80%;
+    height: 80%;
+    max-height: 790px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  & .links__content {
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  & .links__list {
+    max-width: 400px;
+    max-height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  & .links__item {
+    max-width: 400px;
+    max-height: 100px;
+    height: 12vh;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: start;
+
+  }
+  & .links__descr {
+    max-width: 300px;
+    font-family: "Raleway-Bold";
+    font-size: 16px;
+    font-weight: 700;
+    color: #262626;
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  & p {
+    text-align: center;
+  }
+  & .links__descr p{
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  & .links__icon {
+    max-width: 100px;
+    min-width: 13vh;
+    border-left: 1px solid #9d9d9d;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & .info {
+    max-width: 570px;
+    max-height: 530px;
+    & .info__content {
+      /* height: 50vh; */
+      width: 100%;
+      /* background-image: url("../img/img_tomato.png");
+      background-size: 100% 100%; */
+      position: relative;
+    }
+    & .info__img {
+      max-width: 570px;
+      max-height: 530px;
+    }
+    & h1 {
+      max-width: 570px;
+      max-height: 70px;
+      font-family: "Raleway-Bold";
+      font-size: 70px;
+      font-weight: 700;
+      color: #ffffff;
+      position: absolute;
+      top: 37%;
+      left: -5%;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  & .icon {
+    width: 55px;
+    height: 55px;
+  }
+}
 
 
 
-/*******************/
+/*************** contact *************/
 .contact__container {
   max-width: 1500px;
   width: 100%;
@@ -186,10 +361,10 @@ h1 {
 	align-items: center;
 }
 .contact__content {
-	max-width: 1000px;
+	max-width: 1200px;
 	max-height: 650px;
-	width: 140vh;
-	height: 95vh;
+	width: 80%;
+	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -197,7 +372,7 @@ h1 {
 }
 .contact__title {
 	width: 340px;
-	height: 65px;
+	height: 70px;
 	font-family: "Raleway-Bold";
 	font-size: 80px;
 	font-weight: 700;
@@ -214,10 +389,10 @@ h1 {
 	text-align: center;
 }
 .contact__main {
-	max-width: 990px;
+	max-width: 1200px;
 	max-height: 450px;
 	width: 140vh;
-	height: 69.2vh;
+	height: 70vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -235,29 +410,30 @@ h1 {
 .form__name,
 .form__email,
 .form__phone {
-	max-width: 500px;
-	height: 50px;
-	opacity: 0.5;
+  max-width: 500px;
+  height: 6vh;
+	max-height: 50px;
+	opacity: 0.7;
 	background-color: #7ddfdf;
 	font-family: "Raleway-Light";
 	font-size: 15px;
-	line-height: 25px;
+	line-height: 20px;
 	font-weight: 300;
 	color: #fff;
 	padding: 0 20px;
 }
 #form__textarea {
 	max-width: 500px;
-	height: 30vh;
+	height: 25vh;
 	width: 65vh;
-	opacity: 0.5;
+	opacity: 0.7;
 	background-color: #7ddfdf;
 	font-family: "Raleway-Light";
 	font-size: 15px;
-	line-height: 25px;
+	line-height: 20px;
 	font-weight: 300;
 	color: #fff;
-	padding: 0 20px;
+	padding: 10px 20px;
 }
 input::placeholder,
 textarea::placeholder {
@@ -280,35 +456,34 @@ input:focus,
 	color: #000;
 }
 .contact__info {
-	max-width: 320px;
+	max-width: 500px;
 	max-height: 160px;
-	width: 59vh;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
-}
-
-.address,
-.email,
-.phone {
-	font-family: "Raleway-Light";
-	font-size: 20px;
-	line-height: 25px;
-	font-weight: 300;
-	color: #262626;
-}
-
-.address-title,
-.email-title,
-.phone-title {
-	font-family: "Raleway-Bold";
-	font-size: 17px;
-	line-height: 25px;
-	font-weight: 700;
-	color: #262626;
-}
-
+  align-items: flex-start;
+  text-align: left;
+  & .address,
+  & .email,
+  & .phone {
+    font-family: "Raleway-Light";
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #262626;
+    
+  }
+  & .address-title,
+  & .email-title,
+  & .phone-title {
+    font-family: "Raleway-Bold";
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #262626;
+  }
+  }
 .footer__container {
   max-width: 1500px;
   width: 100%;
