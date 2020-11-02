@@ -213,7 +213,7 @@
   & .info {
     max-width: 600px;
     max-height: 300px;
-    height: 30vh;
+    height: 40vh;
     /* position: absolute;
     top: 25.74%;
     right: 11%; */
@@ -342,9 +342,111 @@
     height: 55px;
   }
 }
+/*************** gallery *************/
+.gallery {
+  max-width: 1500px;
+  max-height: 1536px;
+  background-color: #ffe92f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .content {
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & .info {
+    width: 100%;
+    height: 100%;
+  }
+  
+  & .info__content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  & .info__title {
+    /* max-width: 310px; */
+    width: 100%;
+    max-height: 90px;
+    font-family: "Raleway-Bold";
+    font-size: 90px;
+    font-weight: 700;
+    color: #262626;
+    text-align: center;
+  }
+  & .info__text {
+    max-width: 600px;
+    max-height: 75px;
+    font-family: "Raleway-Light";
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #262626;
+  }
+  & .pictures {
+    max-width: 1200px;
+    max-height: 990px;
+    width: 100%;
+    height: 100%;
+  }
+  & .pictures__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & .pictures__item {
+      box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+      
+    }
+    & .top-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    & .right-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    & .bottom-section {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-
-
+    } 
+   
+  }
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  & .pictures__item {
+  
+  }
+  & .info__btn {
+    max-width: 200px;
+    height: 7vh;
+    max-height: 55px;
+    background-color: #5585a2;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & .btn__link {
+    font-family: "Raleway-Light";
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 0 25px;
+  }
+}
 /*************** contact *************/
 .contact__container {
   max-width: 1500px;
