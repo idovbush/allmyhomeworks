@@ -12,7 +12,7 @@
    <div class="wrapper">
       <div class="container">
          <!--******************* home ********************* -->
-         <div class="home">
+         <div class="home" id="home">
             <div class="content">
                <div class="header">
                   <div class="header__content">
@@ -20,12 +20,12 @@
                      <nav class="header__menu">
                         <div class="menu__body">
                            <ul class="menu__list">
-                              <li><a href="" class="menu__link">Home</a></li>
-                              <li><a href="" class="menu__link">About</a></li>
-                              <li><a href="" class="menu__link">Services</a></li>
-                              <li><a href="" class="menu__link">Gallery</a></li>
-                              <li><a href="" class="menu__link">Blog</a></li>
-                              <li><a href="" class="menu__link">Contact</a></li>
+                              <li><a href="#home" class="menu__link">Home</a></li>
+                              <li><a href="#about" class="menu__link">About</a></li>
+                              <li><a href="#services" class="menu__link">Services</a></li>
+                              <li><a href="#gallery" class="menu__link">Gallery</a></li>
+                              <li><a href="#blog" class="menu__link">Blog</a></li>
+                              <li><a href="#contact" class="menu__link">Contact</a></li>
                            </ul>
                         </div>
                      </nav>
@@ -67,7 +67,7 @@
             </div>
          </div>
          <!--****************** services ********************-->
-         <div class="services">
+         <div class="services" id="services">
             <div class="content">
                <div class="links">
                   <div class="links__content">
@@ -144,7 +144,7 @@
             </div>
          </div>
          <!--****************** gallery ********************-->
-         <div class="gallery">
+         <div class="gallery" id="gallery">
             <div class="content">
                <div class="info">
                   <div class="info__content">
@@ -158,20 +158,28 @@
                   <div class="pictures__content">
                      <div class="top-section">
 
-                        <div class="pictures__item pic1"><a href="#"><p><img src="./source/img/gallery_1.jpg" alt=""></p></a></div>
+                        <div class="pictures__item pic1"><a href="#">
+                              <img src="./source/img/gallery_1.jpg" alt="">
+                           </a></div>
 
                         <div class="right-section">
-                           <div class="pictures__item pic2"><a href="#"><p><img src="./source/img/gallery_2.jpg" alt=""></p></a>
+                           <div class="pictures__item pic2"><a href="#">
+                                 <img src="./source/img/gallery_2.jpg" alt="">
+                              </a>
                            </div>
-                           <div class="pictures__item pic3"><a href="#"><p><img src="./source/img/gallery_3.jpg" alt=""></p></a>
+                           <div class="pictures__item pic3"><a href="#">
+                                 <img src="./source/img/gallery_3.jpg" alt="">
+                              </a>
                            </div>
                         </div>
 
                      </div>
 
                      <div class="bottom-section">
-                        <div class="pictures__item pic4"><a href="#"><img src="./source/img/gallery_4.jpg" alt=""></a></div>
-                        <div class="pictures__item pic5"><a href="#"><img src="./source/img/gallery_5.jpg" alt=""></a></div>
+                        <div class="pictures__item pic4"><a href="#"><img src="./source/img/gallery_4.jpg" alt=""></a>
+                        </div>
+                        <div class="pictures__item pic5"><a href="#"><img src="./source/img/gallery_5.jpg" alt=""></a>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -183,43 +191,72 @@
             </div>
          </div>
          <!--****************** subscribe *******************-->
-         <div class="page subscribe">
+         <div class="subscribe" id="subscribe">
             <div class="content">
-               <div class="main">
-                  <div class="main__content">
-                     <div class="main__title"></div>
-                     <div class="main__desc"></div>
+               <div class="info">
+                  <div class="info__content">
+                     <div class="info__title">Subscribe To Us</div>
+                     <div class="info__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                   </div>
                </div>
-               <div class="form">
-                  <div class="form__content">
-                     <input type="text" class="form__email" placeholder="Your email adress...">
-                     <button type="submit" class="form__btn">Subscribe</button>
-                  </div>
-               </div>
+               <form action="" class="subscribe-form">
+                  <input type="email" name="email" id="" class="form__email" placeholder="Your email address...">
+                  <button class="form__button" type="submit">SUBSCRIBE</button>
+               </form>
             </div>
          </div>
          <!--********************* blog ********************-->
-         <div class="page blog">
+         <div class="blog" id="blog">
             <div class="content">
-               <div class="main">
-                  <div class="main__content">
-                     <div class="main__title"></div>
-                     <div class="main__desc"></div>
+               <div class="info">
+                  <div class="info__content">
+                     <div class="info__title">Blog</div>
+                     <div class="info__text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit.</div>
                   </div>
                </div>
                <div class="pictures">
                   <div class="pictures__content">
-                     <div class="pictures__item"></div>
-                     <div class="pictures__item"></div>
-                     <div class="pictures__item"></div>
+                     <div class="pictures__item pic1">
+                        <a href="#" class="pictures__link">
+                           <div class="pictures__date">
+                              <img src="./source/img/blog_date1.png" alt="">
+                           </div>
+                           <div class="pictures__title">Green Smoothies: Too Much of a Good Thing?</div>
+                           <div class="pictures__author">By Auskteez - 2 hours ago</div>
+                        </a>
+                     </div>
+                     <div class="pictures__item pic2">
+                        <a href="#" class="pictures__link">
+                           <div class="pictures__date">
+                              <img src="./source/img/blog_date2.png" alt="">
+                           </div>
+                           <div class="pictures__title">Growing Food and a “Thirst” for Innovation</div>
+                           <div class="pictures__author">By Auskteez - 3 hours ago</div>
+                        </a>
+                     </div>
+                     <div class="pictures__item pic3">
+                        <a href="#" class="pictures__link">
+                           <div class="pictures__date">
+                              <img src="./source/img/blog_date3.png" alt="">
+                           </div>
+                           <div class="pictures__title">Pesticides & Food: What You Need to Know</div>
+                           <div class="pictures__author">By Auskteez - 6 hours ago</div>
+                        </a>
+                     </div>
                   </div>
                </div>
-               <div class="btn"></div>
+               <div class="info__btn">
+                  <a href="#">
+                     <p class="btn__link">VIEW MORE</p>
+                  </a>
+               </div>
             </div>
          </div>
          <!--****************** contact ********************-->
-         <div class="contact__container">
+         <div class="contact" id="contact">
             <div class="contact__content">
                <div class="contact__title">Contact</div>
                <div class="contact__descr">For new projects, ideas, business or anything

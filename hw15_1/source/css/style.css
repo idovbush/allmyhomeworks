@@ -509,7 +509,7 @@ h1, h2, h3, h4, h5, h6 {
 .gallery .pictures__content .top-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: stretch; */
   flex: 0 1 49%;
 }
 .gallery .pictures__content .right-section {
@@ -523,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* margin: auto; */
+  margin-top: 2vh;
   align-items: center;
   flex: 0 1 49%;
 }
@@ -540,12 +540,13 @@ h1, h2, h3, h4, h5, h6 {
 .gallery .pictures__content .pic2 {
   max-width: 370px;
   max-height: 260px;
-  flex: 0 1 49%;
+  flex: 0 1 50%;
+  margin-bottom: 2vh;
 }
 .gallery .pictures__content .pic3 {
   max-width: 370px;
   max-height: 260px;
-  flex: 0 1 49%;
+  flex: 0 1 50%;
 }
 .gallery .pictures__content .pic4 {
   max-width: 570px;
@@ -577,8 +578,241 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 25px;
 }
 
+/************** subscribe *************/
+.subscribe {
+  max-width: 1500px;
+  max-height: 500px;
+  width: 100%;
+  height: 70vh;
+  background-attachment: fixed;
+  /*** паралакс ))) ***/
+  background-image: url("../img/subscribe_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe .content {
+  max-width: 1200px;
+  /* max-height: 650px; */
+  width: 80%;
+  height: 27vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+.subscribe .info {
+  max-width: 600px;
+  max-height: 120px;
+}
+.subscribe .info__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.subscribe .info__title {
+  max-width: 350px;
+  max-height: 40px;
+  font-family: "Raleway-Bold";
+  font-size: 40px;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 3vh;
+}
+.subscribe .info__text {
+  max-width: 580px;
+  min-height: 50px;
+  font-family: "Raleway-Light";
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 300;
+  color: #262626;
+  margin-bottom: 3vh;
+}
+.subscribe .subscribe-form {
+  max-width: 800px;
+  width: 100%;
+  max-height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2vh;
+}
+.subscribe .form__email {
+  max-width: 570px;
+  max-height: 55px;
+  display: block;
+  height: 7vh;
+  border: 1px solid #262626;
+  font-family: "Raleway-Light";
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #262626;
+  padding: 0 20px;
+  flex: 0 1 76%;
+  margin-right: 2%;
+}
+.subscribe .form__email::placeholder {
+  font-family: "Raleway-Light";
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #262626;
+}
+.subscribe .form__button {
+  max-width: 170px;
+  max-height: 55px;
+  height: 7vh;
+  padding: 0 25px;
+  background-color: #96b92c;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  font-family: "Raleway-Light";
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/*************** blog *****************/
+.blog {
+  max-width: 1500px;
+  max-height: 864px;
+  background-color: #b07cf7;
+  width: 100%;
+  height: 100%;
+  min-height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  & img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   } */
+}
+.blog .content {
+  max-width: 1200px;
+  width: 80%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog .info {
+  max-width: 580px;
+  max-height: 200px;
+}
+.blog .info__content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.blog .info__title {
+  font-family: "Raleway-Bold";
+  font-size: 90px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 3vh;
+}
+.blog .info__text {
+  font-family: "Raleway-Light";
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.blog .pictures {
+  width: 100%;
+  max-height: 320px;
+}
+.blog .pictures__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog .pictures__item {
+  max-width: 370px;
+  height: 38vh;
+  max-height: 310px;
+  background-color: #fbfbf7;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  flex: 0 1 31%;
+  padding: 10px;
+}
+.blog .pic1 {
+  background-image: url("../img/blog_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/blog_gradient.png");
+  background-position: 0 50%;
+  background-size: cover;
+}
+.blog .pictures__link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: start;
+}
+.blog .pictures__date {
+  max-width: 60px;
+  max-height: 60px;
+  height: 7vh;
+}
+.blog .pictures__title {
+  font-family: "Raleway-Bold";
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.blog .pictures__author {
+  font-family: Raleway;
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.blog .pic2 {
+  background-image: url("../img/blog_2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.blog .pic3 {
+  background-image: url("../img/blog_3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.blog .info__btn {
+  max-width: 200px;
+  height: 7vh;
+  max-height: 55px;
+  background-color: #f72b3b;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7vh;
+}
+.blog .btn__link {
+  font-family: "Raleway-Light";
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 0 25px;
+}
+
 /*************** contact *************/
-.contact__container {
+.contact {
   max-width: 1500px;
   width: 100%;
   height: 100%;
@@ -648,9 +882,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 
-.form__name,
-.form__email,
-.form__phone {
+.contact .form__name, .contact .form__email, .contact .form__phone {
   max-width: 500px;
   width: 100%;
   height: 6vh;
