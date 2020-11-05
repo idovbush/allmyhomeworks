@@ -494,6 +494,7 @@ h1, h2, h3, h4, h5, h6 {
 .services .links__content {
   height: 55vh;
   width: 100%;
+  min-width: 280px;
   display: flex;
   justify-content: space-between;
 }
@@ -517,6 +518,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 300px;
   font-family: "Raleway-Bold";
   font-size: 16px;
+  font-size: calc(12px + 4 * ((100vw - 320px) / (1500 - 320)));
   font-weight: 700;
   color: #262626;
   flex-grow: 3;
