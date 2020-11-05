@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: none;
   }
 }
-/**************************************/
+/******************** home ******************/
 .home {
   width: 100%;
   height: 100%;
@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 35vh;
   position: absolute;
   left: 10%;
-  top: 38vh;
+  top: 42vh;
 }
 .home .info__content {
   width: 100%;
@@ -196,18 +196,20 @@ h1, h2, h3, h4, h5, h6 {
 .home .info__title {
   font-family: "Raleway-Black";
   /* font-size: 60px; */
-  font-size: calc(60px + 24 * ((100vw - 320px) / (1500 - 320)));
+  font-size: calc(28px + 32 * ((100vw - 320px) / (1500 - 320)));
   font-weight: 900;
   color: #262626;
+  margin-bottom: 3vh;
 }
 .home .info__text {
   font-family: "Raleway-Light";
-  font-size: 17px;
+  font-size: calc(13px + 5 * ((100vw - 320px) / (1500 - 320)));
+  /* font-size: 17px; */
   line-height: 26px;
   font-weight: 300;
   color: #262626;
-  /* margin-top: 5.47%;
-  margin-bottom: 7.47%; */
+  /* margin-top: 5.47%;*/
+  margin-bottom: 5vh;
 }
 .home .btn__link {
   max-width: 200px;
@@ -217,7 +219,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
   color: #fff;
   font-family: "Raleway-Light";
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: calc(14px + 6 * ((100vw - 320px) / (1500 - 320)));
   line-height: 27px;
   font-weight: 300;
   display: flex;
@@ -406,6 +409,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   max-height: 700px;
+  min-height: 90vh;
   margin: 0 auto;
   background-color: #00c4c4;
   background: url("../img/about__bg.png") no-repeat top left 100%;
@@ -429,7 +433,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 60%;
   /*  height: 59vh; */
   max-height: 622px;
-  text-align: left;
   /* background: url("../img/about_img.png");
   background-size: cover;
   background-position: center;
@@ -441,19 +444,21 @@ h1, h2, h3, h4, h5, h6 {
 .about img {
   width: 100%;
   height: 100%;
+  min-height: 280px;
   object-fit: cover;
 }
 .about .info {
   max-width: 600px;
   max-height: 300px;
-  height: 40vh;
+  height: 60vh;
   /* position: absolute;
   top: 25.74%;
   right: 11%; */
 }
 .about .info__title {
   font-family: "Raleway-Bold";
-  font-size: 90px;
+  font-size: calc(36px + 54 * ((100vw - 320px) / (1500 - 320)));
+  /* font-size: 90px; */
   font-weight: 700;
   color: #ffffff;
 }
@@ -461,7 +466,8 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 500px;
   margin-top: 3.5%;
   font-family: "Raleway-Light";
-  font-size: 17px;
+  /* font-size: 17px; */
+  font-size: calc(12px + 5 * ((100vw - 320px) / (1500 - 320)));
   line-height: 25px;
   font-weight: 300;
   color: #ffffff;
@@ -548,12 +554,14 @@ h1, h2, h3, h4, h5, h6 {
 .services .info .info__img {
   max-width: 570px;
   max-height: 530px;
+  min-height: 280px;
 }
 .services .info h1 {
   max-width: 570px;
   max-height: 70px;
   font-family: "Raleway-Bold";
-  font-size: 70px;
+  /* font-size: 70px; */
+  font-size: calc(32px + 38 * ((100vw - 320px) / (1500 - 320)));
   font-weight: 700;
   color: #ffffff;
   position: absolute;
@@ -574,7 +582,7 @@ h1, h2, h3, h4, h5, h6 {
 .gallery {
   max-width: 1500px;
   max-height: 1536px;
-  min-height: 200vh;
+  min-height: 100vh;
   background-color: #ffe92f;
   display: flex;
   justify-content: center;
@@ -590,31 +598,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 .gallery .info {
   width: 100%;
-  height: 100%;
-  margin-bottom: 3vh;
+  min-height: 35vh;
+  margin: 3vh 0;
+  /* flex: 0 1 40%; */
 }
 .gallery .info__content {
   width: 100%;
   height: 100%;
   text-align: center;
-  margin-bottom: 7vh;
+  /* margin-bottom: 7vh; */
 }
 .gallery .info__title {
   /* max-width: 310px; */
   width: 100%;
   max-height: 90px;
   font-family: "Raleway-Bold";
-  font-size: 90px;
+  font-size: calc(32px + 58 * ((100vw - 320px) / (1500 - 320)));
+  /* font-size: 90px; */
   font-weight: 700;
   color: #262626;
   text-align: center;
-  margin: 7vh 0;
+  margin: 3vh 0;
 }
 .gallery .info__text {
   width: 100%;
-  max-height: 75px;
+  /*  max-height: 75px; */
   font-family: "Raleway-Light";
-  font-size: 17px;
+  font-size: calc(12px + 5 * ((100vw - 320px) / (1500 - 320)));
+  /* font-size: 17px; */
   line-height: 27px;
   font-weight: 300;
   color: #262626;
@@ -702,7 +713,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .gallery .btn__link {
   font-family: "Raleway-Light";
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: calc(14px + 6 * ((100vw - 320px) / (1500 - 320)));
   line-height: 27px;
   font-weight: 300;
   color: #ffffff;
@@ -750,7 +762,8 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 350px;
   max-height: 40px;
   font-family: "Raleway-Bold";
-  font-size: 40px;
+  font-size: calc(20px + 20 * ((100vw - 320px) / (1500 - 320)));
+  /* font-size: 40px; */
   font-weight: 700;
   color: #262626;
   margin-bottom: 3vh;
@@ -759,7 +772,8 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 580px;
   min-height: 50px;
   font-family: "Raleway-Light";
-  font-size: 17px;
+  font-size: calc(12px + 5 * ((100vw - 320px) / (1500 - 320)));
+  /*  font-size: 17px; */
   line-height: 27px;
   font-weight: 300;
   color: #262626;
@@ -781,7 +795,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 7vh;
   border: 1px solid #262626;
   font-family: "Raleway-Light";
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: calc(12px + 3 * ((100vw - 320px) / (1500 - 320)));
   line-height: 20px;
   font-weight: 300;
   color: #262626;
@@ -791,7 +806,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .subscribe .form__email::placeholder {
   font-family: "Raleway-Light";
-  font-size: 15px;
+  /*  font-size: 15px; */
+  font-size: calc(12px + 3 * ((100vw - 320px) / (1500 - 320)));
   line-height: 20px;
   font-weight: 300;
   color: #262626;
@@ -804,7 +820,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #96b92c;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
   font-family: "Raleway-Light";
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: calc(14px + 6 * ((100vw - 320px) / (1500 - 320)));
   font-weight: 300;
   color: #fff;
 }
@@ -847,14 +864,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog .info__title {
   font-family: "Raleway-Bold";
-  font-size: 90px;
+  /* font-size: 90px; */
+  font-size: calc(32px + 58 * ((100vw - 320px) / (1500 - 320)));
   font-weight: 700;
   color: #fff;
   margin-bottom: 3vh;
 }
 .blog .info__text {
   font-family: "Raleway-Light";
-  font-size: 17px;
+  /* font-size: 17px; */
+  font-size: calc(12px + 5 * ((100vw - 320px) / (1500 - 320)));
   line-height: 25px;
   font-weight: 300;
   color: #fff;
@@ -908,14 +927,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog .pictures__title {
   font-family: "Raleway-Bold";
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: calc(12px + 4 * ((100vw - 320px) / (1500 - 320)));
   font-weight: 700;
   color: #fff;
   flex: 0 0 25%;
 }
 .blog .pictures__author {
-  font-family: Raleway;
-  font-size: 13px;
+  font-family: "Raleway-Light";
+  font-size: calc(10px + 3 * ((100vw - 320px) / (1500 - 320)));
+  /* font-size: 13px; */
   line-height: 25px;
   font-weight: 300;
   color: #fff;
@@ -944,7 +965,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog .btn__link {
   font-family: "Raleway-Light";
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: calc(14px + 6 * ((100vw - 320px) / (1500 - 320)));
   line-height: 27px;
   font-weight: 300;
   color: #ffffff;
@@ -981,10 +1003,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact__title {
-  width: 340px;
-  height: 70px;
+  max-width: 340px;
+  max-height: 70px;
   font-family: "Raleway-Bold";
-  font-size: 80px;
+  /* font-size: 80px; */
+  font-size: calc(32px + 48 * ((100vw - 320px) / (1500 - 320)));
   font-weight: 700;
   color: #262626;
   text-align: center;
@@ -992,10 +1015,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact__descr {
-  width: 350px;
-  height: 41px;
+  max-width: 350px;
+  max-height: 41px;
   font-family: "Raleway-Light";
-  font-size: 17px;
+  /* font-size: 17px; */
+  font-size: calc(12px + 5 * ((100vw - 320px) / (1500 - 320)));
   font-weight: 300;
   color: #262626;
   text-align: center;
@@ -1030,7 +1054,8 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.7;
   background-color: #7ddfdf;
   font-family: "Raleway-Light";
-  font-size: 15px;
+  /*  font-size: 15px; */
+  font-size: calc(12px + 3 * ((100vw - 320px) / (1500 - 320)));
   line-height: 20px;
   font-weight: 300;
   color: #fff;
@@ -1044,7 +1069,8 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.7;
   background-color: #7ddfdf;
   font-family: "Raleway-Light";
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: calc(12px + 3 * ((100vw - 320px) / (1500 - 320)));
   line-height: 20px;
   font-weight: 300;
   color: #fff;
@@ -1069,7 +1095,8 @@ input:focus,
   opacity: 0.7;
   background-color: #00c4c4;
   font-family: "Raleway-Light";
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: calc(14px + 6 * ((100vw - 320px) / (1500 - 320)));
   line-height: 27px;
   font-weight: 300;
   color: #fff;
@@ -1088,14 +1115,16 @@ input:focus,
 }
 .contact__info .address, .contact__info .email, .contact__info .phone {
   font-family: "Raleway-Light";
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: calc(14px + 6 * ((100vw - 320px) / (1500 - 320)));
   line-height: 25px;
   font-weight: 300;
   color: #262626;
 }
 .contact__info .address-title, .contact__info .email-title, .contact__info .phone-title {
   font-family: "Raleway-Bold";
-  font-size: 17px;
+  /* font-size: 17px; */
+  font-size: calc(12px + 5 * ((100vw - 320px) / (1500 - 320)));
   line-height: 25px;
   font-weight: 700;
   color: #262626;
@@ -1124,33 +1153,34 @@ input:focus,
 
 .footer__copy {
   font-family: "Raleway-Light";
-  font-size: 16px;
-  line-height: 25px;
+  /* font-size: 16px; */
+  font-size: calc(12px + 4 * ((100vw - 320px) / (1500 - 320)));
+  line-height: 15px;
   font-weight: 300;
   color: #b9b9b9;
 }
 
 .footer__logo {
   font-family: "Pacifico-Regular";
-  font-size: 25px;
-  line-height: 25px;
+  /* font-size: 25px; */
+  font-size: calc(18px + 7 * ((100vw - 320px) / (1500 - 320)));
   font-weight: 400;
   color: #b9b9b9;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 .footer__link {
   font-family: "Raleway-Light";
-  font-size: 15px;
-  line-height: 25px;
+  /*  font-size: 15px; */
+  font-size: calc(12px + 3 * ((100vw - 320px) / (1500 - 320)));
   font-weight: 300;
   color: #b9b9b9;
 }
 
 .author-link {
   font-family: "Raleway-Bold";
-  font-size: 15px;
-  line-height: 25px;
+  /* font-size: 15px; */
+  font-size: calc(12px + 3 * ((100vw - 320px) / (1500 - 320)));
   font-weight: 700;
   color: #ff2b58;
 }
