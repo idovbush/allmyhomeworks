@@ -140,6 +140,26 @@ h1, h2, h3, h4, h5, h6 {
   .scroll {
     display: none;
   }
+
+  .blog {
+    min-height: 2000px;
+  }
+  .blog .content {
+    height: 200vh;
+  }
+  .blog .pictures {
+    max-width: 100%;
+  }
+  .blog .pictures .pictures__content {
+    min-height: 100%;
+    flex-direction: column;
+    margin-bottom: 3vh;
+  }
+  .blog .pictures .pictures__content .pic1, .blog .pictures .pictures__content .pic2, .blog .pictures .pictures__content .pic3 {
+    width: 100%;
+    min-height: 100%;
+    margin-bottom: 3vh;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -149,10 +169,37 @@ h1, h2, h3, h4, h5, h6 {
   .header__menu {
     display: none;
   }
+
+  .about .info__img {
+    display: none;
+  }
+
+  .services .content {
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .services .content .info {
+    width: 70%;
+    margin: 3vh 0;
+  }
+  .services .content .links {
+    order: 3;
+    margin-bottom: 3vh;
+  }
 }
 @media (max-width: 576px) {
   .container {
     max-width: none;
+  }
+
+  .subscribe .subscribe-form {
+    flex-direction: column;
+  }
+  .subscribe .subscribe-form .form__email {
+    width: 70%;
+    margin: 3vh 0;
+    display: inline-block;
+    padding: 12px 25px;
   }
 }
 /******************** home ******************/

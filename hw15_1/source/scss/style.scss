@@ -37,7 +37,27 @@
   .scroll {
     display: none;
   }
-  
+  .blog {
+    min-height: 2000px; 
+    & .content {
+      height: 200vh;
+    }
+    
+    & .pictures {
+      max-width: 100%;
+    }
+    & .pictures__content {
+      min-height: 100%;
+      flex-direction: column;
+      margin-bottom: 3vh;
+    } 
+      & .pic1, .pic2, .pic3 {
+        width: 100%;
+        min-height: 100%;
+        margin-bottom: 3vh;
+      }
+    
+ 
 }
 @media (max-width: 767px) {
   .container {
@@ -46,11 +66,36 @@
   .header__menu {
     display: none;
   }
+  .about .info__img {
+    display: none;
+  }
+  .services .content {
+    min-height: 100vh;
+    flex-direction: column;
+    & .info {
+      width: 70%;
+      margin: 3vh 0;
+    }
+    & .links {
+      order: 3;
+      margin-bottom: 3vh;
+    } 
+  }
   
 }
 @media (max-width: 576px) {
   .container {
     max-width: none;
+  }
+  .subscribe .subscribe-form {
+    flex-direction: column;
+    
+    & .form__email {
+      width: 70%;
+      margin: 3vh 0;
+      display: inline-block;
+      padding: 12px 25px;
+    }
   }
  
 }
