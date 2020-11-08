@@ -1,106 +1,6 @@
-@charset "UTF-8";
-/*Обнуление стилей*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
+@import "zerostyle.scss";
+@import "fonts.scss";
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus, :active {
-  outline: none;
-}
-
-a:focus, a:active {
-  outline: none;
-}
-
-nav, footer, header, aside {
-  display: block;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input, button, textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
-/*-----------------------------------------------------*/
-@font-face {
-  font-family: "Raleway-Medium";
-  src: url("../fonts/Raleway-Medium/fonts/Raleway-Medium.eot");
-  src: local("☺"), url("../fonts/Raleway-Medium/fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium/fonts/Raleway-Medium.ttf") format("truetype"), url("../fonts/Raleway-Medium/fonts/Raleway-Medium.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular/fonts/Raleway-Regular.eot");
-  src: local("☺"), url("../fonts/Raleway-Regular/fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular/fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular/fonts/Raleway-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto-Black";
-  src: url("../fonts/Roboto-Black/fonts/Roboto-Black.eot");
-  src: local("☺"), url("../fonts/Roboto-Black/fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black/fonts/Roboto-Black.ttf") format("truetype"), url("../fonts/Roboto-Black/fonts/Roboto-Black.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "OpenSans-Bold";
-  src: local("☺"), url("../fonts/Roboto-Black/fonts/Roboto-Black.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 .wrapper {
   max-width: 1920px;
   max-height: 1000px;
@@ -112,7 +12,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   overflow: hidden;
 }
-
 .inner {
   max-width: 1120px;
   max-height: 800px;
@@ -123,7 +22,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
+
+}   
 
 .carousel {
   /* position: relative; */
@@ -133,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*  border:1px dotted fuchsia; */
+ /*  border:1px dotted fuchsia; */
 }
 
 .carousel-inner {
@@ -145,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-}
+}  
 
 .carousel-open:checked + .carousel-item {
   position: static;
@@ -156,14 +56,14 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   opacity: 0;
   width: 90%;
-  /*  height: 65vh; */
-  /*  padding-top: 5vh; */
+ /*  height: 65vh; */
+ /*  padding-top: 5vh; */
   transition: opacity 0.3s ease-out;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  
 }
-
 .item__info {
   /* width: 50%; */
   flex: 0 0 45%;
@@ -182,11 +82,10 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 560px;
   overflow: hidden;
 }
-
 .item__foto {
   /* width: 50%; */
   flex: 0 0 45%;
-  /*  height: 85%; */
+ /*  height: 85%; */
   width: 40vh;
   /* height: 50vh;   */
   max-width: 400px;
@@ -197,7 +96,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
 }
-
 .foto__wrapper {
   max-width: 390px;
   max-height: 390px;
@@ -207,17 +105,15 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   padding: 15px;
 }
-
 .info__links {
   width: 55%;
   display: flex;
   justify-content: space-between;
 }
-
 .item__foto img {
   display: block;
   max-height: 388px;
-  max-width: 388px;
+  max-width: 388px; 
   height: 44vh;
   object-fit: cover;
   border: 1px solid #ffcc00;
@@ -248,9 +144,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel-control:hover {
+  
   color: #ffcc00;
   border-radius: 50%;
-  border: 1px solid #ffcc00;
+  border: 1px solid #ffcc00 ;
 }
 
 #carousel-1:checked ~ .control-1,
@@ -272,12 +169,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   z-index: 10;
 }
-
 ol {
   display: inline-block;
   height: 12px;
 }
-
 .carousel-indicator li {
   display: inline-block;
   margin: 0 5px;
@@ -289,11 +184,12 @@ ol {
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
+  
 }
 
 .carousel-bullet:hover {
   color: #333;
-  font-size: 12px;
+  font-size: 12px; 
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
@@ -312,13 +208,13 @@ ol {
   letter-spacing: 0.02em;
   color: #898f8f;
 }
-
 .header__title {
   font-family: "Roboto-Black";
   font-size: 60px;
   font-weight: 900;
   color: #ffcc00;
 }
+
 
 .info__title {
   font-family: "Roboto-Black";
@@ -327,27 +223,23 @@ ol {
   letter-spacing: 0.02em;
   color: #666;
 }
-
 .info__border_solid {
   width: 100px;
   height: 10px;
   border-bottom: 1px solid #ffcc00;
 }
-
 .info__job {
   font-family: "Raleway-Regular";
   font-size: 24px;
   font-weight: 400;
   color: #666666;
 }
-
 .info__links {
   max-width: 160px;
   height: 30px;
   display: flex;
   justify-content: space-between;
 }
-
 .info__link {
   width: 30px;
   height: 30px;
@@ -363,16 +255,14 @@ ol {
   line-height: 24px;
   font-weight: 500;
   color: #333333;
-  text-align: center;
+  text-align: center ;
 }
-
 .info__border_dash {
   width: 60px;
   height: 5px;
   margin-top: 5vh;
-  /*  border-bottom: 4px dashed #ffcc00 */
+ /*  border-bottom: 4px dashed #ffcc00 */
 }
-
 .info__btn {
   width: 120px;
   height: 24px;
