@@ -1,5 +1,11 @@
 @import "zerostyle.scss";
 
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: darkgreen;
+}
+
 .text-center {
   text-align: center;
 }
@@ -22,6 +28,9 @@
   width: 700px;
   margin-bottom: 35px;
   max-width: 100%;
+  max-height: 100%;
+  padding: 3vh;
+  border: 1px solid darkviolet;
 }
 
 .flip-box {
@@ -29,14 +38,15 @@
   perspective: 1000px;
 }
 
-.flip-box-front,
+/* .flip-box-front, */
 .flip-box-back {
   background-size: cover;
   background-position: center;
   border-radius: 8px;
-  min-height: 475px;
-  transition: transform 0.5s cubic-bezier(.4,.2,.2,1);
-  backface-visibility: hidden; 
+  min-width: 200px;
+  min-height: 300px;
+  transition: transform 0.7s linear;
+  /* backface-visibility: hidden;  */
 }
 
 /* .flip-box-front {
@@ -55,6 +65,8 @@
   top: 0;
   left: 0;
   width: 40%;
+  transform-style: preserve-3d;
+  perspective: 1000px;
  /*  transform: rotateY(-180deg);
   transform-style: preserve-3d;
 } */
@@ -64,17 +76,23 @@
   top: 0;
   right: 0;
   width: 40%;
-  transform: rotateY(180deg);
-  transform-style: preserve-3d;
+ /*  transform: rotateY(180deg);
+  transform-style: preserve-3d; */
 } 
 
-.flip-box:hover .flip-box-back {
+ .flip-box-back:active {
   transform: rotateY(180deg);
   transform-style: preserve-3d;
   transform-origin: 100% 50%; 
-  transform: translate(100px, 0);
+  /* transform: translate(100px, 0); */
+  animation: openleft .8s ;
 }
 
+@keyframes openleft {
+    from {left:0px;}
+    to {left:100px;} 
+
+}
 /* .flip-box .inner {
   position: absolute;
   left: 0;
