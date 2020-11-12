@@ -1,0 +1,48 @@
+@import "zerostyle.scss";
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: darkgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  min-width: 50%;
+  min-height: 50%;
+  border: 5px solid #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__back,
+.card__front {
+  min-width: 200px;
+  min-height: 280px;
+  transition: .5s;
+} 
+input {
+  display: none;
+}
+.card__front {
+  visibility: hidden;
+}
+
+.table:hover .card__back {
+  /* transform-origin: right 0 0; */
+  animation: opentoleft 2s linear forwards 1;
+ 
+}
+
+@keyframes opentoleft {
+  0% {transform-origin: right 0 0;
+      transform: rotateY(0deg) translateX(0px);}
+  50% {transform-origin: right 0 0;
+    transform: rotateY(90deg) translateX(0px);}
+  100% {transform-origin: right 0 0;
+    transform: rotateY(180deg) translateX(-100px);}
+}
