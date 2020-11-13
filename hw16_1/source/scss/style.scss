@@ -122,19 +122,21 @@
   display: flex;
   justify-content: space-between;
   & li {
-    max-width: 65px;
+    max-width: 65px; 
+    /* width: 100%; */
     display: inline-block;
+    position: relative;
   }
   
   & li::before {
     content: " ";
     display: block;
-    width: 49px;
+    width: 100%;
     height: 3px;
     position: absolute;
     margin-bottom: 5px;
-    top: 10px;
-    
+    top: -2px;
+  
     }
   
   & li:hover::before {
@@ -145,12 +147,12 @@
     
   @keyframes fall {
     from {
-      top: -10px; 
+      top: -21px;
       
     }
     
     to {
-      top: 10px; 
+      top: -2px; 
     
     }
   }
