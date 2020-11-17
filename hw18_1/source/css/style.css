@@ -120,10 +120,10 @@ input {
   }
   50% {
     transform-origin: right 0 0;
-    transform: rotateY(90deg) translateX(0px);
+    transform: rotateY(90deg) translateX(-75px);
   }
   100% {
     transform-origin: right 0 0;
-    transform: rotateY(180deg) translateX(-100px);
+    transform: rotateY(180deg) translateX(-150px);
   }
 }
