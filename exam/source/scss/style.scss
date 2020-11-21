@@ -1,9 +1,29 @@
 @import "zerostyle.scss";
 .wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1800px;
+  max-height: 4271px;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 15px;
+  overflow: hidden;
 }
 .inner {
+  width: 100%;
+  height: 100%;
 }
 .home {
+  max-width: 1770px;
+  max-height: 820px;
+  min-height: 100vh;
+  background-image: url(../img/bg_home.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
 }
 .content {
 }
