@@ -1,47 +1,44 @@
- /* 1. Запросите у пользователя его имя и выведите в ответ: «Привет, его имя!».  */
+/* 1. Запросите у пользователя его имя и выведите в ответ: «Привет, его имя!».  */
 
-    /* let name = prompt("What is your name?");
-    console.log(`Hello, your name is ${name}!`); */
-
+/* let name = prompt("What is your name?");
+console.log(`Hello, your name is ${name}!`); */
 
 /* 2. Запросите у пользователя год его рождения, посчитайте, сколько ему лет и выведите результат. Текущий год укажите в коде как константу. */
 
-    /* let born_year = +prompt("What year were you born?");
-    const  this_year = 2020;
-    let age =  this_year - born_year;
-    console.log(`You are ${age}.`);  */
+/* let born_year = +prompt("What year were you born?");
+const  this_year = 2020;
+let age =  this_year - born_year;
+console.log(`You are ${age}.`);  */
 
 /* 3. Запросите у пользователя длину стороны квадрата и выведите периметр такого квадрата. */
 
-    /* let length = +prompt("Enter the length of the side of the square");
-    let Perimeter =  length * 4;
-    console.log(`Perimeter of a square ${Perimeter}.`); 
- */
+/* let length = +prompt("Enter the length of the side of the square");
+let Perimeter =  length * 4;
+console.log(`Perimeter of a square ${Perimeter}.`); 
+*/
+
 /* 4. Запросите у пользователя радиус окружности и выведите площадь такой окружности. */
 
-    /* let radius = +prompt("Enter the radius of the circle");
-    const PI = 3.1415;
-    let square =   PI * radius ** 2;
-    console.log(`Perimeter of a square ${square}.`); */
-
+/* let radius = +prompt("Enter the radius of the circle");
+const PI = 3.1415;
+let square =   PI * radius ** 2;
+console.log(`Perimeter of a square ${square}.`); */
 
 /* 5. Запросите у пользователя расстояние в км между двумя городами и за сколько часов он хочет добраться. Посчитайте скорость, с которой необходимо двигаться, чтобы успеть вовремя. */
 
-    /* let radius = +prompt("Enter the radius of the circle");
-    const PI = 3.1415;
-    let square =   PI * radius ** 2;
-    console.log(`Perimeter of a square ${square}.`); */
-
+/* let radius = +prompt("Enter the radius of the circle");
+const PI = 3.1415;
+let square =   PI * radius ** 2;
+console.log(`Perimeter of a square ${square}.`); */
 
 /* 6. Реализуйте конвертор валют. Пользователь вводит доллары, программа переводит в евро. Курс валюты храните в константе. */
 
-
-
 /* 7. Пользователь указывает объем флешки в Гб. Программа должна посчитать, сколько файлов размером в 820 Мб помещается на флешку. */
 
-
 /* 8. Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит, сколько шоколадок может купить пользователь, и сколько сдачи у него останется. */
+
 /* 9. Запросите у пользователя трехзначное число и выведите его задом наперед. Для решения задачи вам понадобится оператор % (остаток от деления). */
+
 /* 10. Пользователь вводит сумму вклада в банк на 2 месяца, с процентной ставкой депозита 5% годовых. Вывести сумму начисленных процентов.  */
 
 /* 
@@ -73,3 +70,4 @@ let b = prompt("Второе число?", 2);
 
 alert(a + b); // 12
  */
+"use strict";
