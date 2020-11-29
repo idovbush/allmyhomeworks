@@ -17,6 +17,7 @@
     let Perimeter =  length * 4;
     console.log(`Perimeter of a square ${Perimeter}.`); 
  */
+
 /* 4. Запросите у пользователя радиус окружности и выведите площадь такой окружности. */
 
     /* let radius = +prompt("Enter the radius of the circle");
@@ -81,7 +82,7 @@
 Скопируйте значение из переменной name в admin.
 Выведите на экран значение admin, используя функцию alert (должна показать «Джон»). */
 
-   /*  let admin, name;
+    /*  let admin, name;
     name = "Джон";
     admin = name;
     alert(`${admin}`);
@@ -91,7 +92,7 @@
 важность: 5
 Что выведет этот скрипт? */
 
-   /*  let name = "Ilya";
+    /*  let name = "Ilya";
     alert( `hello ${1}` ); // hello 1
     alert( `hello ${"name"}` ); // hello name
     alert( `hello ${name}` ); // hello Ilya */
@@ -105,4 +106,3 @@
     let b = +prompt("Второе число?", 2);
 
     alert(a + b); // 12 */
- 

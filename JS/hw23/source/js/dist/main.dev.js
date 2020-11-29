@@ -79,9 +79,9 @@ console.log(`Accrued interest ${interest}`); */
 Выведите на экран значение admin, используя функцию alert (должна показать «Джон»). */
 
 /*  let admin, name;
- name = "Джон";
- admin = name;
- alert(`${admin}`);
+name = "Джон";
+admin = name;
+alert(`${admin}`);
 */
 
 /* 12. Шаблонные строки
@@ -89,9 +89,9 @@ console.log(`Accrued interest ${interest}`); */
 Что выведет этот скрипт? */
 
 /*  let name = "Ilya";
- alert( `hello ${1}` ); // hello 1
- alert( `hello ${"name"}` ); // hello name
- alert( `hello ${name}` ); // hello Ilya */
+alert( `hello ${1}` ); // hello 1
+alert( `hello ${"name"}` ); // hello name
+alert( `hello ${name}` ); // hello Ilya */
 
 /* 13. Исправьте сложение
 Ниже приведён код, который запрашивает у пользователя два числа и показывает их сумму.
