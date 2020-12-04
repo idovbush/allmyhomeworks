@@ -40,6 +40,18 @@ console.log(`This number ${number} has ${i} digits.`); */
 
 /* 5. Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран. Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем. */
 
+/* let negativeNumber = 0;
+let zeroNumber = 0;
+let positiveNumber = 0;
+let userNumber;
+for (let i = 1; i < 11; i++) {
+        userNumber = +prompt(`Enter the ${i} number of 10`);
+        if (userNumber == 0) {zeroNumber++;}
+        else if (userNumber > 0) {positiveNumber++;}
+        else if (userNumber < 0) {negativeNumber++;}
+}
+console.log(`You entered ${negativeNumber} negative numbers, ${positiveNumber} positive numbers, and ${zeroNumber} zeros.`); */
+
 /* 6. Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить пример, вывести результат и спросить, хочет ли он решить еще один пример. И так до тех пор, пока пользователь не откажется. */
 
 /*  let firstNumber;
@@ -58,6 +70,22 @@ console.log(`This number ${number} has ${i} digits.`); */
  } while (confirm("Shall we continue?")); */
 
 /* 7. Запросить у пользователя число и на сколько цифр его сдвинуть. Сдвинуть цифры числа и вывести результат (если число 123456 сдвинуть на 2 цифры, то получится 345612). */
+
+/* let userNumber;
+let shift;
+let digitInUserNumber; 
+do {
+        userNumber = +prompt("Enter the number");
+        shift = +prompt("Indicate how many digits you need to shift the number");
+        digitInUserNumber = 0; 
+        while ((userNumber / (10**digitInUserNumber)) > 1) { digitInUserNumber++; };
+        if (shift >= digitInUserNumber) {
+        console.log(`Incorrect data entered. The shift is greater than or equal to the length of the number ( ${shift} >= ${digitInUserNumber} ). No shift is possible.`); 
+        }
+} while (shift >= digitInUserNumber);        
+let shiftNumber = userNumber % 10**shift;
+let result = shiftNumber*(10**(digitInUserNumber - shift)) + Math.trunc(userNumber / 10 ** shift);
+console.log(`You entered number ${userNumber} and shift ${shift}. The result is ${result}.`); */
 
 /* 8. Зациклить вывод дней недели таким образом: «День недели. Хотите увидеть следующий день?» и так до тех пор, пока пользователь нажимает OK. */
 
@@ -89,4 +117,16 @@ while (question);   */
 } */
 
 /* 10. Игра «Угадай число». Предложить пользователю загадать число от 0 до 100 и отгадать его следующим способом: каждую итерацию цикла делите диапазон чисел пополам, записываете результат в N и спрашиваете у пользователя «Ваше число > N, < N или == N?». В зависимости от того, что указал пользователь, уменьшаете диапазон. Начальный диапазон от 0 до 100, поделили пополам и получили 50. Если пользователь указал, что его число > 50, то изменили диапазон на от 51 до 100. И так до тех пор, пока пользователь не выберет == N. */
+
+/* alert("Come up with a number between 0 and 100");
+let check;
+let myVariant=50;
+let halfRange=50;
+do {
+check = +prompt(`Is your number 1) greater than ${myVariant}, 2) less than ${myVariant}, or 3) equal to ${myVariant}?`);
+halfRange = Math.round(halfRange/2);
+if (check == 1) { myVariant = myVariant + halfRange; }
+if (check == 2) { myVariant = myVariant - halfRange; }
+} while (check != 3);
+console.log(`Your number is ${myVariant}.`); */
 "use strict";
