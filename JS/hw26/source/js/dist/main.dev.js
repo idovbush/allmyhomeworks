@@ -3,7 +3,7 @@
 /* let startRange = +prompt("Enter the first element of the range");
 let endRange = +prompt("Enter the last element of the range");
 let sum = 0;
-for (let i = startRange; i < endRange + 1; i++) {
+for (let i = startRange; i <= endRange; i++) {
         sum +=i;
 }
 console.log(`The sum of all elements in the range from ${startRange} to ${endRange} is ${sum}.`); */
@@ -34,8 +34,8 @@ while (i <= number) {
 /* 4. Определить количество цифр в введенном числе. */
 
 /* let number = +prompt("Enter the number");   
-let i = 0; 
-while ((number / (10**i)) > 1) { i++; };
+let i = 1; 
+while (number / 10**i >= 1) { i++; };
 console.log(`This number ${number} has ${i} digits.`); */
 
 /* 5. Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран. Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем. */
@@ -66,6 +66,7 @@ console.log(`You entered ${negativeNumber} negative numbers, ${positiveNumber} p
                  case 2: console.log(`${firstNumber} - ${secondNumber} = ${firstNumber - secondNumber}`); break; 
                  case 3: console.log(`${firstNumber} x ${secondNumber} = ${firstNumber * secondNumber}`); break; 
                  case 4: console.log(`${firstNumber} / ${secondNumber} = ${firstNumber / secondNumber}`); break; 
+                 default: console.log(`${firstNumber} + ${secondNumber} = ${firstNumber + secondNumber}`);
          }
  } while (confirm("Shall we continue?")); */
 
@@ -101,7 +102,8 @@ do {
                 case 5: dayWeek = "Friday"; break;
                 case 6: dayWeek = "Saturday"; break;
                 case 7: dayWeek = "Sunday"; break;
-          }
+                default: dayWeek = "Sunday";
+        }
         question = confirm(`${dayWeek}. Do you want to see the next day?`);
         i++; 
         if (i == 8) { i = 1; };
