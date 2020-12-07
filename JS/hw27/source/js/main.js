@@ -1,12 +1,3 @@
-/* 1. Подсчитать сумму всех чисел в заданном пользователем диапазоне. */
-
-        /* let startRange = +prompt("Enter the first element of the range");
-        let endRange = +prompt("Enter the last element of the range");
-        let sum = 0;
-        for (let i = startRange; i < endRange + 1; i++) {
-                sum +=i;
-        }
-        console.log(`The sum of all elements in the range from ${startRange} to ${endRange} is ${sum}.`); */
 
 
 /* 1. Написать функцию, которая принимает 2 числа и возвращает -1, если первое меньше, чем второе; 1 – если первое больше, чем второе; и 0 – если числа равны. */
