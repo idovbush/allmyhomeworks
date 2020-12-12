@@ -54,15 +54,88 @@ var fraction2 = {
   numerator: 4,
   denominator: 9
 };
+var fraction3 = {
+  numerator: 9,
+  denominator: 81
+};
+var fraction4 = {
+  numerator: 2,
+  denominator: 2
+};
+var fraction5 = {
+  numerator: 36,
+  denominator: 120
+};
 
-function sumFraction(firstFraction, secondFraction) {
+function printFruction(fraction) {
+  return fraction.numerator + "/" + fraction.denominator;
+} //printFruction(fraction1);
+//printFruction(fraction2);
+
+
+function sumFractions(firstFraction, secondFraction) {
   var result = {};
   result.denominator = firstFraction.denominator * secondFraction.denominator;
   result.numerator = firstFraction.numerator * secondFraction.denominator + secondFraction.numerator * firstFraction.denominator;
   console.log(result);
+  document.write('<p>' + printFruction(firstFraction) + ' + ' + printFruction(secondFraction) + ' = ' + printFruction(result) + '</p>');
 }
 
-sumFraction(fraction1, fraction2);
+sumFractions(fraction1, fraction2);
+
+function subFractions(firstFraction, secondFraction) {
+  var result = {};
+  result.denominator = firstFraction.denominator * secondFraction.denominator;
+  result.numerator = firstFraction.numerator * secondFraction.denominator - secondFraction.numerator * firstFraction.denominator;
+  console.log(result);
+  document.write('<p>' + printFruction(firstFraction) + ' - ' + printFruction(secondFraction) + ' = ' + printFruction(result) + '</p>');
+}
+
+subFractions(fraction1, fraction2);
+
+function multFractions(firstFraction, secondFraction) {
+  var result = {};
+  result.denominator = firstFraction.denominator * secondFraction.denominator;
+  result.numerator = firstFraction.numerator * secondFraction.numerator;
+  console.log(result);
+  document.write('<p>' + printFruction(firstFraction) + ' * ' + printFruction(secondFraction) + ' = ' + printFruction(result) + '</p>');
+}
+
+multFractions(fraction1, fraction2);
+
+function divFractions(firstFraction, secondFraction) {
+  var result = {};
+  result.denominator = firstFraction.denominator * secondFraction.numerator;
+  result.numerator = firstFraction.numerator * secondFraction.denominator;
+  console.log(result);
+  document.write('<p>' + printFruction(firstFraction) + ' / ' + printFruction(secondFraction) + ' = ' + printFruction(result) + '</p>');
+}
+
+divFractions(fraction1, fraction2);
+
+function reducFraction(fraction) {
+  var result = {};
+  var min = 1;
+  if (fraction.denominator == fraction.numerator) result = {
+    numerator: 1,
+    denominator: 1
+  };else {
+    if (fraction.denominator < fraction.numerator) min = fraction.denominator;else if (fraction.denominator > fraction.numerator) min = fraction.numerator;
+
+    do {
+      if (fraction.denominator % min == 0 && fraction.numerator % min == 0) {
+        result.numerator = fraction.numerator / min;
+        result.denominator = fraction.denominator / min;
+        break;
+      } else min--;
+    } while (min > 1);
+  }
+  document.write('<p>' + printFruction(fraction) + ' = ' + printFruction(result) + '</p>');
+}
+
+reducFraction(fraction3);
+reducFraction(fraction4);
+reducFraction(fraction5);
 /* 3. Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом: 
 
 Функция вывода времени на экран;

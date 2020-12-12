@@ -48,17 +48,84 @@
     let fraction1 = {numerator: 9 ,
                     denominator: 25};
     let fraction2 = {numerator: 4 ,
-                      denominator: 9};
+                    denominator: 9};
+    let fraction3 = {numerator: 9 ,
+                    denominator: 81};
+    let fraction4 = {numerator: 2 ,
+                    denominator: 2};
+    let fraction5 = {numerator: 36 ,
+                    denominator: 120};
+                      
 
-    function sumFraction(firstFraction, secondFraction) {
+    function printFruction(fraction) {
+          return  fraction.numerator + "/" + fraction.denominator;
+    }                  
+
+    //printFruction(fraction1);
+    //printFruction(fraction2);
+
+    function sumFractions(firstFraction, secondFraction) {
       let result = {};
       result.denominator = firstFraction.denominator * secondFraction.denominator;
       result.numerator = firstFraction.numerator * secondFraction.denominator + secondFraction.numerator * firstFraction.denominator;
       console.log(result);
+      document.write('<p>' + printFruction(firstFraction) + ' + ' + printFruction(secondFraction) + ' = ' + printFruction(result) + '</p>');
     }
 
-    sumFraction(fraction1, fraction2);
+    sumFractions(fraction1, fraction2);
 
+    function subFractions(firstFraction, secondFraction) {
+      let result = {};
+      result.denominator = firstFraction.denominator * secondFraction.denominator;
+      result.numerator = firstFraction.numerator * secondFraction.denominator - secondFraction.numerator * firstFraction.denominator;
+      console.log(result);
+      document.write('<p>' + printFruction(firstFraction) + ' - ' + printFruction(secondFraction) + ' = ' + printFruction(result) + '</p>');
+    }
+
+    subFractions(fraction1, fraction2);
+
+    function multFractions(firstFraction, secondFraction) {
+      let result = {};
+      result.denominator = firstFraction.denominator * secondFraction.denominator;
+      result.numerator = firstFraction.numerator * secondFraction.numerator;
+      console.log(result);
+      document.write('<p>' + printFruction(firstFraction) + ' * ' + printFruction(secondFraction) + ' = ' + printFruction(result) + '</p>');
+    }
+
+    multFractions(fraction1, fraction2);
+
+    function divFractions(firstFraction, secondFraction) {
+      let result = {};
+      result.denominator = firstFraction.denominator * secondFraction.numerator;
+      result.numerator = firstFraction.numerator * secondFraction.denominator;
+      console.log(result);
+      document.write('<p>' + printFruction(firstFraction) + ' / ' + printFruction(secondFraction) + ' = ' + printFruction(result) + '</p>');
+    }
+
+    divFractions(fraction1, fraction2);
+
+    function reducFraction(fraction) {
+      let result = {};
+      let min = 1;
+      if (fraction.denominator == fraction.numerator) result = {numerator: 1 ,
+        denominator: 1};
+      else { if (fraction.denominator < fraction.numerator) min = fraction.denominator
+      else if (fraction.denominator > fraction.numerator) min = fraction.numerator
+      do
+      if (fraction.denominator % min == 0 && fraction.numerator % min == 0)
+      { result.numerator =fraction.numerator / min;
+        result.denominator = fraction.denominator / min; 
+        break;
+      }
+      else min--; 
+       while (min > 1);
+      }
+      document.write('<p>'+ printFruction(fraction) + ' = ' + printFruction(result) + '</p>');
+    }
+
+    reducFraction(fraction3);
+    reducFraction(fraction4);
+    reducFraction(fraction5);
 
 
 
