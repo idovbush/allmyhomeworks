@@ -17,7 +17,26 @@
 
 
 /* 3. Создать массив CSS-стилей (цвет, размер шрифта, выравнивание, подчеркивание и т. д.). Каждый элемент массива – это объект, состоящий из двух свойств: название стиля и значение стиля. Написать функцию, которая принимает массив стилей и текст, и выводит этот текст с помощью document.write() в тегах <p></p>, добавив в открывающий тег атрибут style со всеми стилями, перечисленными в массиве. */
+  
+    let myText =  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nam natus non deserunt sint praesentium explicabo voluptates quam excepturi, placeat odio asperiores hic, enim ipsam et magnam nostrum omnis saepe.";
 
+    let myArrayOfStyles = [ {"font-family": "Verdana"},
+                          {"font-size": 24},
+                          {"font-weight": 700},
+                          {"text-transform": "uppercase"},
+                          {"letter-spacing": 2},
+                          {color: "darkblue"}
+                          ];
+        
+    function stylesForText(arrayOfStyles, text) {
+          let mystyle = "color: red;";
+          //arrayOfStyles.join(';');
+          document.write('<p style ="'+ mystyle +'">'+ text +'</p>');
+          console.log(mystyle);
+        }
+
+     stylesForText(myArrayOfStyles, myText);   
+    
 
 
 /* 4. Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества посадочных мест (от 10 до 20) и названия факультета, для которого она предназначена. Написать несколько функций для работы с ним^
