@@ -58,13 +58,9 @@ console.log(fibo(10)); */
 /* 2. Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом: 
 
 Функция сложения 2-х объектов-дробей;
-
 Функция вычитания 2-х объектов-дробей;
-
 Функция умножения 2-х объектов-дробей;
-
 Функция деления 2-х объектов-дробей;
-
 Функция сокращения объекта-дроби.
  */
 
@@ -88,6 +84,8 @@ console.log(fibo(10)); */
     //printFruction(fraction1);
     //printFruction(fraction2);
 
+
+    //Функция сложения 2-х объектов-дробей;
     function sumFractions(firstFraction, secondFraction) {
       let result = {};
       result.denominator = firstFraction.denominator * secondFraction.denominator;
@@ -98,6 +96,7 @@ console.log(fibo(10)); */
 
     sumFractions(fraction1, fraction2);
 
+    //Функция вычитания 2-х объектов-дробей;
     function subFractions(firstFraction, secondFraction) {
       let result = {};
       result.denominator = firstFraction.denominator * secondFraction.denominator;
@@ -108,6 +107,7 @@ console.log(fibo(10)); */
 
     subFractions(fraction1, fraction2);
 
+    //Функция умножения 2-х объектов-дробей;
     function multFractions(firstFraction, secondFraction) {
       let result = {};
       result.denominator = firstFraction.denominator * secondFraction.denominator;
@@ -118,6 +118,7 @@ console.log(fibo(10)); */
 
     multFractions(fraction1, fraction2);
 
+    //Функция деления 2-х объектов-дробей;
     function divFractions(firstFraction, secondFraction) {
       let result = {};
       result.denominator = firstFraction.denominator * secondFraction.numerator;
@@ -128,6 +129,7 @@ console.log(fibo(10)); */
 
     divFractions(fraction1, fraction2);
 
+    //Функция сокращения объекта-дроби.
     function reducFraction(fraction) {
       let result = {};
       let min = 1;
@@ -137,12 +139,12 @@ console.log(fibo(10)); */
       else if (fraction.denominator > fraction.numerator) min = fraction.numerator
       do
       if (fraction.denominator % min == 0 && fraction.numerator % min == 0)
-      { result.numerator =fraction.numerator / min;
+      { result.numerator = fraction.numerator / min;
         result.denominator = fraction.denominator / min; 
         break;
       }
       else min--; 
-       while (min > 1);
+      while (min > 0);
       }
       document.write('<p>'+ printFruction(fraction) + ' = ' + printFruction(result) + '</p>');
     }
@@ -157,11 +159,8 @@ console.log(fibo(10)); */
 /* 3. Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом: 
 
 Функция вывода времени на экран;
-
 Функция изменения времени на переданное количество секунд;
-
 Функция изменения времени на переданное количество минут;
-
 Функция изменения времени на переданное количество часов. 
 
 Учтите, что в последних 3-х функциях, при изменении одной части времени, может измениться и другая. Например, если ко времени «20:30:45» добавить 30 секунд, то должно получиться «20:31:15», а не «20:30:75».
