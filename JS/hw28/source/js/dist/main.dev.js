@@ -1,25 +1,4 @@
-/* Вывести массив "задом-наперед" */
-
-/* function reverseArray (arr) {
-  for (let i=arr.length; i>= 0; i--) {
-    console.log(arr[i]);
-  }
-}
-
-let list = [1,2,33,5,7,99,100];
-reverseArray(list); */
-
-/* Найти элемент ряда Фибоначчи с помощью рекурсии */
-
-/* function fibo(n) {
-  if (n == 0) { return 0;}
-  if (n == 1 || n== 2) {return 1;}
-      return fibo(n-1) + fibo(n-2);
-}
-  console.log(fibo(0));
-console.log(fibo(1));
-console.log(fibo(5));
-console.log(fibo(10)); */
+"use strict";
 
 /* 1. Создать массив «Список покупок». Каждый элемент массива является объектом, который содержит название продукта, необходимое количество и куплен или нет. Написать несколько функций для работы с таким массивом.
 
@@ -35,7 +14,29 @@ console.log(fibo(10)); */
 Подсчет средней стоимости одного товара в чеке. */
 
 /* 3. Создать массив CSS-стилей (цвет, размер шрифта, выравнивание, подчеркивание и т. д.). Каждый элемент массива – это объект, состоящий из двух свойств: название стиля и значение стиля. Написать функцию, которая принимает массив стилей и текст, и выводит этот текст с помощью document.write() в тегах <p></p>, добавив в открывающий тег атрибут style со всеми стилями, перечисленными в массиве. */
+var myText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nam natus non deserunt sint praesentium explicabo voluptates quam excepturi, placeat odio asperiores hic, enim ipsam et magnam nostrum omnis saepe.";
+var myArrayOfStyles = [{
+  "font-family": "Verdana"
+}, {
+  "font-size": 24
+}, {
+  "font-weight": 700
+}, {
+  "text-transform": "uppercase"
+}, {
+  "letter-spacing": 2
+}, {
+  color: "darkblue"
+}];
 
+function stylesForText(arrayOfStyles, text) {
+  var mystyle = "color: red;"; //arrayOfStyles.join(';');
+
+  document.write('<p style ="' + mystyle + '">' + text + '</p>');
+  console.log(mystyle);
+}
+
+stylesForText(myArrayOfStyles, myText);
 /* 4. Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества посадочных мест (от 10 до 20) и названия факультета, для которого она предназначена. Написать несколько функций для работы с ним^
 
 Вывод на экран всех аудиторий;
@@ -43,4 +44,3 @@ console.log(fibo(10)); */
 Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;
 Функция сортировки аудиторий по количеству мест;
 Функция сортировки аудиторий по названию (по алфавиту). */
-"use strict";
