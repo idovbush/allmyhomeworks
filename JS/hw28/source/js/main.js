@@ -3,16 +3,33 @@
 // Для решения задач данного блока вам понадобятся следующие методы: forEach.
 //  Дан массив с числами. Создайте новый массив, состоящий из квадратов этих чисел. Показать решение.
 
-    let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+    // let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
-    function squareValue(array) {
-      let newArr = {};
-      array.forEach(function(item) {newArr.push(item**2); });
-      return newArray;  
-  }
-    console.log(squareValue(myArray));
+    // function squareValue(array) {
+    //   let newArray = [];
+    //   array.forEach(function(item) {newArray.push(item**2); });
+    //   return newArray;  
+    // }
+    
+    // console.log(squareValue(myArray));
+    // console.log(myArray);
+    
 
 //  Дан массив с числами. Найдите сумму этих чисел. Показать решение.
+
+    // let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]; 
+    
+    // function sumItem(array) {
+    //   let sum = 0;
+    //   array.forEach(item => sum += item)
+    //   return sum; 
+    // }
+
+    // console.log(sumItem(myArray));
+
+
+
+
 
 
 // На map

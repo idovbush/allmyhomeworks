@@ -1,19 +1,22 @@
-"use strict";
-
 // На forEach
 // Для решения задач данного блока вам понадобятся следующие методы: forEach.
 //  Дан массив с числами. Создайте новый массив, состоящий из квадратов этих чисел. Показать решение.
-var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-
-function squareValue(array) {
-  var newArr = {};
-  array.forEach(function (item) {
-    newArr.push(Math.pow(item, 2));
-  });
-  return newArray;
-}
-
-console.log(squareValue(myArray)); //  Дан массив с числами. Найдите сумму этих чисел. Показать решение.
+// let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+// function squareValue(array) {
+//   let newArray = [];
+//   array.forEach(function(item) {newArray.push(item**2); });
+//   return newArray;  
+// }
+// console.log(squareValue(myArray));
+// console.log(myArray);
+//  Дан массив с числами. Найдите сумму этих чисел. Показать решение.
+// let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]; 
+// function sumItem(array) {
+//   let sum = 0;
+//   array.forEach(item => sum += item)
+//   return sum; 
+// }
+// console.log(sumItem(myArray));
 // На map
 // Для решения задач данного блока вам понадобятся следующие методы: map.
 //  Дан массив с числами. Сделайте из него массив, состоящий из квадратов этих чисел. Показать решение.
@@ -77,3 +80,4 @@ console.log(squareValue(myArray)); //  Дан массив с числами. Н
 Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;
 Функция сортировки аудиторий по количеству мест;
 Функция сортировки аудиторий по названию (по алфавиту). */
+"use strict";
