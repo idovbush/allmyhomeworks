@@ -36,20 +36,90 @@
 // Для решения задач данного блока вам понадобятся следующие методы: map.
 //  Дан массив с числами. Сделайте из него массив, состоящий из квадратов этих чисел. Показать решение.
 
+    // let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+    // function squareValue(array) {
+    //   return array.map(item => item**2);
+    // }
+    
+    // console.log(squareValue(myArray));
+    
+
 //  На every, some
 // Для решения задач данного блока вам понадобятся следующие методы: every, some.
 //  Дан массив с числами. Проверьте то, что все элементы в массиве больше нуля. Показать решение.
+
+    // let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+    // let testArray = [1, 2, 3];
+
+    // function checkItem(array) {
+    //   return array.every(item => item>0);
+    // }
+    
+    // console.log(checkItem(myArray));
+    // console.log(checkItem(testArray));
+
 //  Дан массив с числами. Проверьте то, что в нем есть отрицательные элементы. Показать решение.
 
+      // let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+      // let testArray = [1, 2, 3, -1, -2, 100];
+
+      // function checkItem(array) {
+      //   return array.some(item => item<0);
+      // }
+      
+      // console.log(checkItem(myArray));
+      // console.log(checkItem(testArray));
 
 
 
 //  На filter
 // Для решения задач данного блока вам понадобятся следующие методы: filter.
 //  Дан массив с числами. Оставьте в нем только отрицательные числа. Показать решение.
+
+      // let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+      // let testArray = [1, 2, 3, -1, -2, 100];
+
+      // function onlyNegative(array) {
+      //   return array.filter(item => item<0);
+      // }
+      
+      // console.log(onlyNegative(myArray));
+      // console.log(onlyNegative(testArray));
+
+
 //  Дан массив с числами. Оставьте в нем только четные числа. Показать решение.
+
+      // let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+      // let testArray = [1, 2, 3, -1, -2, 100];
+
+      // function onlyEven(array) {
+      //   return array.filter(item => item % 2 == 0);
+      // }
+      
+      // console.log(onlyEven(myArray));
+      // console.log(onlyEven(testArray));
+
+
 //  Дан массив со строками. Оставьте в нем только те строки, длина которых больше 5-ти символов. Показать решение.
+
+      // let myArray = ['cat', 'pig', 'dog', 'elefant', 'tiger', 'squirrel'];
+      
+      // function longerFive(array) {
+      //   return array.filter(item => item.length > 5);
+      // }
+      
+      // console.log(longerFive(myArray));
+      
+
 //  Дан массив, в нем могут быть обычные элементы и подмассивы, например [1, 2, [3, 4], 5, [6, 7]]. Оставьте в нем только подмассивы. Скрыть решение.
+
+
+
+
+
+
+
 //  Дан массив с числами. Посчитайте количество отрицательных чисел в этом массиве. Показать решение.
 
 
