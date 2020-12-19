@@ -1,3 +1,13 @@
+"use strict";
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 // На forEach
 // Для решения задач данного блока вам понадобятся следующие методы: forEach.
 //  Дан массив с числами. Создайте новый массив, состоящий из квадратов этих чисел. Показать решение.
@@ -88,20 +98,76 @@
 //  На reduce, reduceRight
 // Для решения задач данного блока вам понадобятся следующие методы: reduce, reduceRight.
 //  Дан массив с числами. Найдите сумму этих чисел. Показать решение.
-// let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-// let testArray = [1, 2, 3, -1, -2, 100];
+//   let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+//   let testArray = [1, 2, 3, -1, -2, 100];
+//   function sumArr(array) {
+//         let sumItem = array.reduce((sum, item) => sum += item, 0 );
+//         return sumItem;
+//   }
+//   console.log(sumArr(myArray));
+//   console.log(sumArr(testArray));
+//  Дан массив с числами. Найдите сумму первых N элементов до первого нуля. Пример: [1, 2, 3, 0, 4, 5, 6] - суммируем первые 3 элемента, так как дальше стоит элемент с числом 0. Показать решение.
+// let myArray = [1, 2, 3, 4, 5, 0, 7, 8, 9, 0];
+// let testArray = [1, 2, 3, -1, -2, 0];
 // function sumArr(array) {
-//       let sumItem = array.reduce((sum = 0, item) => sum +=item );
-//       return sumItem;
+//     let newArr = [...array];
+//     return newArr.reduce( function( sum, item ) {
+//         if ( item != 0 ) { return sum += item; } 
+//         else { newArr.splice(0);  return sum; }
+//     }, 0 );
 // }
 // console.log(sumArr(myArray));
 // console.log(sumArr(testArray));
-//  Дан массив с числами. Найдите сумму первых N элементов до первого нуля. Пример: [1, 2, 3, 0, 4, 5, 6] - суммируем первые 3 элемента, так как дальше стоит элемент с числом 0. Показать решение.
 //  Дан массив с числами. Найдите сумму последних N элементов до первого нуля с конца. Пример: [1, 2, 3, 0, 4, 5, 6] - суммируем последние 3 элемента, так как дальше стоит элемент с числом 0. Показать решение.
+// let myArray = [1, 2, 3, 4, 5, 0, 7, 8, 9];
+// let testArray = [1, 2, 3, -1, -2, 0];
+// function sumArrBack(array) {
+//     let newArr = [...array];
+//     return newArr.reduceRight( function( sum, item ) {
+//         if ( item != 0 ) { return sum += item; } 
+//         else { newArr.splice(0);  return sum; }
+//     }, 0 );
+// }
+// console.log(sumArrBack(myArray));
+// console.log(sumArrBack(testArray));
 //  Дан массив с числами. Узнайте сколько элементов с начала массива надо сложить, чтобы в сумме получилось больше 10-ти. Показать решение.
+// let myArray = [1, 2, 3, 4, 5, 0, 7, 8, 9, 0];
+// let testArray = [1, 2, 3, -1, -2, 100];
+// function sumForTen(array) {
+//     let newArr = [...array];
+//     let count = 0;
+//     newArr.reduce( function( sum, item ) {
+//         if ( sum <= 10 ) { count++; return sum += item; } 
+//         else { newArr.splice(0);  return sum; }
+//     }, 0 );
+//     return count;   
+// }
+// console.log(sumForTen(myArray));
+// console.log(sumForTen(testArray));
 //  Дан массив с числами. Узнайте сколько элементов с конца массива надо сложить, чтобы в сумме получилось больше 10-ти. Показать решение.
+// let myArray = [1, 2, 3, 4, 5, 0, 7, 8, 9, 0];
+// let testArray = [1, 2, 3, -1, -2, 100];
+// function sumForTenBack(array) {
+//     let newArr = [...array];
+//     let count = 0;
+//     newArr.reduceRight( function( sum, item ) {
+//         if ( sum <= 10 ) { count++; return sum += item; } 
+//         else { newArr.splice(0);  return sum; }
+//     }, 0 );
+//     return count;   
+// }
+// console.log(sumForTenBack(myArray));
+// console.log(sumForTenBack(testArray));
 //  Закрепление
 //  Дан массив с числами. Оставьте в нем только положительные числа. Затем извлеките квадратный корень и этих чисел. Показать решение.
+// let myArray = [1, 25, 36, 144, -5, 0, -97, -8, 9, 0];
+// let testArray = [1, -2, -3, -1, -2, 100];
+// function sumForTenBack(array) {
+//     let newArr = [...array];
+//     return newArr.filter(item => item >= 0 ).map(item => Math.sqrt(item)); 
+// }
+// console.log(sumForTenBack(myArray));
+// console.log(sumForTenBack(testArray));
 
 /* 1. Создать массив «Список покупок». Каждый элемент массива является объектом, который содержит название продукта, необходимое количество и куплен или нет. Написать несколько функций для работы с таким массивом.
 
@@ -115,7 +181,47 @@
 Подсчет общей суммы покупки;
 Получение самой дорогой покупки в чеке;
 Подсчет средней стоимости одного товара в чеке. */
+var myPayCheck = [[{
+  'product-name': 'pen'
+}, {
+  'quantity': 12
+}, {
+  'price': 3
+}], [{
+  'product-name': 'paper'
+}, {
+  'quantity': 3
+}, {
+  'price': 5
+}], [{
+  'product-name': 'ruler'
+}, {
+  'quantity': 2
+}, {
+  'price': 4
+}], [{
+  'product-name': 'eraser'
+}, {
+  'quantity': 4
+}, {
+  'price': 1
+}], [{
+  'product-name': 'schoolbag'
+}, {
+  'quantity': 1
+}, {
+  'price': 35
+}]];
 
+function printPayCheck(somePayCheck) {
+  var newArr = _toConsumableArray(somePayCheck);
+
+  newArr.forEach(function (item, index) {
+    console.log(newArr[index]['price']);
+  }); //return newArr;
+}
+
+printPayCheck(myPayCheck);
 /* 3. Создать массив CSS-стилей (цвет, размер шрифта, выравнивание, подчеркивание и т. д.). Каждый элемент массива – это объект, состоящий из двух свойств: название стиля и значение стиля. Написать функцию, которая принимает массив стилей и текст, и выводит этот текст с помощью document.write() в тегах <p></p>, добавив в открывающий тег атрибут style со всеми стилями, перечисленными в массиве. */
 
 /*  let myText =  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nam natus non deserunt sint praesentium explicabo voluptates quam excepturi, placeat odio asperiores hic, enim ipsam et magnam nostrum omnis saepe.";
@@ -142,4 +248,3 @@
 Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;
 Функция сортировки аудиторий по количеству мест;
 Функция сортировки аудиторий по названию (по алфавиту). */
-"use strict";
