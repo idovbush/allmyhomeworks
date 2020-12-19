@@ -68,10 +68,34 @@
 // }
 // console.log(longerFive(myArray));
 //  Дан массив, в нем могут быть обычные элементы и подмассивы, например [1, 2, [3, 4], 5, [6, 7]]. Оставьте в нем только подмассивы. Скрыть решение.
+// let myArray = [[1, 2, 3], 4, 5, [6, 7], 8, 9, 0];
+// let testArray = [1, 2, 3, -1, -2, 100];
+// function onlyArray(array) {
+//       return array.filter(item => Array.isArray(item)?item:0 );
+// }
+// console.log(onlyArray(myArray));
+// console.log(onlyArray(testArray));
 //  Дан массив с числами. Посчитайте количество отрицательных чисел в этом массиве. Показать решение.
+// let myArray = [[1, 2, 3], 4, 5, [6, 7], 8, 9, 0];
+// let testArray = [1, 2, 3, -1, -2, 100];
+// function countNegative(array) {
+//       let count = 0;
+//       array.filter(item => item<0?count++:count );
+//       return count;
+// }
+// console.log(countNegative(myArray));
+// console.log(countNegative(testArray));
 //  На reduce, reduceRight
 // Для решения задач данного блока вам понадобятся следующие методы: reduce, reduceRight.
 //  Дан массив с числами. Найдите сумму этих чисел. Показать решение.
+// let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+// let testArray = [1, 2, 3, -1, -2, 100];
+// function sumArr(array) {
+//       let sumItem = array.reduce((sum = 0, item) => sum +=item );
+//       return sumItem;
+// }
+// console.log(sumArr(myArray));
+// console.log(sumArr(testArray));
 //  Дан массив с числами. Найдите сумму первых N элементов до первого нуля. Пример: [1, 2, 3, 0, 4, 5, 6] - суммируем первые 3 элемента, так как дальше стоит элемент с числом 0. Показать решение.
 //  Дан массив с числами. Найдите сумму последних N элементов до первого нуля с конца. Пример: [1, 2, 3, 0, 4, 5, 6] - суммируем последние 3 элемента, так как дальше стоит элемент с числом 0. Показать решение.
 //  Дан массив с числами. Узнайте сколько элементов с начала массива надо сложить, чтобы в сумме получилось больше 10-ти. Показать решение.
