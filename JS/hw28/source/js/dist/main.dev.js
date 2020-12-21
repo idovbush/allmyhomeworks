@@ -1,13 +1,5 @@
 "use strict";
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
 // На forEach
 // Для решения задач данного блока вам понадобятся следующие методы: forEach.
 //  Дан массив с числами. Создайте новый массив, состоящий из квадратов этих чисел. Показать решение.
@@ -181,65 +173,65 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 Подсчет общей суммы покупки;
 Получение самой дорогой покупки в чеке;
 Подсчет средней стоимости одного товара в чеке. */
-var myPayCheck = [[{
-  'product-name': 'pen'
-}, {
-  'quantity': 12
-}, {
-  'price': 3
-}], [{
-  'product-name': 'paper'
-}, {
-  'quantity': 3
-}, {
-  'price': 5
-}], [{
-  'product-name': 'ruler'
-}, {
-  'quantity': 2
-}, {
-  'price': 4
-}], [{
-  'product-name': 'eraser'
-}, {
-  'quantity': 4
-}, {
-  'price': 1
-}], [{
-  'product-name': 'schoolbag'
-}, {
-  'quantity': 1
-}, {
-  'price': 35
-}]];
+// let myPayCheck = [{'product-name': 'pen','quantity': 12, 'price': 3},
+//                 {'product-name': 'paper','quantity': 3, 'price': 5},
+//                 {'product-name': 'ruler','quantity': 2, 'price': 4},
+//                 {'product-name': 'eraser','quantity': 4, 'price': 1},
+//                 {'product-name': 'schoolbag','quantity': 1, 'price': 35}];
+// function printPayCheck(somePayCheck) {
+//     let newArr = [...somePayCheck];
+//     newArr.forEach((item,index) => {console.log((newArr[index]))});
+// }       
+// printPayCheck(myPayCheck);
+// function purchaceAmount(somePayCheck) {
+//     let newArr = [...somePayCheck];
+//     let totalPrice = 0;
+//     newArr.map((item,index) => {totalPrice += newArr[index]['price']*newArr[index]['quantity']});
+//     return console.log(totalPrice);
+// }       
+// purchaceAmount(myPayCheck);
+// function mostExpensive(somePayCheck) {
+//     let newArr = [...somePayCheck];
+//     let max = 0;
+//     newArr.map((item,index) => {
+//         if (max < newArr[index]['price']*newArr[index]['quantity'])
+//         max = newArr[index]['price']*newArr[index]['quantity']
+// });
+//     return console.log(max);
+// }       
+// mostExpensive(myPayCheck);
+// function averagePrice(somePayCheck) {
+//     let newArr = [...somePayCheck];
+//     let totalPrice = 0;
+//     let totalQuantity = 0;
+//     newArr.map((item,index) => {
+//         totalQuantity += newArr[index]['quantity'];
+//         totalPrice += newArr[index]['price']*newArr[index]['quantity']
+// });
+//     return console.log(Math.trunc(totalPrice/totalQuantity*100)/100);
+// }       
+// averagePrice(myPayCheck);
 
-function printPayCheck(somePayCheck) {
-  var newArr = _toConsumableArray(somePayCheck);
-
-  newArr.forEach(function (item, index) {
-    console.log(newArr[index]['price']);
-  }); //return newArr;
-}
-
-printPayCheck(myPayCheck);
 /* 3. Создать массив CSS-стилей (цвет, размер шрифта, выравнивание, подчеркивание и т. д.). Каждый элемент массива – это объект, состоящий из двух свойств: название стиля и значение стиля. Написать функцию, которая принимает массив стилей и текст, и выводит этот текст с помощью document.write() в тегах <p></p>, добавив в открывающий тег атрибут style со всеми стилями, перечисленными в массиве. */
-
-/*  let myText =  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nam natus non deserunt sint praesentium explicabo voluptates quam excepturi, placeat odio asperiores hic, enim ipsam et magnam nostrum omnis saepe.";
-   let myArrayOfStyles = [ {"font-family": "Verdana"},
-                       {"font-size": 24},
-                       {"font-weight": 700},
-                       {"text-transform": "uppercase"},
-                       {"letter-spacing": 2},
-                       {color: "darkblue"}
-                       ];
-     
- function stylesForText(arrayOfStyles, text) {
-       let mystyle = "color: red;";
-       //arrayOfStyles.join(';');
-       document.write('<p style ="'+ mystyle +'">'+ text +'</p>');
-       console.log(mystyle);
-     }
-    stylesForText(myArrayOfStyles, myText);  */
+// let myText =  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nam natus non deserunt sint praesentium explicabo voluptates quam excepturi, placeat odio asperiores hic, enim ipsam et magnam nostrum omnis saepe.";
+// let myArrayOfStyles = [ {"font-family": "Verdana"},
+//                         {"font-size": 24},
+//                         {"font-weight": 700},
+//                         {"text-transform": "uppercase"},
+//                         {"letter-spacing": 2},
+//                         {color: "#090"}
+//                         ];
+// function stylesForText(arrayOfStyles, text) {
+//     let mystyle = "";
+//     arrayOfStyles.forEach((item, index) => {
+//         Object.keys(arrayOfStyles[index]).forEach((key) => {
+//             mystyle = mystyle + key + ": "  + arrayOfStyles[index][key]+";";
+//         });
+//     });
+//     document.write('<p style ="'+ mystyle +'">'+ text +'</p>');
+//     return console.log(mystyle);
+// }
+// stylesForText(myArrayOfStyles, myText);   
 
 /* 4. Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества посадочных мест (от 10 до 20) и названия факультета, для которого она предназначена. Написать несколько функций для работы с ним^
 
@@ -248,3 +240,20 @@ printPayCheck(myPayCheck);
 Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;
 Функция сортировки аудиторий по количеству мест;
 Функция сортировки аудиторий по названию (по алфавиту). */
+var classRoom = [{
+  name: "English",
+  capasity: 15,
+  faculty: "Philology"
+}, {
+  name: "Chemistry",
+  capasity: 10,
+  faculty: "Technological"
+}, {
+  name: "Phisics",
+  capasity: 16,
+  faculty: "Mechanical"
+}, {
+  name: "History",
+  capasity: 18,
+  faculty: "Philosofical"
+}];

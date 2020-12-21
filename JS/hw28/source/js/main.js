@@ -260,42 +260,83 @@
 Подсчет средней стоимости одного товара в чеке. */
 
 
-    let myPayCheck = [[{'product-name': 'pen'},{'quantity': 12}, {'price': 3}],
-                    [{'product-name': 'paper'},{'quantity': 3}, {'price': 5}],
-                    [{'product-name': 'ruler'},{'quantity': 2}, {'price': 4}],
-                    [{'product-name': 'eraser'},{'quantity': 4}, {'price': 1}],
-                    [{'product-name': 'schoolbag'},{'quantity': 1}, {'price': 35}],];
+    // let myPayCheck = [{'product-name': 'pen','quantity': 12, 'price': 3},
+    //                 {'product-name': 'paper','quantity': 3, 'price': 5},
+    //                 {'product-name': 'ruler','quantity': 2, 'price': 4},
+    //                 {'product-name': 'eraser','quantity': 4, 'price': 1},
+    //                 {'product-name': 'schoolbag','quantity': 1, 'price': 35}];
 
 
-    function printPayCheck(somePayCheck) {
-        let newArr = [...somePayCheck];
-        newArr.forEach((item,index) => {console.log((newArr[index]['price']))});
-        //return newArr;
-    }               
+    // function printPayCheck(somePayCheck) {
+    //     let newArr = [...somePayCheck];
+    //     newArr.forEach((item,index) => {console.log((newArr[index]))});
+        
+    // }       
+    
+    // printPayCheck(myPayCheck);
 
-    printPayCheck(myPayCheck);
+
+    // function purchaceAmount(somePayCheck) {
+    //     let newArr = [...somePayCheck];
+    //     let totalPrice = 0;
+    //     newArr.map((item,index) => {totalPrice += newArr[index]['price']*newArr[index]['quantity']});
+    //     return console.log(totalPrice);
+    // }       
+    
+    // purchaceAmount(myPayCheck);
+
+
+    // function mostExpensive(somePayCheck) {
+    //     let newArr = [...somePayCheck];
+    //     let max = 0;
+    //     newArr.map((item,index) => {
+    //         if (max < newArr[index]['price']*newArr[index]['quantity'])
+    //         max = newArr[index]['price']*newArr[index]['quantity']
+    // });
+    //     return console.log(max);
+    // }       
+    
+    // mostExpensive(myPayCheck);
+
+
+    // function averagePrice(somePayCheck) {
+    //     let newArr = [...somePayCheck];
+    //     let totalPrice = 0;
+    //     let totalQuantity = 0;
+    //     newArr.map((item,index) => {
+    //         totalQuantity += newArr[index]['quantity'];
+    //         totalPrice += newArr[index]['price']*newArr[index]['quantity']
+    // });
+    //     return console.log(Math.trunc(totalPrice/totalQuantity*100)/100);
+    // }       
+    
+    // averagePrice(myPayCheck);
 
 
 /* 3. Создать массив CSS-стилей (цвет, размер шрифта, выравнивание, подчеркивание и т. д.). Каждый элемент массива – это объект, состоящий из двух свойств: название стиля и значение стиля. Написать функцию, которая принимает массив стилей и текст, и выводит этот текст с помощью document.write() в тегах <p></p>, добавив в открывающий тег атрибут style со всеми стилями, перечисленными в массиве. */
   
-   /*  let myText =  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nam natus non deserunt sint praesentium explicabo voluptates quam excepturi, placeat odio asperiores hic, enim ipsam et magnam nostrum omnis saepe.";
+    // let myText =  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nam natus non deserunt sint praesentium explicabo voluptates quam excepturi, placeat odio asperiores hic, enim ipsam et magnam nostrum omnis saepe.";
 
-    let myArrayOfStyles = [ {"font-family": "Verdana"},
-                          {"font-size": 24},
-                          {"font-weight": 700},
-                          {"text-transform": "uppercase"},
-                          {"letter-spacing": 2},
-                          {color: "darkblue"}
-                          ];
+    // let myArrayOfStyles = [ {"font-family": "Verdana"},
+    //                         {"font-size": 24},
+    //                         {"font-weight": 700},
+    //                         {"text-transform": "uppercase"},
+    //                         {"letter-spacing": 2},
+    //                         {color: "#090"}
+    //                         ];
         
-    function stylesForText(arrayOfStyles, text) {
-          let mystyle = "color: red;";
-          //arrayOfStyles.join(';');
-          document.write('<p style ="'+ mystyle +'">'+ text +'</p>');
-          console.log(mystyle);
-        }
+    // function stylesForText(arrayOfStyles, text) {
+    //     let mystyle = "";
+    //     arrayOfStyles.forEach((item, index) => {
+    //         Object.keys(arrayOfStyles[index]).forEach((key) => {
+    //             mystyle = mystyle + key + ": "  + arrayOfStyles[index][key]+";";
+    //         });
+    //     });
+    //     document.write('<p style ="'+ mystyle +'">'+ text +'</p>');
+    //     return console.log(mystyle);
+    // }
 
-     stylesForText(myArrayOfStyles, myText);  */  
+    // stylesForText(myArrayOfStyles, myText);   
     
 
 
@@ -306,3 +347,9 @@
 Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;
 Функция сортировки аудиторий по количеству мест;
 Функция сортировки аудиторий по названию (по алфавиту). */
+
+let classRoom = [ {name: "English", capasity: 15, faculty: "Philology"},
+{name: "Chemistry", capasity: 10, faculty: "Technological"},
+{name: "Phisics", capasity: 16, faculty: "Mechanical"},
+{name: "History", capasity: 18, faculty: "Philosofical"},
+];
