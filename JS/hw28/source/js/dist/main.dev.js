@@ -7,16 +7,16 @@
 // function squareValue(array) {
 //   let newArray = [];
 //   array.forEach(function(item) {newArray.push(item**2); });
-//   return newArray;  
+//   return newArray;
 // }
 // console.log(squareValue(myArray));
 // console.log(myArray);
 //  Дан массив с числами. Найдите сумму этих чисел. Показать решение.
-// let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]; 
+// let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 // function sumItem(array) {
 //   let sum = 0;
 //   array.forEach(item => sum += item)
-//   return sum; 
+//   return sum;
 // }
 // console.log(sumItem(myArray));
 // На map
@@ -104,7 +104,7 @@
 // function sumArr(array) {
 //     let newArr = [...array];
 //     return newArr.reduce( function( sum, item ) {
-//         if ( item != 0 ) { return sum += item; } 
+//         if ( item != 0 ) { return sum += item; }
 //         else { newArr.splice(0);  return sum; }
 //     }, 0 );
 // }
@@ -116,7 +116,7 @@
 // function sumArrBack(array) {
 //     let newArr = [...array];
 //     return newArr.reduceRight( function( sum, item ) {
-//         if ( item != 0 ) { return sum += item; } 
+//         if ( item != 0 ) { return sum += item; }
 //         else { newArr.splice(0);  return sum; }
 //     }, 0 );
 // }
@@ -129,10 +129,10 @@
 //     let newArr = [...array];
 //     let count = 0;
 //     newArr.reduce( function( sum, item ) {
-//         if ( sum <= 10 ) { count++; return sum += item; } 
+//         if ( sum <= 10 ) { count++; return sum += item; }
 //         else { newArr.splice(0);  return sum; }
 //     }, 0 );
-//     return count;   
+//     return count;
 // }
 // console.log(sumForTen(myArray));
 // console.log(sumForTen(testArray));
@@ -143,10 +143,10 @@
 //     let newArr = [...array];
 //     let count = 0;
 //     newArr.reduceRight( function( sum, item ) {
-//         if ( sum <= 10 ) { count++; return sum += item; } 
+//         if ( sum <= 10 ) { count++; return sum += item; }
 //         else { newArr.splice(0);  return sum; }
 //     }, 0 );
-//     return count;   
+//     return count;
 // }
 // console.log(sumForTenBack(myArray));
 // console.log(sumForTenBack(testArray));
@@ -156,7 +156,7 @@
 // let testArray = [1, -2, -3, -1, -2, 100];
 // function sumForTenBack(array) {
 //     let newArr = [...array];
-//     return newArr.filter(item => item >= 0 ).map(item => Math.sqrt(item)); 
+//     return newArr.filter(item => item >= 0 ).map(item => Math.sqrt(item));
 // }
 // console.log(sumForTenBack(myArray));
 // console.log(sumForTenBack(testArray));
@@ -181,14 +181,14 @@
 // function printPayCheck(somePayCheck) {
 //     let newArr = [...somePayCheck];
 //     newArr.forEach((item,index) => {console.log((newArr[index]))});
-// }       
+// }
 // printPayCheck(myPayCheck);
 // function purchaceAmount(somePayCheck) {
 //     let newArr = [...somePayCheck];
 //     let totalPrice = 0;
 //     newArr.map((item,index) => {totalPrice += newArr[index]['price']*newArr[index]['quantity']});
 //     return console.log(totalPrice);
-// }       
+// }
 // purchaceAmount(myPayCheck);
 // function mostExpensive(somePayCheck) {
 //     let newArr = [...somePayCheck];
@@ -198,7 +198,7 @@
 //         max = newArr[index]['price']*newArr[index]['quantity']
 // });
 //     return console.log(max);
-// }       
+// }
 // mostExpensive(myPayCheck);
 // function averagePrice(somePayCheck) {
 //     let newArr = [...somePayCheck];
@@ -209,7 +209,7 @@
 //         totalPrice += newArr[index]['price']*newArr[index]['quantity']
 // });
 //     return console.log(Math.trunc(totalPrice/totalQuantity*100)/100);
-// }       
+// }
 // averagePrice(myPayCheck);
 
 /* 3. Создать массив CSS-стилей (цвет, размер шрифта, выравнивание, подчеркивание и т. д.). Каждый элемент массива – это объект, состоящий из двух свойств: название стиля и значение стиля. Написать функцию, которая принимает массив стилей и текст, и выводит этот текст с помощью document.write() в тегах <p></p>, добавив в открывающий тег атрибут style со всеми стилями, перечисленными в массиве. */
@@ -231,7 +231,7 @@
 //     document.write('<p style ="'+ mystyle +'">'+ text +'</p>');
 //     return console.log(mystyle);
 // }
-// stylesForText(myArrayOfStyles, myText);   
+// stylesForText(myArrayOfStyles, myText);
 
 /* 4. Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества посадочных мест (от 10 до 20) и названия факультета, для которого она предназначена. Написать несколько функций для работы с ним^
 
@@ -240,9 +240,13 @@
 Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;
 Функция сортировки аудиторий по количеству мест;
 Функция сортировки аудиторий по названию (по алфавиту). */
-var classRoom = [{
+var myClassRooms = [{
   name: "English",
   capasity: 15,
+  faculty: "Philology"
+}, {
+  name: "Russian",
+  capasity: 14,
   faculty: "Philology"
 }, {
   name: "Chemistry",
@@ -253,7 +257,54 @@ var classRoom = [{
   capasity: 16,
   faculty: "Mechanical"
 }, {
+  name: "High-Math",
+  capasity: 12,
+  faculty: "Mechanical"
+}, {
   name: "History",
   capasity: 18,
   faculty: "Philosofical"
 }];
+var myGroup = {
+  name: "ingeneers",
+  capasity: 15,
+  faculty: "Mechanical"
+}; // function printClassRooms(anyClassRooms) {
+//     anyClassRooms.forEach((item,index) => {
+//         console.log(anyClassRooms[index])
+//     });
+// }
+// printClassRooms(myClassRooms);
+// function checkClassRooms(anyClassRooms, faculty) {
+//     anyClassRooms.forEach((item,index) => {
+//         if (anyClassRooms[index]["faculty"] == faculty )
+//         console.log(anyClassRooms[index])
+//     });
+// }
+// checkClassRooms(myClassRooms, "Philology");
+// function checkCapasity(anyClassRooms, anyGroup) {
+//     anyClassRooms.forEach((item,index) => {
+//         if (anyClassRooms[index]["capasity"] >= anyGroup["capasity"] &&  anyClassRooms[index]["faculty"] == anyGroup["faculty"])
+//         console.log(anyClassRooms[index])
+//     });
+// }
+// checkCapasity(myClassRooms, myGroup);
+// function sortByCapasity(anyClassRooms) {
+//     anyClassRooms.sort((a,b) => a.capasity - b.capasity);
+//     anyClassRooms.forEach((item,index) => {
+//         console.log(anyClassRooms[index]);
+//     });
+// }
+// sortByCapasity(myClassRooms);
+
+function sortByABC(anyClassRooms) {
+  anyClassRooms.sort(function (a, b) {
+    a.name - b.name;
+    console.log(b.name);
+  });
+  anyClassRooms.forEach(function (item, index) {
+    console.log(anyClassRooms[index]);
+  });
+}
+
+sortByABC(myClassRooms);
