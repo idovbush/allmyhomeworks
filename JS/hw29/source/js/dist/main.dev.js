@@ -1,13 +1,14 @@
 /* Вывести массив "задом-наперед" */
 
 /* function reverseArray (arr) {
-  for (let i=arr.length; i>= 0; i--) {
+  for (let i=arr.length - 1; i>= 0; i--) {
     console.log(arr[i]);
   }
 }
 
 let list = [1,2,33,5,7,99,100];
-reverseArray(list); */
+reverseArray(list);
+*/
 
 /* Найти элемент ряда Фибоначчи с помощью рекурсии */
 
