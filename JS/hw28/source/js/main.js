@@ -228,26 +228,52 @@
 Добавление покупки в список. Учтите, что при добавлении покупки с уже существующим в списке продуктом, необходимо увеличивать количество в существующей покупке, а не добавлять новую.
 Покупка продукта. Функция принимает название продукта и отмечает его как купленный. */
 
-    let myList=[ {item: 'milk', quantity: 3, isPurchased: 1},
-                {item: 'sugar', quantity: 2, isPurchased: 0},
-                {item: 'tea', quantity: 1, isPurchased: 1},
-                {item: 'salt', quantity: 1, isPurchased: 0},
-                {item: 'pepper', quantity: 2, isPurchased: 1},
-                {item: 'bread', quantity: 1, isPurchased: 1} ];
+    // let myList=[ {item: 'milk', quantity: 3, isPurchased: 1},
+    //             {item: 'sugar', quantity: 2, isPurchased: 0},
+    //             {item: 'tea', quantity: 1, isPurchased: 1},
+    //             {item: 'salt', quantity: 1, isPurchased: 0},
+    //             {item: 'pepper', quantity: 2, isPurchased: 1},
+    //             {item: 'bread', quantity: 1, isPurchased: 1} ];
+
+    // let myItem={item: 'milk', quantity: 3, isPurchased: 0};
+    // let myNewItem={item: 'water', quantity: 6, isPurchased: 0};
+                
+    // function sortItem(list) {
+    //     list.sort((a,b) => {
+    //     return a.isPurchased - b.isPurchased
+    //     });
+    //     list.forEach((item,index) => console.log(list[index]));
+    // }
+
+    //sortItem(myList);
 
 
-    function sortItem(list) {
-        list.sort((a,b) => {
-        return a.isPurchased - b.isPurchased
-        });
-        list.forEach((item, index) => console.log(list[index]));
-    }
+    // function addItem(list, newItem) {
+    //     let inList = false;
+    //     list.forEach((item, index) => { 
+    //         if (list[index].item === newItem.item) {list[index].quantity += newItem.quantity; inList = true; 
+    //         }
+    //     })
+    //     if (inList == false) {newItem.isPurchased = 1; list.push(newItem);
+    //     };
+    // } 
 
-    sortItem(myList);
+    // sortItem(myList);
+    // addItem(myList, myItem);
+    // sortItem(myList);
+    // addItem(myList, myNewItem);
+    // sortItem(myList);
 
 
+    // function purchaseItem(list, someItem) {
+    //     list.forEach((item, index) => { 
+    //         if (list[index].item === someItem) {list[index].isPurchased = 1 }
+    //     });
+    // } 
 
-
+    // sortItem(myList);
+    // purchaseItem(myList, "salt");
+    // sortItem(myList);
 
 
 
@@ -403,3 +429,43 @@
         // }
 
         // sortByABC(myClassRooms);
+
+
+
+
+    // Задача из урока.
+    // Создать объект, описывающий прямоугольник (хранит координаты левой верхней и правой нижней точек), и написать следующие функции для работы с таким объектом.    
+
+        // let myRectangle = {
+        //     topleft: { x: 0, y: 0 },
+        //     bottomright: { x: 100, y: 50 }
+        // };
+
+        // function recInfo(rec) {
+        //     console.log(`myRectangle:`)
+        //     console.log(`top-left: x = ${rec.topleft.x}, y = ${rec.topleft.y};`);
+        //     console.log(`bottom-right: x = ${rec.bottomright.x}, y = ${rec.bottomright.y};`);
+        // };
+
+        // recInfo(myRectangle);
+
+
+        // function heightRec(rec) {
+        //     console.log(`height = ${rec.bottomright.y - rec.topleft.y}`);
+        // }
+
+        // heightRec(myRectangle);    
+
+
+        // function widthRec(rec) {
+        //     console.log(`width = ${rec.bottomright.x - rec.topleft.x}`);
+        // }
+
+        // widthRec(myRectangle);
+
+
+        // function squareRec(rec) {
+        //     console.log(`square = ${(rec.bottomright.y - rec.topleft.y)*(rec.bottomright.x - rec.topleft.x)}`);
+        // }
+
+        // squareRec(myRectangle);
