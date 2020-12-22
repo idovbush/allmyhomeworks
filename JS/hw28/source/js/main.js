@@ -264,12 +264,14 @@
                     [{'product-name': 'paper'},{'quantity': 3}, {'price': 5}],
                     [{'product-name': 'ruler'},{'quantity': 2}, {'price': 4}],
                     [{'product-name': 'eraser'},{'quantity': 4}, {'price': 1}],
-                    [{'product-name': 'schoolbag'},{'quantity': 1}, {'price': 35}],];
+                    [{'product-name': 'schoolbag'},{'quantity': 1}, {'price': 35}]];
+                  
+                 
 
 
     function printPayCheck(somePayCheck) {
         let newArr = [...somePayCheck];
-        newArr.forEach((item,index) => {console.log((newArr[index]['price']))});
+        newArr.forEach((item,index) => {console.log((newArr[index][this['product-name']]))});
         //return newArr;
     }               
 

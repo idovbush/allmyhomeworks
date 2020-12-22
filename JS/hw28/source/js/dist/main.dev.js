@@ -214,10 +214,12 @@ var myPayCheck = [[{
 }]];
 
 function printPayCheck(somePayCheck) {
+  var _this = this;
+
   var newArr = _toConsumableArray(somePayCheck);
 
   newArr.forEach(function (item, index) {
-    console.log(newArr[index]['price']);
+    console.log(newArr[index][_this['product-name']]);
   }); //return newArr;
 }
 
