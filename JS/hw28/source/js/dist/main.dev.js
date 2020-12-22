@@ -1,13 +1,5 @@
 "use strict";
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
 // На forEach
 // Для решения задач данного блока вам понадобятся следующие методы: forEach.
 //  Дан массив с числами. Создайте новый массив, состоящий из квадратов этих чисел. Показать решение.
@@ -15,16 +7,16 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 // function squareValue(array) {
 //   let newArray = [];
 //   array.forEach(function(item) {newArray.push(item**2); });
-//   return newArray;  
+//   return newArray;
 // }
 // console.log(squareValue(myArray));
 // console.log(myArray);
 //  Дан массив с числами. Найдите сумму этих чисел. Показать решение.
-// let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]; 
+// let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 // function sumItem(array) {
 //   let sum = 0;
 //   array.forEach(item => sum += item)
-//   return sum; 
+//   return sum;
 // }
 // console.log(sumItem(myArray));
 // На map
@@ -112,7 +104,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 // function sumArr(array) {
 //     let newArr = [...array];
 //     return newArr.reduce( function( sum, item ) {
-//         if ( item != 0 ) { return sum += item; } 
+//         if ( item != 0 ) { return sum += item; }
 //         else { newArr.splice(0);  return sum; }
 //     }, 0 );
 // }
@@ -124,7 +116,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 // function sumArrBack(array) {
 //     let newArr = [...array];
 //     return newArr.reduceRight( function( sum, item ) {
-//         if ( item != 0 ) { return sum += item; } 
+//         if ( item != 0 ) { return sum += item; }
 //         else { newArr.splice(0);  return sum; }
 //     }, 0 );
 // }
@@ -137,10 +129,10 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 //     let newArr = [...array];
 //     let count = 0;
 //     newArr.reduce( function( sum, item ) {
-//         if ( sum <= 10 ) { count++; return sum += item; } 
+//         if ( sum <= 10 ) { count++; return sum += item; }
 //         else { newArr.splice(0);  return sum; }
 //     }, 0 );
-//     return count;   
+//     return count;
 // }
 // console.log(sumForTen(myArray));
 // console.log(sumForTen(testArray));
@@ -151,10 +143,10 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 //     let newArr = [...array];
 //     let count = 0;
 //     newArr.reduceRight( function( sum, item ) {
-//         if ( sum <= 10 ) { count++; return sum += item; } 
+//         if ( sum <= 10 ) { count++; return sum += item; }
 //         else { newArr.splice(0);  return sum; }
 //     }, 0 );
-//     return count;   
+//     return count;
 // }
 // console.log(sumForTenBack(myArray));
 // console.log(sumForTenBack(testArray));
@@ -164,7 +156,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 // let testArray = [1, -2, -3, -1, -2, 100];
 // function sumForTenBack(array) {
 //     let newArr = [...array];
-//     return newArr.filter(item => item >= 0 ).map(item => Math.sqrt(item)); 
+//     return newArr.filter(item => item >= 0 ).map(item => Math.sqrt(item));
 // }
 // console.log(sumForTenBack(myArray));
 // console.log(sumForTenBack(testArray));
@@ -174,74 +166,107 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 Вывод всего списка на экран таким образом, чтобы сначала шли некупленные продукты, а потом – купленные.
 Добавление покупки в список. Учтите, что при добавлении покупки с уже существующим в списке продуктом, необходимо увеличивать количество в существующей покупке, а не добавлять новую.
 Покупка продукта. Функция принимает название продукта и отмечает его как купленный. */
+var myList = [{
+  item: 'milk',
+  quantity: 3,
+  isPurchased: 1
+}, {
+  item: 'sugar',
+  quantity: 2,
+  isPurchased: 0
+}, {
+  item: 'tea',
+  quantity: 1,
+  isPurchased: 1
+}, {
+  item: 'salt',
+  quantity: 1,
+  isPurchased: 0
+}, {
+  item: 'pepper',
+  quantity: 2,
+  isPurchased: 1
+}, {
+  item: 'bread',
+  quantity: 1,
+  isPurchased: 1
+}];
 
+function sortItem(list) {
+  list.sort(function (a, b) {
+    return a.isPurchased - b.isPurchased;
+  });
+  list.forEach(function (item, index) {
+    return console.log(list[index]);
+  });
+}
+
+sortItem(myList);
 /* 2. Создать массив, описывающий чек в магазине. Каждый элемент массива состоит из названия товара, количества и цены за единицу товара. Написать следующие функции:
 
 Распечатка чека на экран;
 Подсчет общей суммы покупки;
 Получение самой дорогой покупки в чеке;
 Подсчет средней стоимости одного товара в чеке. */
-var myPayCheck = [[{
-  'product-name': 'pen'
-}, {
-  'quantity': 12
-}, {
-  'price': 3
-}], [{
-  'product-name': 'paper'
-}, {
-  'quantity': 3
-}, {
-  'price': 5
-}], [{
-  'product-name': 'ruler'
-}, {
-  'quantity': 2
-}, {
-  'price': 4
-}], [{
-  'product-name': 'eraser'
-}, {
-  'quantity': 4
-}, {
-  'price': 1
-}], [{
-  'product-name': 'schoolbag'
-}, {
-  'quantity': 1
-}, {
-  'price': 35
-}]];
+// let myPayCheck = [{'product-name': 'pen','quantity': 12, 'price': 3},
+//                 {'product-name': 'paper','quantity': 3, 'price': 5},
+//                 {'product-name': 'ruler','quantity': 2, 'price': 4},
+//                 {'product-name': 'eraser','quantity': 4, 'price': 1},
+//                 {'product-name': 'schoolbag','quantity': 1, 'price': 35}];
+// function printPayCheck(somePayCheck) {
+//     let newArr = [...somePayCheck];
+//     newArr.forEach((item,index) => {console.log((newArr[index]))});
+// }
+// printPayCheck(myPayCheck);
+// function purchaceAmount(somePayCheck) {
+//     let newArr = [...somePayCheck];
+//     let totalPrice = 0;
+//     newArr.map((item,index) => {totalPrice += newArr[index]['price']*newArr[index]['quantity']});
+//     return console.log(totalPrice);
+// }
+// purchaceAmount(myPayCheck);
+// function mostExpensive(somePayCheck) {
+//     let newArr = [...somePayCheck];
+//     let max = 0;
+//     newArr.map((item,index) => {
+//         if (max < newArr[index]['price']*newArr[index]['quantity'])
+//         max = newArr[index]['price']*newArr[index]['quantity']
+// });
+//     return console.log(max);
+// }
+// mostExpensive(myPayCheck);
+// function averagePrice(somePayCheck) {
+//     let newArr = [...somePayCheck];
+//     let totalPrice = 0;
+//     let totalQuantity = 0;
+//     newArr.map((item,index) => {
+//         totalQuantity += newArr[index]['quantity'];
+//         totalPrice += newArr[index]['price']*newArr[index]['quantity']
+// });
+//     return console.log(Math.trunc(totalPrice/totalQuantity*100)/100);
+// }
+// averagePrice(myPayCheck);
 
-function printPayCheck(somePayCheck) {
-  var _this = this;
-
-  var newArr = _toConsumableArray(somePayCheck);
-
-  newArr.forEach(function (item, index) {
-    console.log(newArr[index][_this['product-name']]);
-  }); //return newArr;
-}
-
-printPayCheck(myPayCheck);
 /* 3. Создать массив CSS-стилей (цвет, размер шрифта, выравнивание, подчеркивание и т. д.). Каждый элемент массива – это объект, состоящий из двух свойств: название стиля и значение стиля. Написать функцию, которая принимает массив стилей и текст, и выводит этот текст с помощью document.write() в тегах <p></p>, добавив в открывающий тег атрибут style со всеми стилями, перечисленными в массиве. */
-
-/*  let myText =  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nam natus non deserunt sint praesentium explicabo voluptates quam excepturi, placeat odio asperiores hic, enim ipsam et magnam nostrum omnis saepe.";
-   let myArrayOfStyles = [ {"font-family": "Verdana"},
-                       {"font-size": 24},
-                       {"font-weight": 700},
-                       {"text-transform": "uppercase"},
-                       {"letter-spacing": 2},
-                       {color: "darkblue"}
-                       ];
-     
- function stylesForText(arrayOfStyles, text) {
-       let mystyle = "color: red;";
-       //arrayOfStyles.join(';');
-       document.write('<p style ="'+ mystyle +'">'+ text +'</p>');
-       console.log(mystyle);
-     }
-    stylesForText(myArrayOfStyles, myText);  */
+// let myText =  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nam natus non deserunt sint praesentium explicabo voluptates quam excepturi, placeat odio asperiores hic, enim ipsam et magnam nostrum omnis saepe.";
+// let myArrayOfStyles = [ {"font-family": "Verdana"},
+//                         {"font-size": 24},
+//                         {"font-weight": 700},
+//                         {"text-transform": "uppercase"},
+//                         {"letter-spacing": 2},
+//                         {color: "#090"}
+//                         ];
+// function stylesForText(arrayOfStyles, text) {
+//     let mystyle = "";
+//     arrayOfStyles.forEach((item, index) => {
+//         Object.keys(arrayOfStyles[index]).forEach((key) => {
+//             mystyle = mystyle + key + ": "  + arrayOfStyles[index][key]+";";
+//         });
+//     });
+//     document.write('<p style ="'+ mystyle +'">'+ text +'</p>');
+//     return console.log(mystyle);
+// }
+// stylesForText(myArrayOfStyles, myText);
 
 /* 4. Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества посадочных мест (от 10 до 20) и названия факультета, для которого она предназначена. Написать несколько функций для работы с ним^
 
@@ -250,3 +275,52 @@ printPayCheck(myPayCheck);
 Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;
 Функция сортировки аудиторий по количеству мест;
 Функция сортировки аудиторий по названию (по алфавиту). */
+// let myClassRooms = [
+//   { className: "English", capasity: 15, faculty: "Philology" },
+//   { className: "Russian", capasity: 14, faculty: "Philology" },
+//   { className: "Chemistry", capasity: 10, faculty: "Technological" },
+//   { className: "Phisics", capasity: 16, faculty: "Mechanical" },
+//   { className: "High-Math", capasity: 12, faculty: "Mechanical" },
+//   { className: "History", capasity: 18, faculty: "Philosofical" },
+// ];
+// let myGroup = {name: "ingeneers", capasity: 15, faculty: "Mechanical"}
+// function printClassRooms(anyClassRooms) {
+//     anyClassRooms.forEach((item,index) => {
+//         console.log(anyClassRooms[index])
+//     });
+// }
+// printClassRooms(myClassRooms);
+// function checkClassRooms(anyClassRooms, faculty) {
+//     anyClassRooms.forEach((item,index) => {
+//         if (anyClassRooms[index]["faculty"] == faculty )
+//         console.log(anyClassRooms[index])
+//     });
+// }
+// checkClassRooms(myClassRooms, "Philology");
+// function checkCapasity(anyClassRooms, anyGroup) {
+//     anyClassRooms.forEach((item,index) => {
+//         if (anyClassRooms[index]["capasity"] >= anyGroup["capasity"] &&  anyClassRooms[index]["faculty"] == anyGroup["faculty"])
+//         console.log(anyClassRooms[index])
+//     });
+// }
+// checkCapasity(myClassRooms, myGroup);
+// function sortByCapasity(anyClassRooms) {
+//     anyClassRooms.sort((a,b) => a.capasity - b.capasity);
+//     anyClassRooms.forEach((item,index) => {
+//         console.log(anyClassRooms[index]);
+//     });
+// }
+// sortByCapasity(myClassRooms);
+// function sortByABC(anyClassRooms) {
+//     anyClassRooms.sort((a,b) => {
+//         let nameA = a.className.toLowerCase();
+//         let nameB = b.className.toLowerCase();
+//         if (nameA < nameB) return -1;
+//         if (nameA > nameB) return 1;
+//         if (nameA == nameB) return 0;
+//     });
+//     anyClassRooms.forEach((item,index) => {
+//     console.log(anyClassRooms[index]);
+//     });
+// }
+// sortByABC(myClassRooms);
