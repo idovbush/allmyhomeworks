@@ -63,6 +63,29 @@
 // Продемонстрировать работу написанных методов.
 
 
+// class Marker {
+//     constructor(color, fullness) {
+//     this.color  = color;
+//     this.fullness = fullness;
+//     }
+
+//     drawText(text) {
+//         let printText = '';
+//         let textArr = text.split();
+//         console.log(textArr);
+//         for (let i = 0; i <= 199; i++) {
+//             printText += textArr[i];
+//             this.fullness -= 0.5;
+//         }
+//         console.log(printText);  
+//         return printText;  
+//     }
+// }
+
+// let myMarker = new Marker('green', 75);
+// let a = myMarker.drawText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non quidem laborum aliquid fugit saepe architecto, unde itaque cumque distinctio eaque cupiditate, ea harum, voluptatum assumenda omnis quisquam debitis accusantium inventore.';
+// console.log(a);
+// myMarker;
 
 
 
@@ -72,3 +95,22 @@
 // Реализовать класс EmpTable для генерации HTML-кода таблицы со списком работников банка. Массив работников необходимо передавать через конструктор, а получать HTML-код с помощью метода getHtml().
 
 // Создать объект класса EmpTable и вывести на экран результат работы метода getHtml().
+
+
+// class Employee {
+//     constructor(name,position,salary) {
+//         this.name = name;
+//         this.salary = salary;
+//         this.position = position;
+//     }
+// }
+
+// function makeArr(number) {
+//     arrBank = [];
+//     for (let i = 0; i < number; i++) {
+//         arrBank.push(new Employee("asdds","jjjjjj",1233))
+//     }
+//     return arrBank;
+// }
+
+// console.log(makeArr(5));
