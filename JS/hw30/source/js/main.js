@@ -71,21 +71,24 @@
 
 //     drawText(text) {
 //         let printText = '';
-//         let textArr = text.split();
-//         console.log(textArr);
-//         for (let i = 0; i <= 199; i++) {
-//             printText += textArr[i];
-//             this.fullness -= 0.5;
-//         }
-//         console.log(printText);  
-//         return printText;  
+//         let currentFullness = this.fullness * 2;
+//         text = text.split('');
+//         //console.log(textArr);
+//         // for (let i = 0; i < currentFullness; i++) {
+//         //     printText += textArr[i];
+//         //     this.fullness -= 0.5;
+//         // }
+//         //console.log(printText);  
+//         //return textArr;  
 //     }
 // }
-
-// let myMarker = new Marker('green', 75);
-// let a = myMarker.drawText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non quidem laborum aliquid fugit saepe architecto, unde itaque cumque distinctio eaque cupiditate, ea harum, voluptatum assumenda omnis quisquam debitis accusantium inventore.';
+// let aww = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non quidem laborum aliquid fugit saepe architecto, unde itaque cumque distinctio eaque cupiditate, ea harum, voluptatum assumenda omnis quisquam debitis accusantium inventore.';
+// let myMarker = new Marker('green', 10);
+// let a = myMarker.drawText = aww;
 // console.log(a);
-// myMarker;
+// let b = myMarker;
+// console.log(b);
+
 
 
 
