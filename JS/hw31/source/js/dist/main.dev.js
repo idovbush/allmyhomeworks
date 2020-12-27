@@ -39,8 +39,11 @@
 var div = document.createElement('div');
 var btn = document.createElement('button');
 div.style.height = '50px';
-btn.className = 'alert';
+btn.className = 'btn';
 btn.innerHTML = '<strong>Open</strong>';
 btn.style.color = 'red';
 div.style.background = 'green';
-document.body.append(div); // 3. Создать HTML-страницу со светофором и кнопкой, которая переключает светофор на следующий цвет.
+btn.style.cssText = "background: red; color: #fff; padding: 10px;";
+document.body.append(div);
+div.innerHTML = '<button class = "btn">Close</button>';
+div.prepend(btn); // 3. Создать HTML-страницу со светофором и кнопкой, которая переключает светофор на следующий цвет.
