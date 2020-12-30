@@ -79,3 +79,8 @@
 // 3. Создать HTML-страницу со светофором и кнопкой, которая переключает светофор на следующий цвет.
 
 
+let trafficLights = document.createElement('div');
+trafficLights.style.cssText = 'height:20%;width:10%;background:black;padding:10%;';
+document.body.append(trafficLights);
+let colorRed
+let btn = document.createElement('button');

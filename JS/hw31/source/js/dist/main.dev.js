@@ -1,3 +1,5 @@
+"use strict";
+
 // 1. Создать страницу, которая выводит нумерованный список песен:
 // var playList = [
 // {
@@ -68,4 +70,8 @@
 // div.innerHTML = '<button class = "btn">Close</button>';
 // div.prepend(btn);
 // 3. Создать HTML-страницу со светофором и кнопкой, которая переключает светофор на следующий цвет.
-"use strict";
+var trafficLights = document.createElement('div');
+trafficLights.style.cssText = 'height:20%;width:10%;background:black;padding:10%;';
+document.body.append(trafficLights);
+var colorRed;
+var btn = document.createElement('button');
