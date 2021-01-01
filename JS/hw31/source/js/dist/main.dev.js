@@ -1,5 +1,3 @@
-"use strict";
-
 // 1. Создать страницу, которая выводит нумерованный список песен:
 // var playList = [
 // {
@@ -70,8 +68,23 @@
 // div.innerHTML = '<button class = "btn">Close</button>';
 // div.prepend(btn);
 // 3. Создать HTML-страницу со светофором и кнопкой, которая переключает светофор на следующий цвет.
-var trafficLights = document.createElement('div');
-trafficLights.style.cssText = 'height:20%;width:10%;background:black;padding:10%;';
-document.body.append(trafficLights);
-var colorRed;
-var btn = document.createElement('button');
+// let trafficLights = document.createElement('div');
+// trafficLights.style.cssText = 'height:260px;width:80px;background:grey;padding:10px;margin-bottom:25px;';
+// document.body.append(trafficLights);
+// let colorR = document.createElement('div');
+// colorR.style.cssText = 'height:80px;width:80px;background:red;border-radius:40px;margin: 0 auto;margin-bottom:10px';
+// colorR.classList.add('lights','red');
+// trafficLights.append(colorR);
+// let colorY = document.createElement('div');
+// colorY.style.cssText = 'height:80px;width:80px;background:yellow;border-radius:40px;margin: 0 auto;margin-bottom:10px';
+// colorY.classList.add('lights','yellow');
+// trafficLights.append(colorY);
+// let colorG = document.createElement('div');
+// colorG.style.cssText = 'height:80px;width:80px;background:green;border-radius:40px;margin: 0 auto;';
+// colorG.classList.add('lights','green');
+// trafficLights.append(colorG);
+// let btn = document.createElement('button');
+// btn.innerHTML = 'Change';
+// document.body.append(btn);
+// if (colorG.classList.contains('active'))
+"use strict";
