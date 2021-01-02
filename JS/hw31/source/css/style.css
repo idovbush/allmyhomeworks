@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.lights{
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+
+.noActive {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+
