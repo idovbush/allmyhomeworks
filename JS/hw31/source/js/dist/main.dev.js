@@ -42,7 +42,7 @@
 // }
 // ];
 // const div = document.createElement('div');
-// div.style.cssText = 'height:30%;width:30%;background:black;padding:10%;';
+// div.style.cssText = 'height:30%;width:90%;background:black;padding:10%;';
 // document.body.append(div);
 // const h3 = document.createElement('h3');
 // h3.style.cssText = 'color:white;text-align:left';
@@ -57,34 +57,83 @@
 //       ol.append(li);
 // }
 // 2. Создать HTML-страницу с кнопкой "Открыть" и модальным окном. На модальном окне должен быть текст и кнопка "Закрыть". Изначально модальное окно не отображается. При клике на кнопку "Открыть" появляется модальное окно, на кнопку "Закрыть" – исчезает.
-// let div = document.createElement('div');
-// let btn = document.createElement('button');
-// div.style.height = '50px';
-// btn.innerHTML = '<strong>Open</strong>';
-// btn.style.color = 'red';
-// div.style.background = 'green';
-// btn.style.cssText = "background: red; color: #fff; padding: 10px;";
-// document.body.append(div);
-// div.innerHTML = '<button class = "btn">Close</button>';
-// div.prepend(btn);
+// let screen = document.createElement('div');
+// screen.classList.add("screen", "noActive");
+// screen.style.cssText = "position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(33, 33, 33, 0.5);z-index: 2;"
+// document.body.append(screen);
+// let modal = document.createElement('div');
+// modal.classList.add("modal", "noActive");
+// modal.style.cssText = "width: 50%;max-width: 500px;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 100;box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);text-align: center;padding: 30px;border-radius: 5px;background-color: #fff;";
+// modal.innerHTML = '<p><strong>This is my modal window!</strong></p>';
+// document.body.append(modal);
+// let btnOpen = document.createElement('button');
+// btnOpen.style.cssText = "background-color: red; color: #fff;";
+// btnOpen.innerHTML = '<strong>Open</strong>';
+// document.body.append(btnOpen);
+// let btnClose = document.createElement('button');
+// btnClose.innerHTML = '<strong>Close</strong>';
+// btnClose.style.cssText = "background-color: #fff; color: red;";
+// modal.append(btnClose);
+// btnOpen.onclick = openModal; 
+// function openModal() {
+//     modal.classList.remove('noActive');
+//     screen.classList.remove('noActive');
+//     modal.classList.add('active');
+//     screen.classList.add('active');
+// }
+// btnClose.onclick = closeModal; 
+// function closeModal() {
+//     modal.classList.remove('active');
+//     screen.classList.remove('active');
+//     modal.classList.add('noActive');
+//     screen.classList.add('noActive');
+// }
 // 3. Создать HTML-страницу со светофором и кнопкой, которая переключает светофор на следующий цвет.
-// let trafficLights = document.createElement('div');
-// trafficLights.style.cssText = 'height:260px;width:80px;background:grey;padding:10px;margin-bottom:25px;';
+// let trafficLights = document.createElement("div");
+// trafficLights.style.cssText =
+//   "height:260px;width:80px;background:grey;padding:10px;margin-bottom:25px;";
 // document.body.append(trafficLights);
-// let colorR = document.createElement('div');
-// colorR.style.cssText = 'height:80px;width:80px;background:red;border-radius:40px;margin: 0 auto;margin-bottom:10px';
-// colorR.classList.add('lights','red');
+// let colorR = document.createElement("div");
+// colorR.style.cssText =
+//   "height:80px;width:80px;border-radius:40px;margin: 0 auto;margin-bottom:10px";
+// colorR.classList.add("lights", "red");
 // trafficLights.append(colorR);
-// let colorY = document.createElement('div');
-// colorY.style.cssText = 'height:80px;width:80px;background:yellow;border-radius:40px;margin: 0 auto;margin-bottom:10px';
-// colorY.classList.add('lights','yellow');
+// let colorY = document.createElement("div");
+// colorY.style.cssText =
+//   "height:80px;width:80px;border-radius:40px;margin: 0 auto;margin-bottom:10px";
+// colorY.classList.add("lights");
 // trafficLights.append(colorY);
-// let colorG = document.createElement('div');
-// colorG.style.cssText = 'height:80px;width:80px;background:green;border-radius:40px;margin: 0 auto;';
-// colorG.classList.add('lights','green');
+// let colorG = document.createElement("div");
+// colorG.style.cssText =
+//   "height:80px;width:80px;border-radius:40px;margin: 0 auto;";
+// colorG.classList.add("lights");
 // trafficLights.append(colorG);
-// let btn = document.createElement('button');
-// btn.innerHTML = 'Change';
+// let btn = document.createElement("button");
+// btn.innerHTML = "Change";
+// btn.style.cssText = "height: 25px; width: 100px;"
 // document.body.append(btn);
-// if (colorG.classList.contains('active'))
+// btn.onclick = changeColors;
+// function changeColors() {
+//   if (colorR.classList.contains("red")) {
+//     colorR.classList.remove("red");
+//     colorR.classList.add("previous");
+//     colorY.classList.add("yellow");
+//   }
+//   else if (colorY.classList.contains("yellow")) {
+//     colorY.classList.remove("yellow");
+//     if (colorR.classList.contains("previous")) {
+//         colorR.classList.remove("previous");
+//         colorG.classList.add("green");
+//     }
+//     else if (colorG.classList.contains("previous")) {
+//         colorG.classList.remove("previous");
+//         colorR.classList.add("red");
+//     }
+//   }
+//   else if (colorG.classList.contains("green")) {
+//     colorG.classList.remove("green");
+//     colorG.classList.add("previous");
+//     colorY.classList.add("yellow");
+//   }
+// }
 "use strict";

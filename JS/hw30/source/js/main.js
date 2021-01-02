@@ -53,6 +53,7 @@
 
 
 
+
 // 2) Реализовать класс, описывающий простой маркер. В классе должны быть следующие компоненты:
 
 // поле, которое хранит цвет маркера;
@@ -72,23 +73,35 @@
 //     drawText(text) {
 //         let printText = '';
 //         let currentFullness = this.fullness * 2;
-//         text = text.split('');
-//         //console.log(textArr);
-//         // for (let i = 0; i < currentFullness; i++) {
-//         //     printText += textArr[i];
-//         //     this.fullness -= 0.5;
-//         // }
-//         //console.log(printText);  
-//         //return textArr;  
+//         let textArr = text.split("");
+//         for (let i = 0; i < currentFullness; i++) {
+//             printText += textArr[i];
+//             this.fullness -= 0.5;
+//         }
+//         console.log('This text can be printed with this filling: ',printText); 
+//         document.body.style.color = this.color;
+//         document.write(printText); 
+//         return printText;  
 //     }
 // }
-// let aww = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non quidem laborum aliquid fugit saepe architecto, unde itaque cumque distinctio eaque cupiditate, ea harum, voluptatum assumenda omnis quisquam debitis accusantium inventore.';
-// let myMarker = new Marker('green', 10);
-// let a = myMarker.drawText = aww;
-// console.log(a);
-// let b = myMarker;
-// console.log(b);
 
+// let myText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non quidem laborum aliquid fugit saepe architecto, unde itaque cumque distinctio eaque cupiditate, ea harum, voluptatum assumenda omnis quisquam debitis accusantium inventore.';
+// let myMarker = new Marker('green', 5);
+// console.log('Amount of ink before print: ',myMarker.fullness,'%');
+// myMarker.drawText(myText);
+// console.log('Amount of ink after print: ', myMarker.fullness,'%');
+
+
+// class reMarker extends Marker {
+//     refueling() {
+//         this.fullness = 100;
+//     }
+// }
+
+// let myReMarker = new reMarker('pink', 29);
+// console.log('Amount of ink before refueling: ',myReMarker.fullness,'%');
+// myReMarker.refueling();
+// console.log('Amount of ink after refueling: ',myReMarker.fullness,'%');
 
 
 
@@ -111,9 +124,29 @@
 // function makeArr(number) {
 //     arrBank = [];
 //     for (let i = 0; i < number; i++) {
-//         arrBank.push(new Employee("asdds","jjjjjj",1233))
+//         arrBank.push(new Employee("IVANOV","manager",12345))
 //     }
 //     return arrBank;
 // }
 
-// console.log(makeArr(5));
+// let myArr = makeArr(5);
+
+// class EmpTable {
+//     constructor(somearray) {
+//         this.somearray = somearray;
+//     }
+
+//     getHTML() {
+//         let table = document.createElement('table');
+//         table.innerHTML = '<caption>Bank employees</caption>';
+//         document.body.append(table);
+//         for (let i = 0; i < this.somearray.length; i++) {
+//             let tr = document.createElement('tr');
+//             tr.innerHTML = `<td>${this.somearray[i].name}</td><td>${this.somearray[i].position}</td><td>${this.somearray[i].salary}</td>`;
+//             table.append(tr);
+//         }
+//     }    
+// }
+
+// myEmpTable = new EmpTable(myArr);
+// myEmpTable.getHTML();
