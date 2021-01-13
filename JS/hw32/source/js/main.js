@@ -34,16 +34,18 @@
 
 // 2. Создать HTML-страницу с большой таблицей. При клике по заголовку колонки, необходимо отсортировать данные по этой колонке. Учтите, что числовые значения должны сортироваться как числа, а не как строки.
 
-    // function myRandom(from, to) {
-    //     from = Math.ceil(from);
-    //     to = Math.floor(to);
-    //     return Math.floor(Math.random() * (from - to)) + to; 
-    // }
+
 
     // let row, cell; 
     // let myArr = [];
     // let numCol = 0;
     // let resArr = [];
+
+    // function myRandom(from, to) {
+    //     from = Math.ceil(from);
+    //     to = Math.floor(to);
+    //     return Math.floor(Math.random() * (from - to)) + to; 
+    // }
      
     // function myTable(numRow,numCell) {
     //     const table = document.createElement("table");  
@@ -76,32 +78,22 @@
     // function sortColumn(event) {
     //     numCol = event.currentTarget.id;
     //     myArr.sort((a,b) => a[numCol] - b[numCol]);
-        
-
     //     for (let i = 0; i<resArr[0]; i++) {
-            
     //         for (let j = 0; j<resArr[1]; j++) {
     //             document.getElementById(`${i}_${j}`).innerHTML = myArr[i][j];
-                
-                
     //         }    
     //     }  
-
-
     // }
-    
     
     // myTable(3,5);
     // console.log(myArr);
     
     // let thList = document.getElementsByClassName('th');
-
     // for(var n = 0; n < thList.length; ++n) {
-        
     //     thList[n].addEventListener('click', sortColumn, false);
-        
     // };
     
+
 
 
 

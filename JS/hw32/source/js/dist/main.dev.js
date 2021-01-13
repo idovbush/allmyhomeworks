@@ -23,15 +23,15 @@
 //   }
 // })
 // 2. Создать HTML-страницу с большой таблицей. При клике по заголовку колонки, необходимо отсортировать данные по этой колонке. Учтите, что числовые значения должны сортироваться как числа, а не как строки.
+// let row, cell; 
+// let myArr = [];
+// let numCol = 0;
+// let resArr = [];
 // function myRandom(from, to) {
 //     from = Math.ceil(from);
 //     to = Math.floor(to);
 //     return Math.floor(Math.random() * (from - to)) + to; 
 // }
-// let row, cell; 
-// let myArr = [];
-// let numCol = 0;
-// let resArr = [];
 // function myTable(numRow,numCell) {
 //     const table = document.createElement("table");  
 //     const th = table.insertRow(0);
