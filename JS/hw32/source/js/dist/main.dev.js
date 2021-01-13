@@ -23,6 +23,54 @@
 //   }
 // })
 // 2. Создать HTML-страницу с большой таблицей. При клике по заголовку колонки, необходимо отсортировать данные по этой колонке. Учтите, что числовые значения должны сортироваться как числа, а не как строки.
+// function myRandom(from, to) {
+//     from = Math.ceil(from);
+//     to = Math.floor(to);
+//     return Math.floor(Math.random() * (from - to)) + to; 
+// }
+// let row, cell; 
+// let myArr = [];
+// let numCol = 0;
+// let resArr = [];
+// function myTable(numRow,numCell) {
+//     const table = document.createElement("table");  
+//     const th = table.insertRow(0);
+//     for (let h = 0; h<numCell; h++) {
+//         cell = th.insertCell();
+//                 cell.innerHTML = `Column №${h+1}`;
+//                 cell.id = `${h}`;
+//                 cell.classList.add('th');
+//                 cell.style.cssText = "width:40px;text-align:center;font-family:Verdana;font-size:16;font-weight:700;color:blue;border:solid 2px grey";
+//     }
+//     for (let i = 0; i<numRow; i++) {
+//             row = table.insertRow();
+//             myArr[i] = new Array();
+//             for (let j = 0; j<numCell; j++) {
+//                 cell = row.insertCell();
+//                 myArr[i][j] = myRandom(101,1);
+//                 cell.innerHTML = myArr[i][j];
+//                 cell.id = `${i}_${j}`;
+//                 cell.style.cssText = "width:40px;text-align:center;font-family:Verdana;font-size:16;border:solid 2px grey";
+//             }    
+//     }  
+//     document.body.append(table);
+//     return resArr=[numRow,numCell];
+// }
+// function sortColumn(event) {
+//     numCol = event.currentTarget.id;
+//     myArr.sort((a,b) => a[numCol] - b[numCol]);
+//     for (let i = 0; i<resArr[0]; i++) {
+//         for (let j = 0; j<resArr[1]; j++) {
+//             document.getElementById(`${i}_${j}`).innerHTML = myArr[i][j];
+//         }    
+//     }  
+// }
+// myTable(3,5);
+// console.log(myArr);
+// let thList = document.getElementsByClassName('th');
+// for(var n = 0; n < thList.length; ++n) {
+//     thList[n].addEventListener('click', sortColumn, false);
+// };
 // 3. Создать HTML-страницу с блоком текста в рамочке. Реализовать возможность изменять размер блока, если зажать мышку в правом нижнем углу и тянуть ее дальше.
 // let myText = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae iusto doloremque excepturi earum blanditiis adipisci molestiae accusamus pariatur amet expedita exercitationem, qui minus eos quis, necessitatibus, odio inventore aperiam enim.";
 // let div = document.createElement("div");
