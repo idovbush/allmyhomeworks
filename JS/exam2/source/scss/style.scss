@@ -1,27 +1,72 @@
 @import "zerostyle.scss";
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
+body{
+  width: 100%;
+  height: 100%;
 }
+
+.wrapper {
+  width: 100%;
+  //display: flex;
+  //flex-direction: column;
+}
+
+.wrapper .slick-list .slick-track {
+  display: flex;
+  //flex-direction: row;
+} 
 
 .main {
   //background-image: url("../img/bgHeaderMuar2.png");
-  width: 1600px;
-  height: 800px;
+  width: 100%;
+  max-width: 1600px;
+  max-height: 800px;
   background-color: #4b4b4b;
   background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
 }
 
 .gallery {
-  width: 1600px;
-  height: 1000px;
+  width: 100%;
+  max-width: 1600px;
+  max-height: 1000px;
   background-color: #4b4b4b;
 }
 
 .footer {
-  width: 1600px;
-  height: 1143px;
+  width: 100%;
+  max-width: 1600px;
+  max-height: 1143px;
   background-color: #4b4b4b;
   background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+}
+
+.wrapper {
+}
+.main {
+}
+.header {
+}
+.logo {
+}
+.menu {
+}
+.social {
+}
+.title {
+}
+.bottom {
+}
+.gallery {
+}
+.images {
+}
+.btn {
+}
+.map {
+}
+.footer {
+}
+.info {
+}
+.copy {
 }

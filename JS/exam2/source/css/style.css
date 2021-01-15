@@ -1,4 +1,18 @@
 @charset "UTF-8";
+@font-face {
+	font-family: 'GothamBook';
+	src: url('../fonts/GothamBook/GothamBook.eot');
+	src: local('GothamBook'), url('../fonts/GothamBook/GothamBook.woff') format('woff'), url('../fonts/GothamBook/GothamBook.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'GothamBold1';
+	src: url('../fonts/GothamBold/gothambold1.eot');
+	src: local('GothamBold1'), url('../fonts/GothamBold/gothambold1.woff') format('woff'), url('../fonts/GothamBold/gothambold1.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'GothaMedium';
+	src: local('GothamMedium'), url('../fonts/GothamMedium/gotham-medium-webfont.woff') format('woff'), url('../fonts/GothamMedium/gotham-medium-regular.ttf') format('truetype');
+}
 /*Обнуление стилей*/
 * {
   padding: 0;
@@ -75,26 +89,198 @@ h1, h2, h3, h4, h5, h6 {
 
 /*-----------------------------------------------------*/
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;  */
+  /* flex-direction: column; */
+  height: 1900px;
 }
 
 .main {
-  width: 1600px;
-  height: 800px;
+  min-width: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 1600px;
+  max-height: 800px;
   background-color: #4b4b4b;
-  background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+  /* background-image: url("../img/bgHeaderMuar.png");
+  background-image: linear-gradient(45deg, #55b7ff 90%, #7e5aff 100%), url("../img/bgHeaderMuar.png"); */
+  background-image: linear-gradient(45deg, rgba(85,183,255,0.94), rgba(126,90,255,0.9)), url('../img/bgHeaderMuar.png');
+  /* background-image: url("../img/bgHeaderMuar.png"); */
+  opacity: 0.9;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .gallery {
-  width: 1600px;
-  height: 1000px;
-  background-color: #4b4b4b;
+  min-width: 0;
+  height: 100vh;
+  width: 100%;
+  max-width: 1600px;
+  max-height: 1000px;
+  /* background-color: #4b4b4b; */
+  background-image: linear-gradient(45deg, rgba(85,183,255,0.94), rgba(126,90,255,0.9));
+  background-image: url('../img/bgHeaderMuar.png') center;
+  background-size: cover;
 }
 
 .footer {
-  width: 1600px;
-  height: 1143px;
+  min-width: 0;
+  height: 100px;
+  width: 100%;
+  max-width: 1600px;
+  max-height: 1143px;
   background-color: #4b4b4b;
   background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+}
+
+.slick-track {
+  /* display: flex; */
+  /* flex-direction: column; */
+  height: 1900px;
+}
+
+.slick-list {
+  overflow: hidden;
+  height: 1900px;
+}
+
+.slick-slide {
+  min-width: 0;
+}
+
+.slick-arrow {
+  font-size: 0;
+  position: absolute;
+
+} 
+
+.slick-dots {
+  position: fixed;
+  top: 35%;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 15px;
+}
+
+.slick-dots button{
+  
+  font-size: 0;
+  width: 9px;
+  height: 9px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.slick-dots li.slick-active button{
+  background-color: #fff;
+}
+
+.header {
+}
+.header .logo {
+  width: 241px;
+  height: 54px;
+
+}
+.menu {
+  width: 76px;
+  height: 10px;
+  color: #ffffff;
+  font-family: "GothamBook";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-align: left;
+  text-transform: uppercase;
+
+}
+.social {
+  width: 9px;
+  height: 16px;
+  color: #ffffff;
+  font-family: "Font Awesome";
+  font-size: 16px;
+  font-weight: 400;
+
+}
+.title {
+}
+
+.name {
+  width: 892px;
+  height: 59px;
+  color: #ffffff;
+  font-family: "GothamBook";
+  font-size: 80px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+.desc {
+  width: 658px;
+  height: 13px;
+  color: #ffffff;
+  font-family: "GothamBook";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+.bottom {
+  width: 8px;
+  height: 5px;
+  color: #ffffff;
+  font-family: "Font Awesome";
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.gallery {
+}
+.images {
+}
+
+.btn {
+}
+.map {
+}
+.footer {
+}
+.info {
+}
+.copy {
+  width: 203px;
+  height: 13px;
+  color: #ffffff;
+  font-family: "GothamBook";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-align: left;
+
 }
