@@ -123,6 +123,10 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(45deg, rgba(85,183,255,0.94), rgba(126,90,255,0.9));
   background-image: url('../img/bgHeaderMuar.png') center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer {
@@ -186,6 +190,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
+  display: flex;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 73.125%;
+  max-width: 1170px;
 }
 .header .logo {
   width: 241px;
@@ -193,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 .menu {
-  width: 76px;
+  width: 51.3%;
   height: 10px;
   color: #ffffff;
   font-family: "GothamBook";
@@ -206,6 +216,16 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 
 }
+.menu_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_link {
+  color: #fff;
+    text-decoration: none;
+}
+
 .social {
   width: 9px;
   height: 16px;
@@ -261,7 +281,24 @@ h1, h2, h3, h4, h5, h6 {
 .gallery {
 }
 .images {
+  width: 73.125%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
+.image1 {
+  grid-area: 1 / 1 / 3 / 2; }
+.image2 {
+  grid-area: 1 / 2 / 2 / 3; }
+.image3 { 
+  grid-area: 1 / 3 / 2 / 4; }
+.image4 { 
+  grid-area: 2 / 2 / 3 / 3; }
+.image5 { 
+  grid-area: 2 / 3 / 3 / 4; }
 
 .btn {
 }

@@ -1,3 +1,5 @@
+"use strict";
+
 // $(document).ready(function(){
 //   $('.wrapper').slick({
 //     //setting-name: setting-value
@@ -8,4 +10,7 @@
 //     verticalswiping: true,
 //   });
 // });
-"use strict";
+$('[data-fancybox="gallery"]').fancybox({
+  loop: true,
+  buttons: ["close"]
+});
