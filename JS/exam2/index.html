@@ -9,41 +9,55 @@
     <!-- <link rel="stylesheet" type="text/css" href="./source/css/slick.css"/> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" type="text/css" href="./source/css/style.css"/>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+  type="text/javascript" charset="utf-8"></script>
+<script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+  type="text/javascript" charset="utf-8"></script>
     <title>exam2</title>
 </head>
 <body>
     <div class="wrapper">
         <section class="main">
+
             <div class="header">
-                <div class="logo">
+                <div class="container">
+                    <div class="header__body">
+                <div class="header__logo">
                     <img src="./source/img/logoHeader.png" alt="logo">
                 </div>
-                <div class="menu">
-                    <ul class="menu_links">
-                        <li class="menu_item">
-                            <div>
-                                <a href="#" class="menu_link">About us</a>
-                            </div>   
+                
+                <div class="header__menu">
+                    <ul class="header__list">
+                        <li class="list__item">
+                            
+                                <a href="#" class="header__link">About us</a>
+                              
                         </li>
-                        <li class="menu_item">
-                            <div>
-                                <a href="#" class="menu_link">Projects</a>
-                            </div>    
+                        <li class="list__item">
+                            
+                                <a href="#" class="header__link">Projects</a>
+                                
                         </li>
-                        <li class="menu_item">
-                            <div>
-                            <a href="#" class="menu_link">News</a>
-                            </div>
+                        <li class="list__item">
+                            
+                            <a href="#" class="header__link">News</a>
+                            
                         </li>
-                        <li class="menu_item">
-                            <div>
-                            <a href="#" class="menu_link">Contact</a>
-                            </div>
+                        <li class="list__item">
+                            
+                            <a href="#" class="header__link">Contact</a>
+                            
                         </li>
                     </ul>
                 </div>
                 <div class="social">Facebook</div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                </div>
+                </div>
             </div>
+
             <div class="title">
                 <h1 class="name">Simple & mordern</h1>
                 <h3 class="desc">We make the world's beautiful every day</h3>
@@ -52,6 +66,7 @@
         </section>
 
         <section class="gallery">
+            <div class="container">
             <div class="title">Gallery</div>
             <div class="images">
                 <div class="image1">
@@ -81,17 +96,23 @@
                 </div>
             </div>
             <div class="btn">See more</div>
+            </div>
         </section>
-        <section class="map"></section>
+        <section class="map">
+            <!-- <div style="min-width: 200px; min-height: 300px" id="mapContainer"></div> -->
+          
+        </section>
         <section class="footer">
-            <div class="info">
-                <div class="logo">
-                    logo
+            <div class="container">
+            <div class="footer__info">
+                <div class="footer__logo">
+                    <img src="./source/img/logoFooter.png" alt="logo">
                 </div>
-                <div class="social">Facebook</div>
+                <div class="footer__social">Facebook</div>
             </div>
             <div class="copy">Copyrights © 2017 Monticello Group</div>
             <div class="author">Made with ... by Ga Huy</div>
+            </div>
         </section>
 
     </div>
