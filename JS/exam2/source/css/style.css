@@ -236,7 +236,8 @@ h1, h2, h3, h4, h5, h6 {
 .header__link {
   color: #ffffff;
   font-family: "GothamBook";
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: calc(10px + 4 * ((100vw - 320px) / (1600 - 320)));
   font-weight: 400;
   /* line-height: 22px; */
   text-align: left;
@@ -347,6 +348,7 @@ a.social__link  {
     justify-content: space-between;
     align-items: center;
     font-size: 32px;
+    font-size: calc(24px + 8 * ((100vw - 320px) / (1600 - 320)));
     padding-top: 80px;
   }
   .header__list li {
@@ -376,7 +378,8 @@ a.social__link  {
   height: 16px; */
   color: #ffffff;
   font-family: "FontAwesome";
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: calc(10px + 6 * ((100vw - 320px) / (1600 - 320)));
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -398,7 +401,8 @@ a.social__link  {
   height: 59px; */
   color: #ffffff;
   font-family: "GothamBold";
-  font-size: 80px;
+  /* font-size: 80px; */
+  font-size: calc(24px + 56 * ((100vw - 320px) / (1600 - 320)));
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.05em;
@@ -413,7 +417,8 @@ a.social__link  {
   height: 13px; */
   color: #ffffff;
   font-family: "GothamBook";
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: calc(7px + 11 * ((100vw - 320px) / (1600 - 320)));
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.3em;
@@ -429,11 +434,8 @@ a.social__link  {
   color: #ffffff;
 }
 .main__down i {
-  /* width: 9px;
-  height: 9px; */
   
   font-size: 14px;
-  
   width: 35px;
   height: 35px;
   border: 1.5px solid #ffffff;
@@ -468,7 +470,8 @@ max-width: 213px;
 /* height: 31px; */
 color: #2c4058;
 font-family: "GothamBook";
-font-size: 44px;
+/* font-size: 44px; */
+font-size: calc(20px + 24 * ((100vw - 320px) / (1600 - 320)));
 font-weight: 500;
 font-style: normal;
 letter-spacing: normal;
@@ -522,8 +525,9 @@ margin-bottom: 8%;
   /* width: 75px;
   height: 10px; */
   color: #2c4058;
-  font-family: "Gotham - Book";
-  font-size: 14px;
+  font-family: "GothamBook";
+  /* font-size: 14px; */
+  font-size: calc(10px + 4 * ((100vw - 320px) / (1600 - 320)));
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -564,6 +568,7 @@ margin-bottom: 8%;
   justify-content: space-between;
 }
 
+
 .footer__logo {
   /* max-width: 241px;
   max-height: 54px; */
@@ -571,24 +576,36 @@ margin-bottom: 8%;
   margin-right: 20%;
 }
 
+@media (max-width: 490px) {
+  .footer__info {
+    flex-direction: column;
+  }
+  .footer__logo {
+    flex: 25%;
+    margin: 0 20px 0 0;
+    
+  }
+}
+
 .footer__logo img {
   max-width: 100%;
 }
 
 .footer__social {
-  flex: 30%;
+  flex: 27%;
   color: #ffffff;
-  font-size: 10px;
+  /* font-size: 10px; */
+  font-size: calc(8px + 2 * ((100vw - 320px) / (1600 - 320)));
   font-weight: 400;
 }
 .footer__social i {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border: 1.5px solid #ffffff;
   border-radius: 50%;
   text-align: center;
-  padding-top: 10px;
-  margin-left: 15px;
+  padding-top: 8px;
+  margin-left: 10px;
 }
 
 .footer__copy {
@@ -596,7 +613,8 @@ margin-bottom: 8%;
   height: 13px; */
   color: #ffffff;
   font-family: "GothamBook";
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: calc(8px + 6 * ((100vw - 320px) / (1600 - 320)));
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
