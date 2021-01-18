@@ -1,0 +1,129 @@
+@import "zerostyle.scss";
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  //display: flex;
+  //flex-direction: column;
+}
+
+.wrapper .slick-list .slick-track {
+  display: flex;
+  //flex-direction: row;
+} 
+
+.main {
+  //background-image: url("../img/bgHeaderMuar2.png");
+  width: 100%;
+  max-width: 1600px;
+  max-height: 800px;
+  background-color: #4b4b4b;
+  background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+}
+
+.gallery {
+  width: 100%;
+  max-width: 1600px;
+  max-height: 1000px;
+  background-color: #4b4b4b;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1600px;
+  max-height: 1143px;
+  background-color: #4b4b4b;
+  background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+}
+
+.wrapper {
+}
+.main {
+}
+.header {
+
+		// .header__body
+
+		&__body {
+		}
+
+		// .header__logo
+
+		&__logo {
+		}
+
+		// .header__burger
+
+		&__burger {
+		}
+
+		// .header__menu
+
+		&__menu {
+		}
+
+		// .header__list
+
+		&__list {
+		}
+
+		// .header__link
+
+		&__link {
+		}
+}
+.container {
+}
+.list {
+
+		// .list__item
+
+		&__item {
+		}
+}
+.social {
+}
+.title {
+}
+.name {
+}
+.desc {
+}
+.bottom {
+}
+.gallery {
+}
+.images {
+}
+.image1 {
+}
+.fancybox {
+}
+.image-link {
+}
+.image2 {
+}
+.image3 {
+}
+.image4 {
+}
+.image5 {
+}
+.btn {
+}
+.map {
+}
+.footer {
+}
+.info {
+}
+.logo {
+}
+.copy {
+}
+.author {
+}
