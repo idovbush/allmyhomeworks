@@ -53,3 +53,6 @@ $('[data-fancybox="gallery"]').fancybox({
 //     zoom: 15,
 //     center: { lng: 10.4, lat: 10.51 }
 //   });
+
+// document.addEventListener
+// $('.header__link.isCurrent::before').
