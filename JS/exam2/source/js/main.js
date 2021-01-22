@@ -56,3 +56,16 @@ $('[data-fancybox="gallery"]').fancybox({
 
 // document.addEventListener
 // $('.header__link.isCurrent::before').
+
+var map = new ol.Map({
+  target: 'map',
+  layers: [
+    new ol.layer.Tile({
+      source: new ol.source.OSM()
+    })
+  ],
+  view: new ol.View({
+    center: ol.proj.fromLonLat([-73.87, 40.66]),
+    zoom: 12
+  })
+});

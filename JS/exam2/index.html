@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./source/css/jquery.fancybox.min.css" type="text / css" media="screen" />
     <link rel="stylesheet" href="./source/css/fontawesome/css/all.css" />
+    
 
     <!-- <link rel="stylesheet" type="text/css" href="./source/css/slick.css"/> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" type="text/css" href="./source/css/style.css" />
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
     <title>exam2</title>
 </head>
 
@@ -121,8 +122,9 @@
              <div style="min-width: 200px; min-height: 300px" id="mapContainer"></div> 
         </section> -->
         <section class="contact">
-            <div id="map"></div>
+            <!-- <div id="map" class="map"></div> -->
             <div class="container">
+                <div id="map" class="map"></div>
                 <div class="contact__body">	
                     <h3 class="contact__title">Get in touch</h3>
                     <div class="contact__form">				
@@ -145,7 +147,7 @@
                             </div>
                         </div>
                         <div class="form__callback">
-                            <form action="" class="form">
+                            <form action="#" class="form">
                                 <input class="form__name" type="text" name="form" required placeholder="Your name">
                                 <input class="form__email" type="email" name="form"  required placeholder="Email">
                                 <button type="submit" class="form__button">Submit</button>

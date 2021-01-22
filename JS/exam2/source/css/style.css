@@ -538,6 +538,27 @@ margin-bottom: 8%;
   margin-top: 6%;
 }
 
+/****************************************************/
+.contact {
+  width: 100%;
+}
+.contact .container {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10% 15px;
+}
+.map {
+  max-width: 1600px;
+  max-height: 700px;
+  min-width: 320px;
+  height: 400px;
+  width: 100%;
+}
+
 .footer {
   min-width: 0;
   min-height: 320px;
@@ -545,8 +566,16 @@ margin-bottom: 8%;
   max-width: 1600px;
   max-height: 505px;
   background-color: #4b4b4b;
-  background-image: linear-gradient(45deg, rgba(85,183,255,0.94), rgba(126,90,255,0.9)), url('../img/1.jpg');
+  /* background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%); */
+  /* background-image: url('../img/1.jpg');
+  opacity: 0.3; */
+  /* background-image: linear-gradient(45deg, rgba(85,183,255,0.8) rgba(126,90,255,0.9), url('../img/1.jpg') ); */
+
   /* background-image: url('../img/1.jpg'); */
+  /* opacity: 0.3; */
+
+/* background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%),  url('../img/1.jpg') ; */
+
   display: flex;
   justify-content: center;
   align-items: center;
