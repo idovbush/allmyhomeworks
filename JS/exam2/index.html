@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./source/css/jquery.fancybox.min.css" type="text / css" media="screen" />
     <link rel="stylesheet" href="./source/css/fontawesome/css/all.css" />
-    
 
     <!-- <link rel="stylesheet" type="text/css" href="./source/css/slick.css"/> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" type="text/css" href="./source/css/style.css" />
-    
+
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
     <title>exam2</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <section class="main" id="aboutUs">
+        <section class="main slider" id="aboutUs">
             <div class="header">
                 <div class="container">
                     <div class="header__body">
@@ -43,18 +42,15 @@
                             </ul>
                         </div>
                         <div class="header__social">
-                            <a href="https://uk-ua.facebook.com/" class="social__link facebook" style="text-decoration: none;">
-                                
+                            <a href="https://uk-ua.facebook.com/" class="social__link facebook"
+                                style="text-decoration: none">
                                 <i class="fab fa-facebook-f"></i>
-                                
                             </a>
                             <a href="https://twitter.com/?lang=ru" class="social__link twitter">
                                 <i class="fab fa-twitter"></i>
                             </a>
                             <a href="https://www.instagram.com/?hl=ru" class="social__link instagram">
-                                
                                 <i class="fab fa-instagram"></i>
-                                
                             </a>
                         </div>
                         <div class="header__burger">
@@ -73,11 +69,22 @@
                     <i class="fas fa-angle-down"></i>
                 </div>
             </a>
+            </div>
+            <!-- <div class="slider__remote"> -->
+                <ul class="dots">
+                    <li class="dot activeSlide"><button class="slide1"></button></li>
+                    <li class="dot"><button class="slide2"></button></li>
+                    <li class="dot"><button class="slide3"></button></li>
+                    <li class="dot"><button class="slide4"></button></li>
+                    <li class="dot"><button class="slide5"></button></li>
+                </ul>
+            <!-- </div> -->
+
+
+
         </section>
-        <section class="news">
-            
-        </section>
-        <section class="gallery" >
+        <section class="news"></section>
+        <section class="gallery">
             <div class="container">
                 <div class="title" id="gallery">Gallery</div>
                 <div class="images">
@@ -113,44 +120,43 @@
                     </div>
                 </div>
                 <a href="./source/img/5.jpg" class="fancybox gallery__link" data-fancybox="gallery"
-                data-caption="Image">
-                <div class="btn">See more</div>
+                    data-caption="Image">
+                    <div class="btn">See more</div>
                 </a>
             </div>
         </section>
-   
+
         <section class="contact">
             <div id="map" class="map"></div>
-            <div class="container">
+            <div class="contact__container">
                 <div class="contact__title">Get in touch</div>
-                <div class="contact__body">				
-                    <div class="contact__form">
-                        <div class="contacts__item">
-                            <i class="fas fa-map-marker-alt contacts__item_icon"></i>
-                            <a href="#" class="contacts__link">91 Nolan Extensions Suite 670</a>
+                <div class="contact__body">
+                    <div class="contact__details">
+                        <div class="contact__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="#" class="contact__link">91 Nolan Extensions Suite 670</a>
                         </div>
-                        <div class="contacts__item">
-                            <i class="fas fa-phone-alt contacts__icon"></i>
-                            <a href="tel:+001 356-868-2454" class="contacts__tel">+001 356-868-2454</a>
+                        <div class="contact__item">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+001 356-868-2454" class="contact__tel">+001 356-868-2454</a>
                         </div>
-                        <div class="contacts__item">
-                            <i class="fas fa-inbox contacts__icon"></i>
-                            <a href="mailto:gahuy93@gmail.com" class="contacts__email" target="_blank">gahuy93@gmail.com</a>
+                        <div class="contact__item">
+                            <i class="fas fa-inbox"></i>
+                            <a href="mailto:gahuy93@gmail.com" class="contact__email"
+                                target="_blank">gahuy93@gmail.com</a>
                         </div>
-                        <div class="contacts__item">
-                            <i class="far fa-clock contacts__icon"></i>
-                            <span class="contacts__time">From 07:05AM to 19:30PM</span>
+                        <div class="contact__item">
+                            <i class="far fa-clock"></i>
+                            <span class="contact__time">From 07:05AM to 19:30PM</span>
                         </div>
                     </div>
-                    <div class="form__callback">
-                        <form action="#" class="form">
-                            <input class="form__name" type="text" name="form" required placeholder="Your name">
-                            <input class="form__email" type="email" name="form"  required placeholder="Email">
+                    <form action="#" class="form__callback">
+                            <input class="form__name" type="text" name="name" required placeholder="Your name" />
+                            <input class="form__email" type="email" name="email" required placeholder="Email" />
                             <button type="submit" class="form__button">Submit</button>
-                        </form>
-                    </div>
+                    </form>
+                    
                 </div>
-                
             </div>
         </section>
         <section class="footer" id="contacts">
@@ -160,14 +166,21 @@
                         <img src="./source/img/logoFooter.png" alt="logo" />
                     </div>
                     <div class="footer__social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
+                        <a href="https://uk-ua.facebook.com/" class="social__link facebook"
+                            style="text-decoration: none !important"><i class="fab fa-facebook-f footer__icon"></i>
+                        </a>
+
+                        <a href="https://twitter.com/?lang=ru" class="social__link twitter"><i
+                                class="fab fa-twitter footer__icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com/?hl=ru" class="social__link instagram"><i
+                                class="fab fa-instagram footer__icon"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="footer__copy">
                     <div class="rights">Copyrights © 2017 Monticello</div>
-                    <div class="author">Made with ... by Ga Huy</div>
+                    <div class="author">Made with <i class="fas fa-heart"></i> by Ga Huy</div>
                 </div>
             </div>
         </section>
