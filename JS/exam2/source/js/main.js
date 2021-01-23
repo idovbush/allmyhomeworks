@@ -1,10 +1,13 @@
-//$(document).ready(function() {
-  // $('.header__burger').click(function() {
-  //   console.log(123);
-  //   $('.header__burger, .header__menu').toggleClass('active');
-  //   console.log(456);
-  // });
-//})
+$(document).ready(function() {
+  $('a.').click(function() {
+    console.log(123);
+    $('a.isCurrent').removeClass('isCurrent').addClass('noCurrent');
+    $('a.noCurrent').removeClass('noCurrent').addClass('isCurrent');
+
+    console.log(456);
+    //, this.header__link::before
+  });
+})
 $('.header__burger').click(function(){
   $('.header__burger, .header__menu').toggleClass('active');
 $('body').toggleClass('lock');

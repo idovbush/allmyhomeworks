@@ -789,4 +789,8 @@ margin-bottom: 8%;
   margin-left: 10px;
 }
 
+.link__down i:hover,
+.social__link i:hover {
+  transform: scale(1.2);
+} 
 
