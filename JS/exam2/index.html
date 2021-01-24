@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./source/css/jquery.fancybox.min.css" type="text / css" media="screen" />
     <link rel="stylesheet" href="./source/css/fontawesome/css/all.css" />
-
-    <!-- <link rel="stylesheet" type="text/css" href="./source/css/slick.css"/> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" type="text/css" href="./source/css/style.css" />
-
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
     <title>exam2</title>
 </head>
@@ -31,25 +28,25 @@
                                     <a href="#aboutUs" class="header__link isCurrent">About us</a>
                                 </li>
                                 <li class="list__item">
-                                    <a href="#" class="header__link noCurrent">Projects</a>
+                                    <a href="#gallery" class="header__link ">Projects</a>
                                 </li>
                                 <li class="list__item">
-                                    <a href="#" class="header__link  noCurrent">News</a>
+                                    <a href="#news" class="header__link  ">News</a>
                                 </li>
                                 <li class="list__item">
-                                    <a href="#contacts" class="header__link noCurrent">Contact</a>
+                                    <a href="#contacts" class="header__link ">Contact</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="header__social">
-                            <a href="https://uk-ua.facebook.com/" class="social__link facebook"
+                            <a href="https://uk-ua.facebook.com/target='_blank'" class="social__link facebook"
                                 style="text-decoration: none">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://twitter.com/?lang=ru" class="social__link twitter">
+                            <a href="https://twitter.com/?lang=ru target='_blank'" class="social__link twitter">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="https://www.instagram.com/?hl=ru" class="social__link instagram">
+                            <a href="https://www.instagram.com/?hl=ru target='_blank'" class="social__link instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
@@ -64,26 +61,28 @@
                 <h1 class="title__name">Simple & mordern</h1>
                 <h3 class="title__desc">We make the world's beautiful every day</h3>
             </div>
-            <a href="#gallery" class="link__down">
+
+            <a href="#" class="link__down">
                 <div class="main__down">
                     <i class="fas fa-angle-down"></i>
                 </div>
             </a>
-            </div>
-    
-                <ul class="dots">
-                    <li class="dot activeSlide"><button class="slide1"></button></li>
-                    <li class="dot"><button class="slide2"></button></li>
-                    <li class="dot"><button class="slide3"></button></li>
-                    <li class="dot"><button class="slide4"></button></li>
-                    <li class="dot"><button class="slide5"></button></li>
-                </ul>
 
+            <ul class="dots">
+                <li class="dot activeSlide" id="slide1"><button class="slide1"></button></li>
+                <li class="dot" id="slide2"><button class="slide2"></button></li>
+                <li class="dot" id="slide3"><button class="slide3"></button></li>
+                <li class="dot" id="slide4"><button class="slide4"></button></li>
+                <li class="dot" id="slide5"><button class="slide5"></button></li>
+            </ul>
+
+            </div>
         </section>
-        <section class="news"></section>
-        <section class="gallery">
+
+        <!-- <section class="news"></section> -->
+        <section class="gallery" id="gallery">
             <div class="container">
-                <div class="title" id="gallery">Gallery</div>
+                <div class="title" >Gallery</div>
                 <div class="images">
                     <div class="image1">
                         <a href="./source/img/1.jpg" rel="group" class="fancybox image-link" data-fancybox="gallery"
@@ -123,7 +122,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="news">
             <div id="map" class="map"></div>
             <div class="contact__container">
                 <div class="contact__title">Get in touch</div>
@@ -156,6 +155,7 @@
                 </div>
             </div>
         </section>
+
         <section class="footer" id="contacts">
             <div class="container">
                 <div class="footer__info">
@@ -163,14 +163,14 @@
                         <img src="./source/img/logoFooter.png" alt="logo" />
                     </div>
                     <div class="footer__social">
-                        <a href="https://uk-ua.facebook.com/" class="social__link facebook"
+                        <a href="https://uk-ua.facebook.com/ target='_blank'" class="social__link facebook"
                             style="text-decoration: none !important"><i class="fab fa-facebook-f footer__icon"></i>
                         </a>
 
-                        <a href="https://twitter.com/?lang=ru" class="social__link twitter"><i
+                        <a href="https://twitter.com/?lang=ru target='_blank'" class="social__link twitter"><i
                                 class="fab fa-twitter footer__icon"></i>
                         </a>
-                        <a href="https://www.instagram.com/?hl=ru" class="social__link instagram"><i
+                        <a href="https://www.instagram.com/?hl=ru target='_blank'" class="social__link instagram"><i
                                 class="fab fa-instagram footer__icon"></i>
                         </a>
                     </div>
@@ -181,11 +181,11 @@
                 </div>
             </div>
         </section>
+        
     </div>
     <script type="text/javascript" src="./source/js/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script type="text / javascript" src="./source/js/jquery.fancybox.min.js"></script>
-    <!-- <script type="text/javascript" src="./source/js/slick.min.js"></script> -->
     <script src="./source/js/main.js"></script>
 </body>
 
