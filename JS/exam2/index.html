@@ -83,39 +83,46 @@
         <section class="gallery" id="gallery">
             <div class="container">
                 <div class="title" >Gallery</div>
+
+                    <ul class="gallery__list">
+                        <li class="gallery__item" id="big"><button class="option">Big</button></li>
+                        <li class="gallery__item  activeOption" id="all"><button class="option">All</button></li>
+                        <li class="gallery__item" id="little"><button class="option">Little</button></li>
+                    </ul>
+               
                 <div class="images">
                     <div class="image1">
-                        <a href="./source/img/1.jpg" rel="group" class="fancybox image-link" data-fancybox="gallery"
+                        <a href="./source/img/1.jpg" rel="group" class="fancybox image-link big" data-fancybox="gallery"
                             data-caption="Image" tabindex="-1">
                             <img src="./source/img/1.jpg" alt="image" />
                         </a>
                     </div>
                     <div class="image2">
-                        <a href="./source/img/2.jpg" rel="group" class="fancybox image-link" data-fancybox="gallery"
+                        <a href="./source/img/2.jpg" rel="group" class="fancybox image-link little" data-fancybox="gallery"
                             data-caption="Image">
                             <img src="./source/img/2.jpg" alt="image" />
                         </a>
                     </div>
                     <div class="image3">
-                        <a href="./source/img/3.jpg" rel="group" class="fancybox image-link" data-fancybox="gallery"
+                        <a href="./source/img/3.jpg" rel="group" class="fancybox image-link little" data-fancybox="gallery"
                             data-caption="Image">
                             <img src="./source/img/3.jpg" alt="image" />
                         </a>
                     </div>
                     <div class="image4">
-                        <a href="./source/img/4.jpg" rel="group" class="fancybox image-link" data-fancybox="gallery"
+                        <a href="./source/img/4.jpg" rel="group" class="fancybox image-link little" data-fancybox="gallery"
                             data-caption="Image">
                             <img src="./source/img/4.jpg" alt="image" />
                         </a>
                     </div>
                     <div class="image5">
-                        <a href="./source/img/5.jpg" rel="group" class="fancybox image-link" data-fancybox="gallery"
+                        <a href="./source/img/5.jpg" rel="group" class="fancybox image-link little" data-fancybox="gallery"
                             data-caption="Image">
                             <img src="./source/img/5.jpg" alt="image" />
                         </a>
                     </div>
                 </div>
-                <a href="./source/img/5.jpg" class="fancybox gallery__link" data-fancybox="gallery"
+                <a href="./source/img/5.jpg" class="fancybox gallery__link little" data-fancybox="gallery"
                     data-caption="Image">
                     <div class="btn">See more</div>
                 </a>
@@ -125,7 +132,7 @@
         <section class="contact" id="news">
             <div id="map" class="map"></div>
             <div class="contact__container">
-                <div class="contact__title">Get in touch</div>
+                <div class="contact__title" id="contacts">Get in touch</div>
                 <div class="contact__body">
                     <div class="contact__details">
                         <div class="contact__item">
@@ -147,8 +154,8 @@
                         </div>
                     </div>
                     <form action="#" class="form__callback">
-                            <input class="form__name" type="text" name="name" required placeholder="Your name" />
-                            <input class="form__email" type="email" name="email" required placeholder="Email" />
+                            <input class="form__name fill" type="text" name="name" placeholder="Name" />
+                            <input class="form__email fill" type="email" name="email"  placeholder="Email" />
                             <button type="submit" class="form__button">Submit</button>
                     </form>
                     
@@ -156,7 +163,7 @@
             </div>
         </section>
 
-        <section class="footer" id="contacts">
+        <section class="footer" id="footer">
             <div class="container">
                 <div class="footer__info">
                     <div class="footer__logo">
